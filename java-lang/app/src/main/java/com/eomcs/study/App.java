@@ -11,6 +11,7 @@ public class App {
 
   public static void main(String[] args) {
     SpringApplication.run(App.class, args);
+    //스프링 부트를 실행하는 문장
   }
 
   @RequestMapping("/hello")
