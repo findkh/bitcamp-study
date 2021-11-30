@@ -1,5 +1,7 @@
 package com.eomcs.lang.ex02;
 
+//211130
+
 //# 주석 - 애노테이션(annotation)
 //- 클래스, 변수(필드, 아규먼트, 로컬 변수), 메서드 선언에 붙이는 주석이다.
 //- 컴파일러나 JVM에서 사용할 주석이다.
@@ -20,7 +22,7 @@ public class Exam0300 {
   public static void main(String[] args) {
     System.out.println("애노테이션");
   }
-  
+
   //## @Override 
   //- 수퍼 클래스에서 상속 받은 멤버를 재정의 한다는 것을 컴파일러에게 알린다.
   //- 컴파일러는 오버라이딩 규칙을 준수하는지 검사한다.

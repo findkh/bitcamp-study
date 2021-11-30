@@ -1,5 +1,7 @@
 package com.eomcs.lang.ex01;
 
+//211130
+
 //# main() 메서드
 //- 다음과 같이 JVM을 통해 클래스를 실행하면, JVM은 그 클래스에서 main() 메서드를 찾아 실행한다.
 //  예) $ java -cp bin/main com.eomcs.basic.ex01.Exam400

@@ -1,10 +1,12 @@
 package com.eomcs.lang.ex03;
 
+//211130
+
 //# 부동소수점 리터럴 - 메모리 크기에 따른 표기법
 
 public class Exam0320 {
   public static void main(String[] args) {
-    
+
     //## 8바이트 크기의 부동소수점
     //- 숫자 맨 뒤에 d 또는 D를 붙인다.
     //- 생략해도 된다.

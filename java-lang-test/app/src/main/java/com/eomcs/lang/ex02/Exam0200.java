@@ -1,5 +1,7 @@
 package com.eomcs.lang.ex02;
 
+//211130
+
 //# 주석 - Javadoc 주석
 //
 //- "java document comment(doc comment)"
@@ -19,7 +21,7 @@ public class Exam0200 {
    * 변수 선언 앞에 설명을 붙여 놓으면 나중에 HTML 문서를 만들 때 추출할 수 있다.
    */
   public static String message = "Hello, world!";
-  
+
   /**
    * 메서드에 대한 설명
    * 메서드에 대한 설명을 여기에 붙여 놓으면 나중에 HTML 문서를 만들 때 추출할 수 있다.
