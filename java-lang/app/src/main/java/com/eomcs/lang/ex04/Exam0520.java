@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex04;
+//211203
 
 //# 배열 - 배열 메모리에 방법 
 // 배열 메모리에 접근
@@ -19,6 +20,10 @@ public class Exam0520 {
     arr1[2] = 300;
     arr1[3] = 400;
     arr1[4] = 500;
+
+    for(int i = 0; i<arr1.length; i++) {
+      System.out.println("arr["+i+"]"+"="+arr1[i]);
+    }
 
 
     // 유효하지 않은 인덱스를 지정한다면?

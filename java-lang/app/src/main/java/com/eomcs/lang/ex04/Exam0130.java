@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex04;
+//211203
 
 //# 변수에 값 할당
 //- 변수가 가리키는 메모리에 값을 저장하는 것
@@ -20,6 +21,7 @@ public class Exam0130 {
     //- 문법
     //    변수명 = 값;
     age = 20; 
+    System.out.println(age);
 
     //표현
     //- age 변수가 가리키는 메모리에 20을 저장하라!

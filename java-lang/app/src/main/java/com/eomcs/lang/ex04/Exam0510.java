@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex04;
+//211203
 
 //# 배열 - 배열을 선언하는 방법 
 // 배열?
@@ -23,7 +24,7 @@ public class Exam0510 {
 
     // 배열 선언
     int[] arr1 = new int[5]; // OK!
-    int arr2[] = new int[5]; // OK! C-style.
+    //    int arr2[] = new int[5]; // OK! C-style.
 
     // 배열의 크기는 int 타입의 최대 값에서 2를 뺀 값이다.
     // 배열의 최대 크기 = Integer.MAX_VALUE - 2
@@ -31,8 +32,12 @@ public class Exam0510 {
     //int[] arr3 = new int[2147483647]; // 실행 오류 => VM의 배열 크기 제한을 초과
     // Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 
-    //int[] arr3 = new int[2147483645]; // OK!
-    int[] arr3 = new int[Integer.MAX_VALUE - 2]; // OK!
+    //    int[] arr3 = new int[2147483645]; // OK!
+    //    Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
+    //    at com.eomcs.lang.ex04.Exam0510.main(Exam0510.java:35)
+    //    OS가 쓰라고 준 메모리보다 메모리를 초과했을 때 뜨는 오류
+    //    int[] arr3 = new int[Integer.MAX_VALUE - 2]; // OK!
+
 
     // 실행 오류 발생!
     // => Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
