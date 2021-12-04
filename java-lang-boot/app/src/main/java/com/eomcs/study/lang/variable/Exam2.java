@@ -22,6 +22,8 @@ public class Exam2 {
 
   //여러 개의 값을 받는 방법 : 배열 사용 후
   //->배열 메모리에 값을 넘길 때는 같은 파라미터 이름을 사용해야 한다.
+  //URL
+  //http://localhost:8080/lang/variable/exam2/test2?name=%EA%B9%80%EC%9B%90%EB%B4%89&name=%EC%9C%A0%EA%B4%80%EC%88%9C&name=%EA%B9%80%EA%B5%AC&name=%EC%86%90%EB%B3%91%ED%9D%AC&name=%EC%95%88%EC%A4%91%EA%B7%BC&name=%ED%99%8D%EB%B2%94%EB%8F%84&name=%22%EC%95%88%EC%B0%BD%ED%98%B8%22
   @GetMapping("/test2")
   public String test2(String[] name) {
     return "=> " +  name[0] + ", "+  name[1] + ", " + name[2] + ", " + name[3] + ", " + name[4] + ", " +name[5] + ", " +name[6];

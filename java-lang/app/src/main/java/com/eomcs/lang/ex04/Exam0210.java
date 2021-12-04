@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-//211203 
+//211203  //211204
 //# 블록 안에서 변수 선언 위치  
 //
 public class Exam0210 {

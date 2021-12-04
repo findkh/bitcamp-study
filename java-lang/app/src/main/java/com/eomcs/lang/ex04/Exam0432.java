@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-//211203 
+//211203 //211204
 //# 문자 변수 - UCS-2 문자 코드 값 저장
 //
 public class Exam0432 {

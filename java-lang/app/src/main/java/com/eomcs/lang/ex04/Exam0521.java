@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-//211203
+//211203 //211204
 
 //# 배열 - 배열이 필요할 때: 같은 종류의 메모리를 많이 다룰 경우 
 //
@@ -26,6 +26,8 @@ public class Exam0521 {
 
     // 배열 변수에 들어 있는 값의 합계를 구해 보자!
     int sum2 = 0;
+
+    System.out.println("[3]" + arr1[3]);
 
     //    for (int i = 0; i < arr1.length; i++) {
     //      sum2 = sum2 + arr1[i];

@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-//211203
+//211203 211204
 
 //# 배열 - 배열을 선언하는 방법 
 // 배열?
@@ -24,12 +24,12 @@ public class Exam0510 {
 
     // 배열 선언
     int[] arr1 = new int[5]; // OK!
-    //    int arr2[] = new int[5]; // OK! C-style.
+    int arr2[] = new int[5]; // OK! C-style.
 
     // 배열의 크기는 int 타입의 최대 값에서 2를 뺀 값이다.
     // 배열의 최대 크기 = Integer.MAX_VALUE - 2
 
-    //int[] arr3 = new int[2147483647]; // 실행 오류 => VM의 배열 크기 제한을 초과
+    //    int[] arr3 = new int[2147483646]; // 실행 오류 => VM의 배열 크기 제한을 초과
     // Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 
     //    int[] arr3 = new int[2147483645]; // OK!

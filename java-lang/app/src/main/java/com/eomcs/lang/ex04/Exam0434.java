@@ -11,6 +11,7 @@ public class Exam0434 {
 
     // 영어 대문자의 문자 코드 저장
     int v = 0x41;  // 65(10진수)
+    System.out.println(v);
 
     // 코드 값을 1씩 증가하면서 문자를 출력해 보자!
     for (int i = 0; i < 26; i++) {

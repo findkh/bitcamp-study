@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-//211203
+//211203, //211204
 
 // # 변수(variables)
 // - 값을 저장하는 메모리
