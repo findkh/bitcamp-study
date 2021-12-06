@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex04;
+//211206
 
 //# 상수 - 변수의 값을 고정하는 방법
 //
@@ -6,10 +7,11 @@ public class Exam0610 {
   public static void main(String[] args) {
     // 변수
     // => 언제든지 값을 변경할 수 있다.
-    int a;
+    int a; //static type binding
     a = 10;
     a = 100;
     a = -300;
+
 
     // 상수
     // => 값을 오직 한 번만 저장할 수 있다.

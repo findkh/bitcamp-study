@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex04;
-
+//211206
 //# 변수의 종류 - 같은 블록에서는 중복 선언 불가
 public class Exam0810 {
 

@@ -15,6 +15,7 @@ public class Exam2 {
   //여러 개의 값을 받는 방법 : 배열 사용전
   //URL
   //http://localhost:8080/lang/variable/exam2/test1?name1=%ED%99%8D%EA%B8%B8%EB%8F%99&name2=%EC%9E%84%EA%BA%BD%EC%A0%95&name3=%EC%9C%A0%EA%B4%80%EC%88%9C&name4=%EC%95%88%EC%A4%91%EA%B7%BC&name5=%22%EC%9C%A4%EB%B4%89%EA%B8%B8%22&name6=%22%EA%B9%80%EA%B5%AC%22&name7=%22%ED%99%8D%EB%B2%94%EB%8F%84%22
+  //http://localhost:8080/lang/variable/exam2/test1?name1=%ED%99%8D%EA%B8%B8%EB%8F%99&name2=%EC%9E%84%EA%BA%BD%EC%A0%95&name3=%EC%9C%A0%EA%B4%80%EC%88%9C&name4=
   @GetMapping("/test1")
   public String test1(String name1, String name2, String name3, String name4, String name5, String name6, String name7) {
     return "=> " +  name1 + ", "+  name2 + ", " + name3 + ", " + name4 + ", " + name5 + ", " +name6 + ", " +name7;
