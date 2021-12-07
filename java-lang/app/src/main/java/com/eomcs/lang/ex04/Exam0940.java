@@ -39,6 +39,13 @@ public class Exam0940 {
     System.out.println(l); // 앞 쪽 바이트가 짤린다.
     System.out.println(i);
     System.out.println(0x502f9000);
+
+
+    float f = 1234.56789f;
+    i2 = (int)f;
+    System.out.println(f);
+
+
   }
 }
 
