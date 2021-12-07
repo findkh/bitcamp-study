@@ -65,13 +65,9 @@ public class Exam4 {
   // /static/lang/literal/variable/exam4/test3.html
   @GetMapping("/test3")
   public Object test3() {
-    String[] names = new String[] {"홍길동", "임꺽정", "유관순", "안중근", "윤봉길"};
+    String[] names = new String[] {"하파", "수다르", "희", "레고", "스프링부트"};
+    //String[] names = new String[] {"홍길동", "임꺽정", "유관순", "안중근", "윤봉길"};
     return names; 
     //스프링부트는 이 메서드가 리턴한 배열을 JSON 형식의 문자열로 바꿔 응답한다
-
-
   }
-
-
-
 } 
