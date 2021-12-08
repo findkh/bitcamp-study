@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211208 
 //# 비트 연산자 & 활용: 그림의 한 픽셀에서 빨강 색을 제거하고 싶다.
 //
 public class Exam0354 {

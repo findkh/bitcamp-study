@@ -1,5 +1,6 @@
 // 관계 연산자 : 부동소수점 비교 
 package com.eomcs.lang.ex05;
+//211208
 
 public class Exam0220 {
   public static void main(String[] args) {
@@ -29,11 +30,11 @@ public class Exam0220 {
     //
     // 0 10000001000 1110111001100001111110001111110011010110011111111101
     // 0 10000001000 1110111001100001111110001111110011010110011111111101
-    
+
     double x = 234.765411;
     double y = 754.0;
     System.out.println((x + y) == 988.765411);
-    
+
     System.out.println(x);
     System.out.println(y);
     System.out.println(x + y);
@@ -50,16 +51,18 @@ public class Exam0220 {
     //
     // 0 10000001000 1110111001100001111110001111110011010110011111111101
     //
-    
+
     // IEEE 754의 변환 공식에 따라 발생되는 이런 문제를 
     // 실무 프로그래밍 할 때 해결하는 방법?
     //
     System.out.println((d1 + d2) == (x + y)); // false
+    System.out.println((d1 + d2) == 988.765411); // false
 
     // 소수점 뒤에 붙은 극소수의 값을 무시하면 된다.
     // => JVM이 자동으로 처리하지 않는다.
     // => 다음과 같이 개발자가 직접 처리해야 한다.
     double EPSILON = 0.00001;
     System.out.println(Math.abs((d1 + d2) - (x + y)) < EPSILON);
+    System.out.println(Math.abs((d1 + d2) - 988.765411) < EPSILON);
   }
 }

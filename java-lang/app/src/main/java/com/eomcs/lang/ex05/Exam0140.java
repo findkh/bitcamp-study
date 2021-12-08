@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211208
 //# 산술 연산자 : 데이터 타입과 연산자
 //
 public class Exam0140 {
@@ -13,10 +13,12 @@ public class Exam0140 {
 
     System.out.println("Hello," + "world!"); // OK! '+' 연산자는 문자열 연결 용도로 사용된다.
     //    System.out.println("Hello," - "o,"); // 컴파일 오류!
-    //    System.out.println("Hello," * 5); // 컴파일 오류!
+    //        System.out.println("Hello," * 5); // 컴파일 오류!
 
     System.out.println(true && true);
     //    System.out.println(10 && 10); // 컴파일 오류!이다.
+
+
   }
 }
 

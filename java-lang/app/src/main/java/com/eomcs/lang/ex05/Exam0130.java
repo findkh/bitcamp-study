@@ -1,9 +1,16 @@
 package com.eomcs.lang.ex05;
-
+//211208
 //# 산술 연산자 : 기본 연산 단위
 //
 public class Exam0130 {
   public static void main(String[] args) {
+
+    byte b1;
+    b1 = 127;
+    b1 = -128;
+    //    b1 = 128;
+    b1 = 127 + -128;
+    System.out.println("b1은? " + b1);
 
     byte b;
     b = 5; // OK!
@@ -23,6 +30,11 @@ public class Exam0130 {
     byte x = 5, y = 6, z;
     z = x; // OK!
     z = y; // OK!
+
+    byte b2 = 5, b3 = 10, c;
+    c = b2;
+    c = b3;
+    //        c = b2 + b3;
 
     //    z = x + y; // 컴파일 오류!
     //

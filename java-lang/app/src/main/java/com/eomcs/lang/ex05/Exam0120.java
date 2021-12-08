@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex05;
+//211208
 
 //# 산술 연산자 : 우선 순위 
 //
@@ -16,15 +17,22 @@ public class Exam0120 {
     // 강제로 실행 순서를 바꾸고 싶다면 
     // 괄호()를 묶어라!
     System.out.println((2 + 3) * 7); // = 35
+
+    System.out.println(2+3*2); //8
+    System.out.println(2*3/2); //3
+    System.out.println((2+3)*2); //10
   }
 }
+
+
+
 
 /* 
 # 연산자 우선 순위
 괄호: ()
 후위 연산자: a++, a--
 전위 연산자: ++a, --a, 단항 연산자(+, -)
-*, /, %
+ *, /, %
 +, -
 비트이동 연산자: <<, >>, >>>
 관계 연산자: <, >, <=, >=, instanceof

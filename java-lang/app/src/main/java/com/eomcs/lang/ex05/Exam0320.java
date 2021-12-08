@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211208
 //# 논리 연산자 : &, |
 //
 public class Exam0320 {
