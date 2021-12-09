@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-//211208
+//211208 211209
 //# 비트 이동 연산자 : >>, >>>, <<
 //
 public class Exam0421 {

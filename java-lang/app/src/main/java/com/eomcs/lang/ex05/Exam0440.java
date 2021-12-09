@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211209
 //# 비트 연산자 : 응용 I
 //
 public class Exam0440 {
@@ -48,6 +48,7 @@ public class Exam0440 {
     System.out.println(Integer.toHexString(c));
     System.out.println(Integer.toHexString(d));
 
+    //& 1111을 하면 원래 값을 그대로 투과 시킨다. 
 
   }
 }

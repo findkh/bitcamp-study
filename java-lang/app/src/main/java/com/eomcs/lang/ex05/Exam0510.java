@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211209
 //# 조건 연산자 => ? :
 //
 public class Exam0510 {
@@ -14,6 +14,12 @@ public class Exam0510 {
     // 조건연산자의 왼쪽은 변수이어야 한다.
     String message = age > 18 ? "성년" : "미성년";
     System.out.printf("나이 %d는(은) %s이다.\n", age, message);
+
+    //조건 연산자에서 : 좌우의 값은 반드시 표현식(expression)이어야 한다.
+    //    그리고 왼쪽은 그 값을 받는 변수여야 한다
+    // 또는 메서드의 파라미터여야 한다
+    //다음은 컴파일 오류
+    //object result = (age < 19) ? System.out.println("미성년"); System.out.println("성년");
   }
 }
 

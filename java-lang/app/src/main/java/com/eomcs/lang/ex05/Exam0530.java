@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211209
 //# 조건 연산자 => ? :
 //
 public class Exam0530 {
