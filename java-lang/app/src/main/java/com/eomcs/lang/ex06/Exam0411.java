@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-
+//211209
 //# 흐름 제어문 - for 반복문
 //
 public class Exam0411 {
@@ -9,8 +9,8 @@ public class Exam0411 {
 
     // 증감문 제거
     for (int i = 1; i <= 5;) {
-      System.out.println(i);
       i++;
+      System.out.println(i);
     }
 
   }

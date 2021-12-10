@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-
+//211209 211210
 //# 흐름 제어문 - break와 continue 활용
 //
 public class Exam0320 {
@@ -8,7 +8,7 @@ public class Exam0320 {
     int sum = 0;
 
     // 1부터 100까지의 합은?
-    while (count < 100) {
+    while (count < 5) {
       //count++;
       //sum += count; // sum = sum + count;
       sum += ++count;

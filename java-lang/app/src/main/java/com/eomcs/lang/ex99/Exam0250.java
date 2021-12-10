@@ -11,6 +11,7 @@ public class Exam0250 {
 
     // 한 개의 토큰을 읽을 때 유용하다.
     String name = keyboardScanner.next();
+    //next는 앞뒤공백을 무시해버린다.
 
     boolean working = keyboardScanner.nextBoolean();
 

@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-
+//211209 중요!
 //# 증감 연산자 : 후위(post-fix) 증감 연산자 응용 I
 //
 public class Exam0631 {
@@ -24,6 +24,13 @@ public class Exam0631 {
     //    => 다시 i는 8에서 7로 바뀌었다.
 
     System.out.println(i);
+
+    int a = 2;
+    int temp = a;
+    a = a + 1;
+    a = temp;
+    System.out.println(a);
+
 
   }
 }

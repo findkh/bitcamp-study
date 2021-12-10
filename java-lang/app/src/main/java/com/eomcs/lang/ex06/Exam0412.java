@@ -16,5 +16,9 @@ public class Exam0412 {
 
     // for 문을 종료한 후에도 i 변수를 사용할 수 있다.
     System.out.println(i);
+
+    for(i=2; i < 3; i++) {
+      System.out.println("*");
+    }
   }
 }
