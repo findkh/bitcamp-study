@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>연락처</title>
+  </head>
+  <body>
+<h1>연락처</h1>
+<a href="form.html"> 새 연락처 </a>
+<table id="x-contact-tbl" border="1">
+  <thead>
+      <tr>
+        <td>이름</td>
+        <td>이메일</td>
+        <td>전화</td>
+        <td>회사</td>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+      </tr>
+  </tbody>
+</table>
+
+<script>
+var tbody = document.querySelector("#x-contact-tbl tbody"); //x-contact-tbl id를 가지고 있는 밑에 tbody를 찾아라
+
+fetch("/contact/list").then(function(response){
+  return response.json();
+}).then(function(arr) {
+  for (var str of arr) {
+    //console.log(str) //배열에서 문자열 3개를 꺼내서 출력함
+    var contact = str.split(","); //contact안에 콤마가 있으니까 콤마로 쪼개준다. 그러면 문자열이 4덩어리로 바뀐다.
+    //콤마로 쪼갠걸 배열로 만들어서 리턴해준다.
+    var tr = document.createElement("tr");
+    tr.innerHTML = `<td><a href="view.html?email=${contact[1]}">${contact[0]}</a></td>
+      <td>${contact[1]}</td>
+      <td>${contact[2]}</td>
+      <td>${contact[3]}</td>`;
+    tbody.appendChild(tr);
+  }
+});
+</script>
+
+
+</body>
+</html>

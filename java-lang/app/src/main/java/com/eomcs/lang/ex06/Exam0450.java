@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-
+//211210
 // # 흐름 제어문 - for(:) 와 배열
 //
 public class Exam0450 {
@@ -11,6 +11,10 @@ public class Exam0450 {
     // for (배열에서 꺼낸 값을 저장할 변수 선언 : 배열주소) 문장;
     for (String name : names)
       System.out.println(name);
+
+    int[] num = {1,2,3,4,5,6,7,8,9};
+    for (int num1 : num)
+      System.out.print(num1);
   }
 }
 

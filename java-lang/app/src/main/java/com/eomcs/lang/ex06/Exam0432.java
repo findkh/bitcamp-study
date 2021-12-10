@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-
+//211210
 // # 흐름 제어문 - for 중첩과 break
 //
 public class Exam0432 {
@@ -16,6 +16,7 @@ public class Exam0432 {
       }
       System.out.println("-------------------------");
     }
+    System.out.println("loop1 밖!");
   }
 }
 
