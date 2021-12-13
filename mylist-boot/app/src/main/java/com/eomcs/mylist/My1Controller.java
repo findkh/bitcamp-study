@@ -15,14 +15,14 @@ public class My1Controller {
   public Object list() {
     String[] arr = new String[size];
     for (int i = 0; i < size; i++) {
-      arr[i] = items[i]; 
+      arr[i] = items[i];
     }
-    return arr; 
+    return arr;
   }
 
   @RequestMapping("/item/add")
-  public Object add(String itemcode, String itemname, String sellingprice, String client, String clientcallnum, String unitprice) {
-    String item = itemcode + "," + itemname + "," + sellingprice + "," + client + "," + clientcallnum + "," + unitprice;
+  public Object add(String itemcode, String itemname, String sellingprice, String client, String clientcallnum, String unitprice, String quantity) {
+    String item = itemcode + "," + itemname + "," + sellingprice + "," + client + "," + clientcallnum + "," + unitprice + "," + quantity;
 
     items[size++] = item;
     return size;
@@ -45,8 +45,8 @@ public class My1Controller {
   }
 
   @RequestMapping("/item/update")
-  public Object update(String itemcode, String itemname, String sellingprice, String client, String clientcallnum, String unitprice) {
-    String item = itemcode + "," + itemname + "," + sellingprice + "," + client + "," + clientcallnum + "," + unitprice;
+  public Object update(String itemcode, String itemname, String sellingprice, String client, String clientcallnum, String unitprice, String quantity) {
+    String item = itemcode + "," + itemname + "," + sellingprice + "," + client + "," + clientcallnum + "," + unitprice + "," + quantity;
     for(int i = 0; i < size; i++) {
       if (items[i].split(",")[0].equals(itemcode)) {
         items[i] = item;
@@ -59,7 +59,7 @@ public class My1Controller {
   @RequestMapping("/item/delete")
   public Object delete(String itemcode) {
     for (int i = 0; i < size; i++) {
-      if (items[i].split(",")[0].equals(itemcode)) { 
+      if (items[i].split(",")[0].equals(itemcode)) {
 
         for (int j = i + 1; j < size; j++) {
           items[j - 1] = items[j];

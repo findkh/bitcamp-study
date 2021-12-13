@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>상품 관리</h1>
-<a href="form.html">상품등록</a>
+<button type="button"><a href="form.html">상품등록</a></button><br>
 <table border="1">
 <thead>
   <tr>
@@ -16,6 +16,7 @@
     <th>거래처</th>
     <th>거래처번호</th>
     <th>상품원가</th>
+    <th>사입수량</th>
   </tr>
 </thead>
 <tbody id="x-item-table">
@@ -40,7 +41,8 @@ fetch("/item/list")
     <td>${values[2]}</td>
     <td>${values[3]}</td>
     <td>${values[4]}</td>
-    <td>${values[5]}</td>`;
+    <td>${values[5]}</td>
+    <td>${values[6]}</td>`;
     tbody.appendChild(tr);
   }
 });

@@ -15,6 +15,7 @@
 거래처      : <input id="x-client"         type="text"><br>
 전화번호    : <input id="x-client-callnum" type="text"><br>
 상품원가(*) : <input id="x-unit-price"     type="text"><br>
+사입수량    : <input id="x-quantity"       type="text"><br>
 별표(*) 항목은 필수 입력입니다.<br>
 <button id="x-add-btn"    type="button">등록</button>
 <button id="x-cancel-btn" type="button">취소</button>
@@ -27,6 +28,7 @@ var xSellingprice = document.querySelector("#x-selling-price");
 var xClient = document.querySelector("#x-client");
 var xClientcallnum = document.querySelector("#x-client-callnum");
 var xUnitprice = document.querySelector("#x-unit-price");
+var xQuantity = document.querySelector("#x-quantity");
 
 document.querySelector("#x-add-btn").onclick = function() {
   if (xItemcode.value == "" || xSellingprice.value == "" || xUnitprice.value == "") {
@@ -34,7 +36,7 @@ document.querySelector("#x-add-btn").onclick = function() {
     return;
   }
 
-  fetch(`/item/add?itemcode=${xItemcode.value}&itemname=${xItemname.value}&sellingprice=${xSellingprice.value}&client=${xClient.value}&clientcallnum=${xClientcallnum.value}&unitprice=${xUnitprice.value}`)
+  fetch(`/item/add?itemcode=${xItemcode.value}&itemname=${xItemname.value}&sellingprice=${xSellingprice.value}&client=${xClient.value}&clientcallnum=${xClientcallnum.value}&unitprice=${xUnitprice.value}&quantity=${xQuantity.value}`)
   .then(function(response) {
       return response.text();
   })

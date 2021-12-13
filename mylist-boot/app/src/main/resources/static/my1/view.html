@@ -9,12 +9,13 @@
 <h1>신상 상세 정보</h1>
 
 <form>
-상품코드* : <input id="x-item-code" type="text" readonly><br>
-상품명    : <input id="x-item-name" type="text"><br>
-판매가격* : <input id="x-selling-price" type="text"><br>
-거래처    : <input id="x-client"  type="text"><br>
+상품코드* : <input id="x-item-code"      type="text" readonly><br>
+상품명    : <input id="x-item-name"      type="text"><br>
+판매가격* : <input id="x-selling-price"  type="text"><br>
+거래처    : <input id="x-client"         type="text"><br>
 전화번호  : <input id="x-client-callnum" type="text"><br>
-상품원가* : <input id="x-unit-price" type="text"><br>
+상품원가* : <input id="x-unit-price"     type="text"><br>
+사입수량  : <input id="x-quantity"       type="text"><br>
 별표(*) 항목은 필수 입력입니다.<br>
 <button id="x-update-btn" type="button">수정</button>
 <button id="x-delete-btn" type="button">삭제</button>
@@ -48,6 +49,7 @@ var xSellingprice = document.querySelector("#x-selling-price");
 var xClient = document.querySelector("#x-client");
 var xClientcallnum = document.querySelector("#x-client-callnum");
 var xUnitprice = document.querySelector("#x-unit-price");
+var xQuantity = document.querySelector("#x-quantity");
 
 fetch(`/item/get?itemcode=${itemcode}`)
   .then(function(response) {
@@ -63,6 +65,7 @@ fetch(`/item/get?itemcode=${itemcode}`)
   xClient.value = values[3];
   xClientcallnum.value = values[4];
   xUnitprice.value = values[5];
+  xQuantity.value = values[6];
 });
 
 document.querySelector("#x-update-btn").onclick = function() {
@@ -71,7 +74,7 @@ document.querySelector("#x-update-btn").onclick = function() {
     return;
   }
 
-  fetch(`/item/update?itemcode=${xItemcode.value}&itemname=${xItemname.value}&sellingprice=${xSellingprice.value}&client=${xClient.value}&clientcallnum=${xClientcallnum.value}&unitprice=${xUnitprice.value}`)
+  fetch(`/item/update?itemcode=${xItemcode.value}&itemname=${xItemname.value}&sellingprice=${xSellingprice.value}&client=${xClient.value}&clientcallnum=${xClientcallnum.value}&unitprice=${xUnitprice.value}&quantity=${xQuantity.value}`)
   .then(function(response) {
     return response.text();
   })
