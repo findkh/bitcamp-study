@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex99;
-//211209
+//211209 211213
 //# 콘솔로 출력하기
 //
 
@@ -25,6 +25,7 @@ public class Exam0110 {
 
     // 이스케이프 문자를 통해 줄바꿈을 수행한다.
     System.out.print('\n');
+    System.out.print("안녕\n ");
 
     System.out.print("OK!\n"); // ==> println("Ok!")
     System.out.print("Hi!\n"); // ==> println("Hi!");

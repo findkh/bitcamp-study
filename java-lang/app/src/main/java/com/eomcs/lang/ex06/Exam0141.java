@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-//211210
+//211210 211213
 //# 흐름 제어문 - if ~ else 문
 //
 public class Exam0141 {

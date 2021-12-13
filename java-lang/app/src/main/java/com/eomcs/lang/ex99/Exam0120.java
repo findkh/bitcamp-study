@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex99;
-//211209
+//211209 211213
 //# 콘솔로 출력하기 II - 특정 형식을 갖춘 문자열 안에 값을 삽입하여 출력하기
 //
 public class Exam0120 {
@@ -12,6 +12,9 @@ public class Exam0120 {
     //      삽입할 값은 오른쪽에 설정한다.
     System.out.printf("이름: %s\n", "홍길동");
     System.out.printf("안녕하세요! %s입니다.\n", "임꺽정");
+    System.out.printf("이름이 뭐야? %s\n", "놉");
+    System.out.printf("%d %x %c \n", 65, 65, 65);
+    System.out.printf("%d, %x, %c \n",68, 68, 68);
 
     // %d : 정수 값을 10진수 문자열로 만들어 삽입한다.
     // %x : 정수 값을 16진수 문자열로 만들어 삽입한다.
@@ -22,6 +25,7 @@ public class Exam0120 {
     // 한 개의 값을 여러 곳에 삽입할 수 있다.
     // %[n$]s : n은 문자열에 삽입될 값의 순서이다. 순서는 1부터 증가한다.
     System.out.printf("%d %1$x %1$c\n", 65);
+    System.out.printf("%d %1$x %1$c\n", 66);
     System.out.printf("%3$d %1$x %2$c\n", 65, 66, 67); // 3$(67), 1$(65), 2$(66)
     System.out.printf("%d %1$x %1$c\n", 66);
     // 값을 삽입할 때 사용할 공간을 지정할 수 있다.

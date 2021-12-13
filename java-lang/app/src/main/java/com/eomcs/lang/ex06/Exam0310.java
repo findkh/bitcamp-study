@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex06;
-//211209 211210
+//211209 211210 211213
 //# 흐름 제어문 - 반복문 while
 //
 public class Exam0310 {
