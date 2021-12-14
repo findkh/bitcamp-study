@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>상품등록</title>
+</head>
+<body>
+
+<h1>신상 등록</h1>
+
+<form>
+  <table>
+    <tbody>
+      <tr>
+        <td>상품코드(*)</td>
+        <td><input id="x-item-code" type="text"></td>
+      </tr>
+      <tr>
+        <td>상품명</td>
+        <td><input id="x-item-name" type="text"></td>
+      </tr>
+      <tr>
+        <td>판매가격(*)</td>
+        <td><input id="x-selling-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>거래처</td>
+        <td><input id="x-client" type="text"></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td><input id="x-client-callnum" type="tel"></td>
+      </tr>
+      <tr>
+        <td>상품원가(*)</td>
+        <td><input id="x-unit-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>사입수량</td>
+        <td><input id="x-quantity" type="number"></td>
+      </tr>
+    </tbody>
+  </table>
+
+별표(*) 항목은 필수 입력입니다.<br><br>
+<button id="x-add-btn"    type="button">등록</button>
+<button id="x-cancel-btn" type="button">취소</button>
+</form>
+
+<script type="text/javascript">
+var xItemcode = document.querySelector("#x-item-code");
+var xItemname = document.querySelector("#x-item-name");
+var xSellingprice = document.querySelector("#x-selling-price");
+var xClient = document.querySelector("#x-client");
+var xClientcallnum = document.querySelector("#x-client-callnum");
+var xUnitprice = document.querySelector("#x-unit-price");
+var xQuantity = document.querySelector("#x-quantity");
+
+document.querySelector("#x-add-btn").onclick = function() {
+  if (xItemcode.value == "" || xSellingprice.value == "" || xUnitprice.value == "") {
+    window.alert("필수 입력 항목이 비어 있습니다.");
+    return;
+  }
+
+  fetch(`/item/add?itemcode=${xItemcode.value}&itemname=${xItemname.value}&sellingprice=${xSellingprice.value}&client=${xClient.value}&clientcallnum=${xClientcallnum.value}&unitprice=${xUnitprice.value}&quantity=${xQuantity.value}`)
+  .then(function(response) {
+      return response.text();
+  })
+  .then(function(text){
+    window.alert("등록되었습니다.");
+    console.log(text);
+    location.href="index.html";
+  });
+};
+
+document.querySelector("#x-cancel-btn").onclick = function() {
+  window.location.href = "index.html";
+};
+</script>
+</body>
+</html>
