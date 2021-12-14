@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <title>상품 리스트</title>
 </head>
+
 <body>
-<h1>상품 관리</h1>
-<button type="button"><a href="form.html">상품등록</a></button><br>
-<table border="1">
+<center>
+<h1>상품 리스트</h1><br>
+<a href="form.html">상품등록</a>
+<a href="/index.html">메인</a><br>
+
+<table id=table border="1" width=1000 height=100>
 <thead>
   <tr>
     <th>상품코드</th>
@@ -47,5 +51,6 @@ fetch("/item/list")
   }
 });
 </script>
+</center>
 </body>
 </html>

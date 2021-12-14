@@ -9,14 +9,40 @@
 <h1>신상 상세 정보</h1>
 
 <form>
-상품코드* : <input id="x-item-code"      type="text" readonly><br>
-상품명    : <input id="x-item-name"      type="text"><br>
-판매가격* : <input id="x-selling-price"  type="text"><br>
-거래처    : <input id="x-client"         type="text"><br>
-전화번호  : <input id="x-client-callnum" type="text"><br>
-상품원가* : <input id="x-unit-price"     type="text"><br>
-사입수량  : <input id="x-quantity"       type="text"><br>
-별표(*) 항목은 필수 입력입니다.<br>
+  <table>
+    <tbody>
+      <tr>
+        <td>상품코드(*)</td>
+        <td><input id="x-item-code" type="text" readonly></td>
+      </tr>
+      <tr>
+        <td>상품명</td>
+        <td><input id="x-item-name" type="text"></td>
+      </tr>
+      <tr>
+        <td>판매가격(*)</td>
+        <td><input id="x-selling-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>거래처</td>
+        <td><input id="x-client" type="text"></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td><input id="x-client-callnum" type="tel"></td>
+      </tr>
+      <tr>
+        <td>상품원가(*)</td>
+        <td><input id="x-unit-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>사입수량</td>
+        <td><input id="x-quantity" type="number"></td>
+      </tr>
+    </tbody>
+  </table>
+<br>
+별표(*) 항목은 필수 입력입니다.<br><br>
 <button id="x-update-btn" type="button">수정</button>
 <button id="x-delete-btn" type="button">삭제</button>
 <button id="x-cancel-btn" type="button">취소</button>
@@ -69,7 +95,7 @@ fetch(`/item/get?itemcode=${itemcode}`)
 });
 
 document.querySelector("#x-update-btn").onclick = function() {
-  if (xItemcode == "" || xSellingprice == "" || xUnitprice == "") {
+  if (xItemcode.value == "" || xSellingprice.value == "" || xUnitprice.value == "") {
     window.alert("필수 입력 항목이 비어 있습니다.");
     return;
   }
@@ -79,6 +105,7 @@ document.querySelector("#x-update-btn").onclick = function() {
     return response.text();
   })
   .then(function(text){
+    window.alert("수정되었습니다.");
     console.log(text);
     location.href = "index.html";
   });
@@ -94,6 +121,7 @@ document.querySelector("#x-delete-btn").onclick = function() {
       return response.json();
     })
     .then(function(result) {
+      window.alert("삭제되었습니다.");
       console.log(result);
       location.href = "index.html";
     });

@@ -9,14 +9,40 @@
 <h1>신상 등록</h1>
 
 <form>
-상품코드(*) : <input id="x-item-code"      type="text"><br>
-상품명      : <input id="x-item-name"      type="text"><br>
-판매가격(*) : <input id="x-selling-price"  type="text"><br>
-거래처      : <input id="x-client"         type="text"><br>
-전화번호    : <input id="x-client-callnum" type="text"><br>
-상품원가(*) : <input id="x-unit-price"     type="text"><br>
-사입수량    : <input id="x-quantity"       type="text"><br>
-별표(*) 항목은 필수 입력입니다.<br>
+  <table>
+    <tbody>
+      <tr>
+        <td>상품코드(*)</td>
+        <td><input id="x-item-code" type="text"></td>
+      </tr>
+      <tr>
+        <td>상품명</td>
+        <td><input id="x-item-name" type="text"></td>
+      </tr>
+      <tr>
+        <td>판매가격(*)</td>
+        <td><input id="x-selling-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>거래처</td>
+        <td><input id="x-client" type="text"></td>
+      </tr>
+      <tr>
+        <td>전화번호</td>
+        <td><input id="x-client-callnum" type="tel"></td>
+      </tr>
+      <tr>
+        <td>상품원가(*)</td>
+        <td><input id="x-unit-price" type="number"></td>
+      </tr>
+      <tr>
+        <td>사입수량</td>
+        <td><input id="x-quantity" type="number"></td>
+      </tr>
+    </tbody>
+  </table>
+
+별표(*) 항목은 필수 입력입니다.<br><br>
 <button id="x-add-btn"    type="button">등록</button>
 <button id="x-cancel-btn" type="button">취소</button>
 </form>
@@ -41,6 +67,7 @@ document.querySelector("#x-add-btn").onclick = function() {
       return response.text();
   })
   .then(function(text){
+    window.alert("등록되었습니다.");
     console.log(text);
     location.href="index.html";
   });
