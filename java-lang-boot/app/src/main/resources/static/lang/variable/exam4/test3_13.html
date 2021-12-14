@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>변수 활용</title>
+</head>
+<body>
+
+<h1>배열 다루기</h1>
+<button type="button" id="x-btn">배열 가져오기</button>
+<ul id="x-namelist">
+</ul>
+
+<script>
+var xNamelist = document.querySelector("#x-namelist");
+var xBtn = document.querySelector("#x-btn");
+
+xBtn.addEventListener("click", function() {
+  
+	/*
+	 var result = fetch("/lang/variable/exam4/test3");
+  var result2 = result.then(function(response) { 
+      //파라미터를 안써도 함수에서 넘어오는 값은 내장 변수인 arguments에 들어간다.
+      //파라미터를 지정하면 서버에서 넘어온 값이 지정한 파라미터에 변수에 들어간다.
+      return response.json();
+      //서버에서 포장되어 넘어온 값을 json형식으로 파싱해서 자바스크립트 객체로 만든다
+      //그 값을 리턴하라 한다.
+    });
+  result2.then(function(jsonData) { //파라미터로 json처리가 된 데이터가 들어오게 된다.
+    console.log(jsonData)
+  });
+	*/
+	
+  var result = fetch("/lang/variable/exam4/test3");
+  var result2 = result.then(function(response) {
+	  return response.json();
+  });
+  result2.then(function(jsonData) {
+    console.log(jsonData)
+  });
+  
+	
+	/*
+  var xhr = new XMLHttpRequest();
+  xhr.onload = function() {
+    // 서버에서 받은 JSON 형식의 배열을 자바스크립트 배열로 변환한다.
+    var names = JSON.parse(xhr.responseText);
+    
+    // 배열에 내장된(built-in) forEach() 사용하기
+    names.forEach(function(name) {
+      var li = document.createElement("li");
+      li.innerHTML = name;
+      xNamelist.appendChild(li);
+    });
+  };
+  xhr.open("GET", "/lang/variable/exam4/test3", true);
+  xhr.send();
+  */
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
