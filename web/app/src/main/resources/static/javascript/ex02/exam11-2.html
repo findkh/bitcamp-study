@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211215 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>변수 - let 변수와 블록</h1>
-<script>
+<!-- <script>
 "use strict"
 
 let v1 = "홍길동"; // 로컬 변수
@@ -26,7 +26,7 @@ let v2 = 100; // 로컬 변수
 
 console.log(v1); // 홍길동
 console.log(v2); // 100
-console.log(v3); // let 변수는 그 변수를 선언한 블록에서 나가면 제거된다.
+// console.log(v3); // let 변수는 그 변수를 선언한 블록에서 나가면 제거된다.
 console.log(v4);
 console.log("------------------");
 
@@ -35,6 +35,33 @@ console.log(window.v1); // undefined
 console.log(window.v2); // undefined
 console.log(window.v4); // 3.14
 
+ </script> -->
+
+<script>
+let v1 = "하파";
+let v2 = 9;
+{
+  //로컬변수
+  let v1 = "고양이";
+  let v3 = true;
+  var v4 = 3.14;
+  console.log("블록내부");
+  console.log(v1);
+  console.log(v2);
+  console.log(v3);
+  console.log(v4);
+  console.log("-----");
+}
+console.log("블록 밖");
+console.log(v1);
+console.log(v2);
+// console.log(v3);
+console.log(v4);
+console.log("-----");
+
+console.log(window.v1);
+console.log(window.v2);
+console.log(window.v4);
 </script>
 </body>
 </html>

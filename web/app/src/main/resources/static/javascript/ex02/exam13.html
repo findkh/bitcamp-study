@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211215 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>변수 - 함수 로컬 변수와 블록</h1>
-<script>
+<!-- <script>
 "use strict"
 
 var v1 = "홍길동"; // window.v1
@@ -19,12 +19,34 @@ function f1() {
       // let v3 = true; // 현재의 블록에서만 사용할 수 있는 로컬 변수이다.
     }
     console.log("f1():", v1, v2);
-    // console.log(v3);
+    // console.log(v3); Uncaught ReferenceError: v3 is not defined
 }
 
 f1();
 console.log(v1); // window.v1
 console.log(v2); // 오류!
+</script> -->
+
+<script>
+"use strict"
+
+var v4 = "하파"; // window.v4 전역변2
+
+function f2() {
+    var v4 = "코냥이"; // f2() 함수에서만 사용되는 로컬 변수이다.
+    {
+      var v4 = "반반고양이"; // 위에 선언된 로컬 변수를 가리킨다.
+      var v5 = 9; // 로컬 변수이다. 블록은 무시된다.
+      // let v6 = true; // 현재의 블록에서만 사용할 수 있는 로컬 변수이다.
+    }
+    console.log("f2():", v4, v5);
+    // console.log(v6); Uncaught ReferenceError: v6 is not defined
+}
+
+f2();
+console.log(v4); // window.v4
+console.log(v5); // 오류!
 </script>
+
 </body>
 </html>

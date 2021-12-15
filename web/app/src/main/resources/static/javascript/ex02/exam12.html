@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211215 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -23,6 +23,23 @@ function f1() {
 f1(); //함수실행 = 함수호출
 console.log("=> :", v1);
 console.log("=> :", v2); // v2는 함수 호출이 끝나면 제거되는 변수이다.
+
+</script>
+
+<script>
+
+var v3 = "하파";
+
+function f2() {
+
+  var v3 = "야옹이"
+  var v4 = "턱시도"
+  console.log("f2():" + v3, v4);
+}
+
+f2();
+console.log(v3);
+console.log(v4);
 
 </script>
 </body>

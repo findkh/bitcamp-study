@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211215 -->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -22,6 +22,22 @@ console.log(v1);
 console.log(v2);
 console.log(v3);
 
+</script>
+
+<script>
+  var v1;
+  let l1;
+  // const c3; Uncaught SyntaxError: Missing initializer in const declaration
+
+  const c3 = "하파";
+  // c3 = "승질냄"; Uncaught TypeError: Assignment to constant variable.
+
+  v1 = "야옹이";
+  l1 = "고양이";
+
+  console.log(v1);
+  console.log(l1);
+  console.log(c3);
 </script>
 </body>
 </html>
