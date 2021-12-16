@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211216-->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -11,11 +11,11 @@
 // => 즉 프로퍼티와 코드를 포함하고 있는 객체이다.
 //    object = properties(값, 함수, 객체)
 //    function = object + function body(함수 코드)
-// => 객체는 주소가 있다. 
-//    따라서 함수도 주소가 있다. 
-// => 함수의 주소는 함수 이름을 가진 변수에 저장된다. 
+// => 객체는 주소가 있다.
+//    따라서 함수도 주소가 있다.
+// => 함수의 주소는 함수 이름을 가진 변수에 저장된다.
 //
-function f1() { 
+function f1() {
 	console.log("안녕!");
 }
 
@@ -27,6 +27,10 @@ f2();
 window.f2();
 
 // 함수도 객체이기 때문에 객체처럼 사용할 수 있다.
+f2.age = 20;
+f2.working = true;
+console.log(f2.age, f2.working); // OK!
+
 f1.age = 20;
 f1.working = true;
 console.log(f1.age, f1.working); // OK!
@@ -34,8 +38,3 @@ console.log(f1.age, f1.working); // OK!
 </script>
 </body>
 </html>
-
-
-
-
-

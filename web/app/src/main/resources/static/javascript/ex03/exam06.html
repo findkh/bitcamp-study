@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--211216-->
 <html>
 <head>
 <meta charset="UTF-8">
@@ -7,17 +7,39 @@
 <body>
 <h1>함수 - 익명 함수</h1>
 <script>
-// 함수 이름없이 함수를 정의할 수 있다. 
+// 함수 이름없이 함수를 정의할 수 있다.
 // => 이름없는 함수를 정의한 후 사용하려면 그 함수의 주소를 어딘가에 저장해야 한다.
-var f1;
 
-f1 = function(a) { 
+function f0(a) {
+	console.log(a+"님, 안녕");
+}
+f0("임꺽정");
+console.log("----------");
+//위와 아래는 같다
+
+var f1;
+f1 = function(a) {
 	console.log(a + "님, 안녕!");
 };
 
 // 함수 주소가 저장되어 있는 변수는 함수처럼 사용하면 된다.
-f1("홍길동");
+f1("홍길동"); //정의한 함수를 실행시키는 명령 => 함수호출(call)
 window.f1("홍길동");
+
+//기존 함수
+function f3(a) {
+	console.log(a +"안녕?");
+}
+f3("하파");
+
+//익명함수
+var f4; // 함수의 주소를 저장할 변수
+f4 = function(a) {
+	console.log(a +"안녕?");
+}
+f4("하파");
+window.f4("하파");
+
 
 // 주의!
 // => 자바스크립트 변수의 타입은 고정형이 아니다.
@@ -31,8 +53,3 @@ window.f1("홍길동");
 </script>
 </body>
 </html>
-
-
-
-
-
