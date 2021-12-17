@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-
+//211218
 // # 메서드 : 가변 파라미터의 단점
 //
 public class Exam0271 {

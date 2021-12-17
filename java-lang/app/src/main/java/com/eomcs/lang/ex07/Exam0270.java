@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-
+//211218
 // # 메서드 : 가변 파라미터의 단점
 //
 public class Exam0270 {
@@ -35,8 +35,10 @@ public class Exam0270 {
     // 컴파일 확인하라!
 
     //가변 파라미터 사용 예:
-    System.out.printf("\n");
-    System.out.printf("%s,%s\n", "aaa", "bbb");
+    System.out.printf("%s,%s\n", "aaa","bbb");
+    System.out.printf("==> \n");
+    //    System.out.printf("\n");
+    //    System.out.printf("%s,%s\n", "aaa", "bbb");
   }
 }
 

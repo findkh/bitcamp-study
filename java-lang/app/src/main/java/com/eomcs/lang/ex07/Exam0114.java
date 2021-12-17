@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-
+//211217
 import java.util.Scanner;
 
 // 1단계: 공백 출력 코드를 메서드로 추출하기

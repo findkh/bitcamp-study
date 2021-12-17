@@ -25,7 +25,21 @@ public class Exam0230 {
     return 10;
   }
 
+  static String name() {
+    return "하파";
+  }
+
+  static int age() {
+    return 9;
+  }
+
   public static void main(String[] args) {
+
+    String n = name();
+    int a1 = age();
+    System.out.println(n + a1);
+    System.out.println(name());
+    System.out.println(age());
 
     // hello() 메서드를 실행하고, 그 리턴 값을 변수에 담는다.
     // => 리턴 값을 받을 변수를 준비한다.

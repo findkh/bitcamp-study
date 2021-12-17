@@ -5,6 +5,25 @@ package com.eomcs.lang.ex07;
 import java.util.Scanner;
 
 public class Exam0110Test2 {
+  //1. 공백 출력 코드 메서드로 추출하기
+  static void printSpace(int len) {
+    for(int spaceCnt = 1; spaceCnt <= len; spaceCnt++) {
+      System.out.print(" ");
+    }
+  }
+
+  //2. 별을 출력하는 코드를 메서드로 추출하기
+  static void printStars(int len) {
+    for(int starCnt = 1; starCnt <= len; starCnt++) {
+      System.out.print("*");
+    }
+  }
+
+  //3. 공백 계산 식을 메서드로 추출하기
+  static int getSpaceLength(int totalStar, int displayStar) {
+    return (totalStar - displayStar) / 2;
+  }
+
   public static void main(String[] args) {
     Scanner keyScan = new Scanner(System.in);
     System.out.print("밑변의 길이? ");
@@ -12,18 +31,9 @@ public class Exam0110Test2 {
     keyScan.close();
 
     for(int starLen = 1; starLen <= len; starLen +=2) {
-      int spaceLen = (len - starLen) / 2;
-      for(int spaceCnt = 1; spaceCnt <= spaceLen; spaceCnt++) {
-        System.out.print(" ");
-      }
-      // 별 출력
-      for(int starCnt = 1; starCnt <= starLen; starCnt++) {
-        System.out.print("*");
-      }
-
-      // 출력 줄 바꾸기
+      printSpace(getSpaceLength(len, starLen));
+      printStars(starLen);
       System.out.println();
-
     }
   }
 }

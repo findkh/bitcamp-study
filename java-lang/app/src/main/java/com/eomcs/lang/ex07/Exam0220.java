@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;//211217
-
+//211217
 // # 메서드 : 개념 및 기본 문법 II
 //
 public class Exam0220 {
@@ -16,7 +16,12 @@ public class Exam0220 {
     //    System.out.println(age + "살 " + name + "님 반갑습니다.");
   }
 
+  static void hi(String name, int age) {
+    System.out.println(age + "살 " + name + " 고양이 안녕");
+  }
+
   public static void main(String[] args) {
+    hi("하파", 9);
 
     System.out.println("main()11111");
 

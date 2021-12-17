@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-
+//211218
 // # 메서드 : 가변 파라미터
 //
 public class Exam0250 {
@@ -17,7 +17,16 @@ public class Exam0250 {
     }
   }
 
+  static void hi(String...others) {
+    for (int i = 0; i <others.length; i++) {
+      System.out.printf("%s님 Hi\n", others[i]);
+    }
+  }
+
   public static void main(String[] args) {
+
+    hi("하파", "수달", "레고");
+
 
     hello(); // 이 경우 names 배열의 개수는 0이다.
     System.out.println("-------------------");

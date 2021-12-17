@@ -1,4 +1,5 @@
 package com.eomcs.lang.ex07;
+//211217
 
 // # 메서드 : 개념 및 기본 문법
 // - 특정 기능을 수행하는 명령어들을 모아 둔 블록
@@ -47,8 +48,12 @@ public class Exam0210 {
     System.out.println("이 메서드는 어떤 값도 리턴하지 않습니다.");
   }
 
-  public static void main(String[] args) {
+  static void hi() {
+    System.out.println("메서드 : 리턴값(X), 파라미터(X)");
+  }
 
+  public static void main(String[] args) {
+    hi();
     // ## 메서드를 사용하는 방법
     // [리턴값을 받을 변수] = 메서드명(아규먼트);
     // - 아규먼트(argument)?
