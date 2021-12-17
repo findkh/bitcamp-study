@@ -1,4 +1,4 @@
-package com.eomcs.lang.ex07;
+package com.eomcs.lang.ex07;//211217
 
 // # 메서드 : 개념 및 기본 문법 III
 //
@@ -21,6 +21,10 @@ public class Exam0230 {
     //    System.out.println("NO!"); // 컴파일 오류!
   }
 
+  static int num() {
+    return 10;
+  }
+
   public static void main(String[] args) {
 
     // hello() 메서드를 실행하고, 그 리턴 값을 변수에 담는다.
@@ -41,5 +45,9 @@ public class Exam0230 {
 
     // 리턴 타입과 다른 타입의 변수로 값을 받으려 하면 컴파일 오류!
     //    int r2 = hello(); // 컴파일 오류!
+
+    int a = num();
+    System.out.println(a);
+    System.out.println(num());
   }
 }

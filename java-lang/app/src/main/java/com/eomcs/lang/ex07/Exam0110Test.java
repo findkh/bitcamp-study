@@ -2,10 +2,8 @@ package com.eomcs.lang.ex07;
 
 import java.util.Scanner;
 
-// 1단계: 공백 출력 코드를 메서드로 추출하기
-//
-public class Exam0111 {
-  //명령 형태로 이름을 짓는다.
+public class Exam0110Test {
+
   static void printSpaces(int len) {
     int spaceCnt = 1;
     while (spaceCnt <= len) {
@@ -14,26 +12,28 @@ public class Exam0111 {
     }
   }
 
+  static void printStars(int len) {
+    int starCnt = 1;
+    while (starCnt <= len) {
+      System.out.print("*");
+      starCnt++;
+    }
+  }
+
+  static int getSpaceLength(int total, int starLen) {
+    return (total - starLen) / 2;
+  }
+
   public static void main(String[] args) {
     Scanner keyScan = new Scanner(System.in);
     System.out.print("밑변의 길이? ");
     int len = keyScan.nextInt();
     keyScan.close();
 
-    int starLen = 1;
-    while (starLen <= len) {
-      printSpaces((len - starLen) / 2);
-
-      // 별 출력
-      int starCnt = 1;
-      while (starCnt <= starLen) {
-        System.out.print("*");
-        starCnt++;
-      }
-
-      // 출력 줄 바꾸기
+    for (int starLen = 1; starLen <= len; starLen += 2) {
+      printSpaces(getSpaceLength(len, starLen));
+      printStars(starLen);
       System.out.println();
-      starLen += 2;
     }
   }
 }
