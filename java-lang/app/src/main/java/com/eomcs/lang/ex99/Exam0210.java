@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex99;
-//211213
+//211213 //211219
 //# 키보드 입력 받기 - System.in 과 java.util.Scanner
 //
 public class Exam0210 {
@@ -17,7 +17,7 @@ public class Exam0210 {
     java.util.Scanner keyboardScanner = new java.util.Scanner(keyboard);
 
     // print()는 문자열을 출력한 후 줄 바꿈을 하지 않는다.
-    System.out.print("팀명? "); 
+    System.out.print("이름이 뭐냐? "); 
 
     // nextLine()
     // - Scanner 도구를 사용하여 키보드로부터 한 줄의 문자열을 

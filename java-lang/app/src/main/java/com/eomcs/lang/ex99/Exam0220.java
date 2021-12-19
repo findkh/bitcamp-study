@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex99;
-///211213
+///211213 211219
 //# 키보드 입력 받기 - 문자열 한 줄 읽기
 //
 public class Exam0220 {
