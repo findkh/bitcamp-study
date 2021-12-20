@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-
+//211220
 // # JVM 아규먼트 응용 I
 //
 public class Exam0620 {
@@ -18,7 +18,7 @@ public class Exam0620 {
 
     if (name == null || s1 == null || s2 == null || s3 == null) {
       System.out.println(
-          "실행 형식: java -cp ./bin/main -Dname=이름 -Dkor=국어점수 -Deng=영어점수 -Dmath=수학점수 com.eomcs.basic.ex07.Exam0620");
+          "실행 형식: java -cp ./bin/main -Dname=이름 -Dkor=국어점수 -Deng=영어점수 -Dmath=수학점수 com.eomcs.lang.ex07.Exam0620");
       return;
     }
     int kor = Integer.parseInt(s1);
