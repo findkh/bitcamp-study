@@ -1,6 +1,6 @@
 // 논리 연산자 : 조건문과 비트 연산 
 package com.eomcs.lang.ex05;
-//211208
+//211208 211221
 
 public class Exam0360 {
   public static void main(String[] args) {

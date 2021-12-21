@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-//211209
+//211209 211221
 //# 비트 연산자 : 응용 I
 //
 public class Exam0440 {

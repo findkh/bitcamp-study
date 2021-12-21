@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex05;
-//211208
+//211208 211221
 //# 비트 연산자 | 활용: 픽셀에서 파란색의 값을 강화시키고 싶다.
 //
 public class Exam0355 {
