@@ -22,23 +22,20 @@
     border-style: dashed;
     margin: 10px;
   }
-  /*c1에 소속되어 있는 ul에 적용*/
+  /* c1에 소속되어 있는 ul에 적용 */
   /* ul.c1 {
     background-color: yellow;
   } */
-/*c1 c2에 모두 소속되어 있는 ul에 적용*/
+/* c1 c2에 모두 소속되어 있는 ul에 적용 */
   ul.c1.c2 {
     background-color: yellow;
   }
 
-/* div 자손 중에 li에 */
-  div#menu.li.c2{
+/* div 자손 중에 menu라는 id를 가진 자손중에 li에 c2라는 속성을 가진 li에 적용*/
+   div#menu li.c2{
     display: none;
   }
 
-  div2#menu li.c2 {
-    display: none;
-  }
   </style>
 </head>
 <body>
