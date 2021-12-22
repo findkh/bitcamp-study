@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>HTML</title>
   <style>
-  /* 실렉터(selector) III
+  /* 211222
+     실렉터(selector) III
      특정 조건을 갖는 대상자를 지정하기
      => 대상자를 지정할 때 조건을 나열할 수 있다.
      => 문법
@@ -13,11 +14,11 @@
         대상자:상태명 {...}
         대상자[속성명] {...}
    */
-  input[name^="office"] { /* 속성의 값이 특정 문자열로 시작하는 경우*/
+  input[name^="office"] { /* ^= 속성의 값이 특정 문자열로 시작하는 경우*/
     background-color: yellow;
   }
 
-  input[name$="fax"] { /* 속성의 값이 특정 문자열로 끝나는 경우*/
+  input[name$="fax"] { /* $= 속성의 값이 특정 문자열로 끝나는 경우*/
     color: red;
   }
   </style>
