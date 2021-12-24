@@ -40,7 +40,7 @@ console.log("--------------------------");
 // 그래서 프로퍼티 이름이 인덱스가 아닌 프로퍼티까지 반복하는 문제가 있다.
 // 즉 HTMLCollection에 대해 다음과 같이 반복문을 사용하지 말라!
 for (var i in el) { //el은 객체이기 때문에 i 변수에는 프로퍼티 이름이 저장된다.
-    //console.log(i, el[i]);
+    // console.log(i, el[i]);
     console.log(i, el[i].innerHTML);
 }
 console.log("--------------------------");

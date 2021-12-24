@@ -14,13 +14,18 @@ console.log("----------------------");
 console.log("Object() 생성자:");
 
 Object.prototype.test0 = function() {
+  //prototype이라는 보관소에 test0이라는 함수를 집어 넣음
   console.log("test0() 호출됨");
 }
 
-var obj0 = new Object();
-console.log(obj0);
-console.log(obj0.constructor);
-console.log(Object.prototype);
+var obj0 = new Object(); //생성자를 통해 객체를 만듦
+console.log("obj0은?");
+console.log(obj0); //그냥 객체를 출력해봄
+console.log("obj0.constructor는?");
+console.log(obj0.constructor); //obj0을 만든 constructor를 출력함
+console.log("Object.prototype은?");
+console.log(Object.prototype); //프로토타입을 확인해
+console.log("obj0의 test0호출함");
 obj0.test0();
 
 
@@ -35,11 +40,17 @@ f1.prototype.test1 = function() {
 };
 
 var obj1 = new f1();
+console.log("obj1은?");
 console.log(obj1);
+console.log("obj1.constructor는?");
 console.log(obj1.constructor);
+console.log("f1의 prototype은?");
 console.log(f1.prototype);
+console.log("obj1의 test1()호출함");
 obj1.test1(); // obj1 ---> f1.prototype
+console.log("obj1의 test0()호출함");
 obj1.test0(); // obj1 ---> f1.prototype ---> Object.prototype
+console.log("obj1의 testx()호출함");
 // obj1.testx();  // obj1 ---> f1.prototype ---> Object.prototype ---> null
 
 
@@ -50,19 +61,23 @@ function f2() {
   this.email = "hong@test.com";
 }
 f2.prototype = Object.create(f1.prototype);
-//f1의 프로토타입을 기반으로 만듦
 f2.prototype.constructor = f2;
-//prototype의 생성자 정보를 지정해줘야 한다. 지정해주지 않으면 constructor가 f1 나옴
 f2.prototype.test2 = function() {
   console.log("test2() 호출됨");
 };
 
 var obj2 = new f2();
+console.log("obj2는?");
 console.log(obj2);
+console.log("obj2의 constructor?");
 console.log(obj2.constructor);
+console.log("f2의 prototype은?");
 console.log(f2.prototype);
+console.log("obj2의 test2()호출함");
 obj2.test2(); //obj2 ---> f2.prototype
+console.log("obj2의 test1()호출함");
 obj2.test1(); //obj2 ---> f2.prototype ---> f1.prototype
+console.log("obj2의 test0()호출함");
 obj2.test0(); //obj2 ---> f2.prototype ---> f1.prototype ---> Object.prototype
 // obj1.testx(); //obj2 ---> f2.prototype ---> f1.prototype ---> Object.prototype ---> null
 
@@ -74,20 +89,28 @@ function f3() {
   this.tel = "010-1234-5678";
 }
 f3.prototype = Object.create(f2.prototype);
+//이 부분이 없다면 이 객체는 f2에 연결되는게 아니라 Object에 연결된다
 f3.prototype.constructor = f3;
-//prototype의 생성자 정보를 지정해줘야 한다. 지정해주지 않으면 constructor가 f1 나옴
 f3.prototype.test3 = function() {
   console.log("test3() 호출됨 ");
 };
 
 var obj3 = new f3();
+console.log("obj3는?");
 console.log(obj3);
+console.log("obj3의 constructor는?");
 console.log(obj3.constructor);
+console.log("f3의 prototype은?");
 console.log(f3.prototype);
+console.log("obj3의 test3 호출");
 obj3.test3(); //obj3 ---> f3.prototype
+console.log("obj3의 test2 호출");
 obj2.test2(); // obj3 ---> f3.prototype ---> f2.prototype
+console.log("obj3의 test1 호출");
 obj2.test1(); // obj3 ---> f3.prototype ---> f2.prototype ---> f1.prototype
+console.log("obj3의 test0 호출");
 obj2.test0(); // obj3 ---> f3.prototype ---> f2.prototype ---> f1.prototype ---> Object.prototype
+console.log("obj3의 testx 호출");
 obj1.testx(); // obj3 ---> f3.prototype ---> f2.prototype ---> f1.prototype ---> Object.prototype ---> null
 </script>
 </body>
