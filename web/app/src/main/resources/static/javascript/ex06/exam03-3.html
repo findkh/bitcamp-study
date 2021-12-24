@@ -25,6 +25,11 @@ var btnClick = function(e) {
 	alert("===> " + e.target.getAttribute("data-no"));
 	for (var e of el2) {
 		e.style["background-color"] = "yellow";
+		// original
+		e.style.backgroundColor = "gray";
+		//JS 편의성을 제공하고자 속성을 추가해서 이름으로 다룰 수도 있다
+		e.style.border = "1px dashed blue";
+		e.style.color = "red";
 	}
 };
 
@@ -35,8 +40,3 @@ for (var e of el) {
 </script>
 </body>
 </html>
-
-
-
-
-

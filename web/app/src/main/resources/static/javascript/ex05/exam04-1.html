@@ -29,8 +29,8 @@ var section = document.querySelector("section");
 //
 var article = document.createElement("article"); // <article></article>
 var h1 = document.createElement("h1"); // <h1></h1>
-var h2 = document.createElement("h1"); // <h1></h1>
-var text = document.createTextNode("제목입니다."); // 제목입니다.
+var h2 = document.createElement("h2"); // <h2></h2>
+var text = document.createTextNode("TextNode 제목입니다."); // 제목입니다.
 var p = document.createElement("p"); // <p></p>
 var text2 = document.createTextNode("내용입니다."); // 내용입니다.
 
@@ -38,24 +38,25 @@ var text2 = document.createTextNode("내용입니다."); // 내용입니다.
 // => appendChild(자식노드)를 사용하여 자식 태그나 노드를 붙인다.
 //    appendChild()는 자식노드(태그)를 맨 뒤에 붙인다.
 //
-
+//
 // Node의 함수를 사용해서 콘텐트를 설정할 수 있다.
-h1.appendChild(text); // <h1>제목입니다.</h1>
-// h2.innerHTML = "제목입니다."; // innerHTML에 직접 값을 넣을 수 도 있다.
-
+h1.appendChild(text); // <h1>TextNode 제목입니다.</h1>
+h2.innerHTML = "inner HTML로 만든 제목입니다."; // innerHTML에 직접 값을 넣을 수 도 있다.
+//
 p.appendChild(text2); // <p>내용입니다.</p>
-
-article.appendChild(h1); // <article><h1>제목입니다.</h1></article>
+//
+article.appendChild(h1);
+article.appendChild(h2); // <article><h1>제목입니다.</h1></article>
 article.appendChild(p); // <article><h1>제목입니다.</h1><p>내용입니다.</p></article>
-
-
+//
+//
 if(confirm("article 태그를 추가하겠습니까?")){
 // 새로 만든 article 태그를 section 태그의 막내 자식태그로 붙인다.
 section.appendChild(article);
 // <section>
-//   <article>...</article>
-//   <article>...</article>
-//   <article><h1>제목입니다.</h1><p>내용입니다.</p></article>
+// //   <article>...</article>
+// //   <article>...</article>
+// //   <article><h1>제목입니다.</h1><p>내용입니다.</p></article>
 // </section>
 }
 </script>

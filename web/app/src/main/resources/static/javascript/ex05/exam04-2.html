@@ -19,7 +19,7 @@
 </section>
 <script>
 "use strict"
-//211223
+//211223 211224
 // 태그를 만들고 추가하는 방법 II
 // 많이 쓰임
 var section = document.querySelector("section");
@@ -29,8 +29,34 @@ var originContent = section.innerHTML;
 console.log(originContent);
 
 section.innerHTML = originContent +
-    "<article><h1>제목이래요!</h1><p>내용이지요!</p></article>";
+    "<article><h1>제목이야</h1><p>내용이지</p><ul><li>1</li><li>2</li></ul></article>";
 
+
+
+    var e = document.querySelector("article:nth-child(2)");
+
+
+
+    // => 부모 태그를 알아낸다.
+    // => Node.parentElement 또는 Node.parentNode를 사용한다.
+    // var parent = e.parentElement;
+    // console.log(parent);
+
+    // => 부모 태그에서 자식 태그를 제거한다.
+    // parent.removeChild(e);
+
+//태그 삭제 하기
+    /* if(confirm("자식 태그 삭제할까요?")){
+    // 방법1) 부모 태그를 알고 있다면 removeChild()를 이용하여 삭제한다.
+    // => 삭제할 태그를 찾는다.
+    var e = document.querySelector("article:nth-child(2)");
+
+    // => 부모 태그를 찾는다.
+    var parent = document.querySelector("section");
+
+    // => 부모 태그에서 자식 태그를 제거한다.
+    parent.removeChild(e);
+  }*/
 </script>
 </body>
 </html>
