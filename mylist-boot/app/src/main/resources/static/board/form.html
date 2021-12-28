@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>게시판</title>
+</head>
+<body>
+
+<h1>게시판</h1>
+
+<form>
+<table>
+  <tr>
+    <td>제목</td>
+    <td><input id="x-title" type="text"></td>
+  </tr>
+  <tr>
+    <td>작성자</td>
+    <td><input id="x-name" type="text"></td>
+  </tr>
+  <tr id=contentsize>
+    <td>내용</td>
+    <td><input id="x-content" type="text"><br></td>
+  </tr>
+</table>
+<td><button id="x-add-btn" type="button">등록</button>
+<td><button id="x-cancel-btn" type="button">취소</button>
+</form>
+
+<script type="text/javascript">
+  var xTitle = document.querySelector("#x-title");
+  var xName = document.querySelector("#x-name");
+  var xContent = document.querySelector("#x-content");
+
+
+  document.querySelector("#x-add-btn").onclick = function() {
+    //등록 클릭 눌렀을 때 xTitle과 xContent를 querySelector가 잡는지 확인함
+    // console.log(xTitle);
+    // console.log(xContent); //실행확인함
+
+    //필수 항목 비어 있으면 alert 띄움
+    if (xTitle.value == "" || xContent.value == "") {
+      window.alert("필수 입력 항목이 비어 있습니다.");
+      return;
+    }
+
+    fetch(`/board/add?title=${xTitle.value}&content=${xContent.value}&name=${xName.value}`)
+      .then(function(response) {
+        return response.text();
+      })
+      .then(function(text) {
+        console.log(text);
+        location.href = "index.html";
+      });
+  };
+
+//취소 버튼 누르면 index.html로 돌아가는거 실행확인함
+  document.querySelector("#x-cancel-btn").onclick = function() {
+    window.location.href = "index.html";
+  };
+</script>
+
+</body>
+</html>

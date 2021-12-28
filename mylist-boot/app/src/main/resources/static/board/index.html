@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>게시판</title>
+</head>
+<body>
+<h1>게시판</h1>
+<a href="form.html">새 글작성</a>
+<table id="x-board-table" border="1" width="800">
+<thead>
+  <tr>
+    <th width="500">제목</th>
+    <th width="100">작성자</th>
+    <th width="100">작성일시</th>
+    <th width="100">조회수</th>
+  </tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<script type="text/javascript">
+  var tbody = document.querySelector("#x-board-table tbody")
+  // console.log(tbody);
+  // querySelector가 tbody값을 찾았는지 확인함
+
+  fetch("/board/list")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(Board) {
+      // console.log(Board);
+      for (var board of Board) {
+        var tr = document.createElement("tr");
+        tr.innerHTML = `<td id="x-count" onclick="location.href='view.html?title=${board.title}'">${board.title}</td><td>${board.name}</td><td>${board.Date}</td><td>${board.viewCount}</td>`;
+        tbody.appendChild(tr);
+        // var xCount = document.getElementById("x-count");
+        // // console.log(xCount);
+        // xCount.onclick = function(){
+        //   console.log(count++);
+        // };
+      }
+    });
+
+
+
+</script>
+</body>
+</html>

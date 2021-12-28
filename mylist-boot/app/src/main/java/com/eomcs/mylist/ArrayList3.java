@@ -1,18 +1,20 @@
 package com.eomcs.mylist;
 
-public class ArrayList {
-  static Object[] list = new Object[5];
+public class ArrayList3 {
+  static Object[] list = new Object[10]; 
+  //레퍼런스배열이 다양한 타입의 객체 주소를 받을 수 있도록 Object로 변경
   static int size = 0;
 
-  static void add(Object obj) {
-    if (size == list.length) {
+  static void add(Object obj) { //add의 파라미터 타입 변경
+    //어떤 값이든 받아서 넣을 수 있게 Object로 파라미터를 받는다.
+    if (size == list.length) { 
       list = grow();
     }
     list[size++] = obj;
   }
 
   static Object[] grow() {
-    Object[] arr = new Contact[newLength()];
+    Object[] arr = new Object[newLength()];
     copy(list, arr);
     return arr;
   }
@@ -48,16 +50,12 @@ public class ArrayList {
     return old;
   }
 
-  static Object set(int index, Object contact) {
+  static Object set(int index, Object obj) {
     if (index < 0 || index >= size) {
       return null;
     }
     Object old = list[index];
-    list[index] = contact;
+    list[index] = obj;
     return old;
   }
-
-
-
-
 }
