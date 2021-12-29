@@ -6,11 +6,12 @@
 </head>
 <body>
 
-<h1>새 게시글</h1>
+<h1>게시판</h1>
 
 <form>
-제목 : <input id="x-title" type="text"><br>
-내용 : <textarea id="x-content" cols="60" rows="10"></textarea><br>
+제목*: <input id="x-title" type="text"><br>
+내용*: <textarea id="x-content" cols="60" rows="10"></textarea><br>
+별표(*) 항목은 필수 입력입니다.<br>
 <button id="x-add-btn" type="button">등록</button>
 <button id="x-cancel-btn" type="button">취소</button>
 </form>
@@ -20,11 +21,6 @@
   var xContent = document.querySelector("#x-content");
 
   document.querySelector("#x-add-btn").onclick = function() {
-    //등록 클릭 눌렀을 때 xTitle과 xContent를 querySelector가 잡는지 확인함
-    // console.log(xTitle);
-    // console.log(xContent); //실행확인함
-
-    //필수 항목 비어 있으면 alert 띄움
     if (xTitle.value == "" || xContent.value == "") {
       window.alert("필수 입력 항목이 비어 있습니다.");
       return;
@@ -40,7 +36,6 @@
       });
   };
 
-//취소 버튼 누르면 index.html로 돌아가는거 실행확인함
   document.querySelector("#x-cancel-btn").onclick = function() {
     window.location.href = "index.html";
   };

@@ -21,7 +21,7 @@ button {padding: 30px;}
 </div>
 <script>
 "use strict"
-//211224
+//211224 211229
 // 이벤트가 발생하면 capture-target-bubble 단계로 진행한다.
 // target 단계에서 bubble 단계로 진행하는 것을 막지 않으면
 // 부모 태그에 등록된 리스너까지 호출되는 문제가 발생한다.
@@ -44,7 +44,7 @@ document.getElementById("btn1").addEventListener("click", function(e) {
 //방법2: Event.stopImmediatePropagation()을 호출하라!
 //=> 이벤트 bubbling을 막는다.
 //=> target에 등록된 함수라도 즉시 현 함수에서 실행을 마감한다.
-//
+
 document.getElementById("btn2").addEventListener("click", function(e) {
     console.log("버튼2...1");
     e.stopImmediatePropagation(); // 이 리스너까지만 실행한다.

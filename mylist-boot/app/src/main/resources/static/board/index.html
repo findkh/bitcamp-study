@@ -6,13 +6,13 @@
 </head>
 <body>
 <h1>게시글</h1>
-<a href="form.html">새 게시글</a>
-<table id="x-board-table" border="1">
+<a href="form.html">새 글</a>
+<table id="x-contact-table" border="1">
 <thead>
   <tr>
     <th>제목</th>
+    <th>작성일</th>
     <th>조회수</th>
-    <th>등록일</th>
   </tr>
 </thead>
 <tbody>
@@ -20,22 +20,20 @@
 </table>
 
 <script type="text/javascript">
-  var tbody = document.querySelector("#x-board-table tbody")
-  // console.log(tbody);
-  // querySelector가 tbody값을 찾았는지 확인함
+  var tbody = document.querySelector("#x-contact-table tbody")
 
   fetch("/board/list")
     .then(function(response) {
       return response.json();
     })
     .then(function(boards) {
-      // console.log(boards);
+      console.log(boards);
       for (var i = 0; i < boards.length; i++) {
         var board = boards[i];
         var tr = document.createElement("tr");
         tr.innerHTML = `<td><a href="view.html?index=${i}">${board.title}</a></td>
-        <td>${board.viewCount}</td>
-        <td>${board.Date}</td>`;
+        <td>${board.createdDate}</td>
+        <td>${board.viewCount}</td>`;
         tbody.appendChild(tr);
       }
     });
