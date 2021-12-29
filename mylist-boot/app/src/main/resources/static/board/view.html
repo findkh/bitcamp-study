@@ -6,23 +6,13 @@
 </head>
 <body>
 
-<h1>게시판 상세</h1>
+<h1>게시글 상세</h1>
 
 <form>
-<table>
-  <tr>
-    <td>제목</td>
-    <td><input id="x-title" type="text"></td>
-  </tr>
-  <tr>
-    <td>작성자</td>
-    <td><input id="x-name" type="text"></td>
-  </tr>
-  <tr>
-    <td>내용</td>
-    <td><input id="x-content" type="text"></td>
-  </tr>
-</table>
+  제목 : <input id="x-title" type="text"><br>
+  내용 : <textarea id="x-content" cols="60" rows="10"></textarea><br>
+  조회수 : <span id="x-viewCount"></span><br>
+  등록일 : <span id="x-createdDate"></span><br>
 <button id="x-update-btn" type="button">변경</button>
 <button id="x-delete-btn" type="button">삭제</button>
 <button id="x-cancel-btn" type="button">취소</button>
@@ -39,42 +29,46 @@
     throw "URL 형식 오류!";
   }
 
-  var qs = arr[1];  // console.log(qs);
+  var qs = arr[1];
+  // console.log(qs);
 
   // 2) 쿼리 스트링에서 title의 값을 추출한다.
   var params = new URLSearchParams(qs);
-  var title = params.get("title");
+  var index = params.get("index");
 
-  if (title == null) {
-    alert("제목이 비어 있습니다!");
+  if (index == null) {
+    alert("게시물 번호가 없습니다!");
     throw "파라미터 오류!";
   }
   // console.log(title);
 
   var xTitle = document.querySelector("#x-title");
-  var xName = document.querySelector("#x-name");
   var xContent = document.querySelector("#x-content");
+  var xViewCount = document.querySelector("#x-viewCount");
+  var xCreatedDate = document.querySelector("#x-createdDate");
 
   // 3) 서버에서 데이터 가져오기
-  fetch(`/board/get?title=${title}`)
+  fetch(`/board/get?index=${index}`)
     .then(function(response) {
       return response.json();
     })
     .then(function(board) {
         // 4) 게시판 제목과 내용을 화면에 출력한다.
       xTitle.value = board.title;
-      xName.value = board.name;
       xContent.value = board.content;
+      xViewCount.innerHTML = board.viewCount;
+      xCreatedDate.innerHTML = board.createdDate;
+      // span태그는 innerHTML 사용
     });
 
   //필수 입력값 확인하기
   document.querySelector("#x-update-btn").onclick = function() {
-    if (xTitle.value == "" || xContent.value == "" || xName.value == "") {
+    if (xTitle.value == "" || xContent.value == "") {
       window.alert("필수 입력 항목이 비어 있습니다.");
       return;
     }
 
-    fetch(`/board/update?title=${xTitle.value}&content=${xContent.value}&name=${xName.value}`)
+    fetch(`/board/update?index=${index}&title=${xTitle.value}&content=${xContent.value}`)
       .then(function(response) {
         return response.text();
       })
@@ -90,7 +84,7 @@
     };
 
   document.querySelector("#x-delete-btn").onclick = function() {
-    fetch(`/board/delete?title=${title}`)
+    fetch(`/board/delete?index=${index}`)
       .then(function(response) {
         return response.json();
       })

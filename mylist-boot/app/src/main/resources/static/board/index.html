@@ -5,15 +5,14 @@
   <title>게시판</title>
 </head>
 <body>
-<h1>게시판</h1>
-<a href="form.html">새 글작성</a>
-<table id="x-board-table" border="1" width="800">
+<h1>게시글</h1>
+<a href="form.html">새 게시글</a>
+<table id="x-board-table" border="1">
 <thead>
   <tr>
-    <th width="500">제목</th>
-    <th width="100">작성자</th>
-    <th width="100">작성일시</th>
-    <th width="100">조회수</th>
+    <th>제목</th>
+    <th>조회수</th>
+    <th>등록일</th>
   </tr>
 </thead>
 <tbody>
@@ -29,22 +28,17 @@
     .then(function(response) {
       return response.json();
     })
-    .then(function(Board) {
-      // console.log(Board);
-      for (var board of Board) {
+    .then(function(boards) {
+      // console.log(boards);
+      for (var i = 0; i < boards.length; i++) {
+        var board = boards[i];
         var tr = document.createElement("tr");
-        tr.innerHTML = `<td id="x-count" onclick="location.href='view.html?title=${board.title}'">${board.title}</td><td>${board.name}</td><td>${board.Date}</td><td>${board.viewCount}</td>`;
+        tr.innerHTML = `<td><a href="view.html?index=${i}">${board.title}</a></td>
+        <td>${board.viewCount}</td>
+        <td>${board.Date}</td>`;
         tbody.appendChild(tr);
-        // var xCount = document.getElementById("x-count");
-        // // console.log(xCount);
-        // xCount.onclick = function(){
-        //   console.log(count++);
-        // };
       }
     });
-
-
-
 </script>
 </body>
 </html>
