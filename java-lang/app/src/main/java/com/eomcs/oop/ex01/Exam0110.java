@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex01;
 
 // # 클래스 사용 : 1) 일반 변수 사용
-//
+//211230
 public class Exam0110 {
   public static void main(String[] args) {
     // 낱개의 변수를 사용하여 한 사람의 성적 정보를 저장하라!

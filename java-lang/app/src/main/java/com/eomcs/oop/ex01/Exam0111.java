@@ -1,15 +1,13 @@
 package com.eomcs.oop.ex01;
 
 // # 클래스 사용 : 2) 메서드 활용
-//
+//211230
 public class Exam0111 {
   public static void main(String[] args) {
     String name;
     int kor;
     int eng;
     int math;
-    int sum;
-    float aver;
 
     name = "홍길동";
     kor = 100;

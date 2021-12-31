@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex01;
 
 // # 클래스 사용 : 5) 메서드 활용 II
-//
+//211230
 public class Exam0114 {
 
   static class Score {
@@ -16,14 +16,22 @@ public class Exam0114 {
   public static void main(String[] args) {
 
     // 클래스를 이용하면 성적 정보와 같은 여러 개의 값을 한 번에 리턴 받을 수 있다.
-    Score s = createScore("홍길동", 100, 100, 100);
+    Score s = createScore("홍길동", 30, 100, 100);
+    //팩토리메서드 패턴
+    //객체 생성과정에 별도의 메서드에서 객체를 생성해서 그 생성된 객체를 리턴한다.
 
     printScore(s);
+
+    Score s2 = createScore("하파", 30, 100, 20);
+    printScore(s2);
+
+    Score s3 = createScore("수달", 100, 100, 100);
+    printScore(s3);
+
   }
 
   static void printScore(Score s) {
-    s.sum = s.kor + s.eng + s.math;
-    s.aver = s.sum / 3;
+
     System.out.printf("%s: %d, %d, %d, %d, %.1f\n",
         s.name, s.kor, s.eng, s.math, s.sum, s.aver);
   }
@@ -32,12 +40,17 @@ public class Exam0114 {
   // - Score 인스턴스를 생성하여 리턴한다.
   // - 더 정확하게 표현하면, Score 인스턴스를 생성한 후 그 주소를 리턴한다.
   static Score createScore(String name, int kor, int eng, int math) {
+    // 파라미터는 로컬 변수다
     Score s = new Score();
+    //s도 로컬 변수다.
+    //new는 힙에 만들어진다. 설계도에 따라 만들어짐
 
-    s.name = "홍길동";
-    s.kor = 100;
-    s.eng = 90;
-    s.math = 80;
+    s.name = name;
+    s.kor = kor;
+    s.eng = eng;
+    s.math = math;
+    s.sum = s.kor + s.eng + s.math;
+    s.aver = s.sum / 3;
 
     return s; // s에 저장된 인스턴스의 주소를 리턴한다.
     // 강사님! 로컬 변수는 메서드 호출이 끝난 다음에 삭제된다고 했는데
@@ -54,11 +67,3 @@ public class Exam0114 {
     //    오직 스택(stack) 메모리에 생성된 로컬 변수만이 삭제됩니다.
   }
 }
-
-
-
-
-
-
-
-

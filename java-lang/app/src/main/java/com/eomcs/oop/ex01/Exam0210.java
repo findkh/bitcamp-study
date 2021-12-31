@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex01;
-
+//211230
 // # 레퍼런스 배열 - 사용 전
 //
 public class Exam0210 {
@@ -51,6 +51,11 @@ public class Exam0210 {
     System.out.printf("%s: %d, %d, %d, %d, %.1f\n", s2.name, s2.kor, s2.eng, s2.math, s2.sum, s2.aver);
     System.out.printf("%s: %d, %d, %d, %d, %.1f\n", s3.name, s3.kor, s3.eng, s3.math, s3.sum, s3.aver);
   }
+
+  static void m1() {
+    class Score{}
+  }
+
 }
 
 // 수 십 개의 인스턴스를 저장한다면

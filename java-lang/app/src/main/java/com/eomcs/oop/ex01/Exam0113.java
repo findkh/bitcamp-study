@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex01;
 
 // # 클래스 사용 : 4) 메서드 활용
-//
+//211230
 public class Exam0113 {
 
   // 여러 메서드에서 클래스를 사용한다면
@@ -28,6 +28,21 @@ public class Exam0113 {
     // 성적 데이터를 클래스로 묶어 놓으면 값을 다루기가 편하다.
     // => 다음과 같이 성적 데이터를 한 번에 넘길 수 있다.
     printScore(s);
+
+    Score s2 = new Score();
+    s2.name = "유관순";
+    s2.kor = 30;
+    s2.eng = 90;
+    s2.math = 80;
+    printScore(s2);
+
+    Score s3 = new Score();
+    s3.name = "하파";
+    s3.kor = 80;
+    s3.eng = 90;
+    s3.math = 80;
+    printScore(s3);
+
   }
 
   static void printScore(Score s) {
