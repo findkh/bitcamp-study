@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>포켓몬 고르기</title>
+<style>
+.item {
+  boarder : 1px solid black;
+  width : 80px;
+  height: 40px;
+  text-align: center;
+  padding-top:10px;
+  margin: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.selected {
+  background-color: yellow;
+  color: blue;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>초기 포켓몬 고르기</h1>
+<div id="x-list"></div>
+
+<script>
+var pocketmon = [
+  "피카츄", "꼬북이", "파이리", "이상해씨", "캐터피",
+  "치코리타", "성원숭", "피죤", "꼬렛", "푸린",
+  "주뱃", "콘팡", "고라파덕", "근육몬", "코일",
+  "포니타", "독파리", "우추보트", "왕눈해", "고오스",
+  "삐삐", "슬리프", "롱스톤", "미뇽", "팽도리",
+  "찌리리공", "잠만보", "닥트리", "야도란", "파르셀"
+]
+
+var listDiv = document.querySelector("#x-list");
+
+for (var name of pocketmon) {
+  var div = document.createElement("div");
+  div.classList.add("item");
+  div.innerHTML = `${name}`;
+  listDiv.appendChild(div);
+}
+
+var items = document.querySelectorAll(".item");
+var currNo = 0;
+var count = 0;
+
+var timerId = window.setInterval(function() {
+  items[currNo].classList.remove("selected");
+  var no = Math.floor(Math.random()*30);
+  // console.log(items[no]);
+  items[no].classList.add("selected");
+  currNo = no;
+  count++;
+  if (count % 50 == 0) {
+    clearInterval(timerId);
+  }
+}, 100);
+</script>
+</body>
+</html>
