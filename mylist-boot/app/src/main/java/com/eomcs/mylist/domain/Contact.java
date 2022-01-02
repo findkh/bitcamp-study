@@ -6,7 +6,6 @@ public class Contact {
   String tel;
   String company;
 
-
   @Override
   public String toString() {
     return "Contact [name=" + name + ", email=" + email + ", tel=" + tel + ", company=" + company
@@ -44,4 +43,6 @@ public class Contact {
   public void setCompany(String company) {
     this.company = company;
   }
+
+
 }

@@ -8,24 +8,23 @@ import com.eomcs.util.ArrayList;
 @RestController 
 public class ContactController {
 
-  //Contact 객체 목록을 저장할 메모리 준비
-  //-> Object[] list = new Object[5];
-  //-> int size = 0;
+  //Contact 객체 목록을 저장할 메모리를 준비
+  // => Object[] list = new Object[5];
+  // => int size = 0;
   ArrayList contactList = new ArrayList();
-  //ArrayList에 따라 설계도에 따라 메모리가 만들어짐
-
 
   @RequestMapping("/contact/list")
-  public Object list() { //클라이언트 요청 처리
-    return contactList.toArray(); //배열을 다룸
+  public Object list() {
+    return contactList.toArray(); 
   }
 
   @RequestMapping("/contact/add")
   public Object add(Contact contact) {
-    //System.out.println(contact);
+    //    System.out.println(contact);
     contactList.add(contact);
     return contactList.size();
   }
+
 
   @RequestMapping("/contact/get")
   public Object get(String email) {
@@ -42,7 +41,6 @@ public class ContactController {
     if (index == -1) {
       return 0;
     }
-
     return contactList.set(index, contact) == null ? 0 : 1;
   }
 
@@ -52,20 +50,21 @@ public class ContactController {
     if (index == -1) {
       return 0;
     }
-
     contactList.remove(index);
     return 1;
   }
 
   int indexOf(String email) {
     for (int i = 0; i < contactList.size(); i++) {
-      Contact contact = (Contact) contactList.get(i);
+      Contact contact =  (Contact) contactList.get(i);
       if (contact.getEmail().equals(email)) { 
         return i;
       }
     }
-    return -1;
+    return -1;  
   }
 }
+
+
 
 
