@@ -1,6 +1,7 @@
-// # 클래스 변수
-//
+//211231 210103
+
 package com.eomcs.oop.ex03;
+// # 클래스 변수
 
 public class Exam0130 {
 

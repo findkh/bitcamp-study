@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex02;
-
+//211231 220103
 import com.eomcs.oop.ex02.util.Calculator;
 
 // # 관련된 기능(메서드)을 묶어 분류하기 - 패키지와 클래스
@@ -37,8 +37,8 @@ public class Exam0280 {
     c1.divide(3); // + 2 + 3 - 1 * 7 / 3 = ?
     c2.minus(5); // + 3 * 2 + 7 / 4 - 5 = ?
 
-    System.out.printf("c1.result = %d\n", c1.result);
-    System.out.printf("c2.result = %d\n", c2.result);
+    System.out.printf("c1.result = %d\n", c1.getResult());
+    System.out.printf("c2.result = %d\n", c2.getResult());
   }
 }
 

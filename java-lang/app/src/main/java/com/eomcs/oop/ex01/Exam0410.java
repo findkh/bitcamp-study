@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex01;
-//211231
+//211231 //220103
 // # 패키지 멤버 클래스
 //
 public class Exam0410 {
@@ -22,8 +22,7 @@ public class Exam0410 {
 // Exam0410.java 컴파일 오류!
 // - 콘솔에서 이 소스 파일을 컴파일 할 때
 //   Score 클래스를 찾을 수 없다고 오류가 발생할 것이다.
-//   > javac -encoding UTF-8 -d bin/main src/main/java/com/eomcs/oop/ex01/Exam0410.java
-//javac -encoding UTF-8 -d bin/main src/main/java/com/eomcs/oop/ex01/Exam0410.java
+//   javac -encoding UTF-8 -d bin/main src/main/java/com/eomcs/oop/ex01/Exam0410.java
 // - 이유?
 //   Exam0410.java 에서 Score 클래스를 사용하는데,
 //   컴파일할 때 Score 클래스 정보가 필요하다.

@@ -1,14 +1,14 @@
 package com.eomcs.oop.ex02;
 
 // # 사용자 정의 데이터 타입
-//211231
+//211231 220103
 public class Exam0110 {
 
   // ## 사용자 정의 데이터 타입 만들기
   // - 인스턴스 변수를 사용하여 학생의 성적 데이터를 담을 메모리를 설계한다.
   //
   static class Score {
-    // 인스턴스 변수(instance variagle; instace field)
+    // 인스턴스 변수(instance variable; instance field)
     // - new 명령으로 생성되는 변수이다.
     // - 데이터를 개별적으로 다루고 싶을 때 인스턴스 변수로 선언한다.
     //

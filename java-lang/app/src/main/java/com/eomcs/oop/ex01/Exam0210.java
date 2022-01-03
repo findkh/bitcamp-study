@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex01;
-//211230
+//211230 //220103
 // # 레퍼런스 배열 - 사용 전
 //
 public class Exam0210 {
@@ -7,6 +7,7 @@ public class Exam0210 {
     // 여러 개의 인스턴스 주소 저장하기
 
     // 1) 성적 정보를 저장할 메모리를 설계한다.
+    //메인 메서드 안에 있기 때문에 이 클래스는 메인 메서드 안에서만 사용 할 수 있다
     class Score {
       String name;
       int kor;

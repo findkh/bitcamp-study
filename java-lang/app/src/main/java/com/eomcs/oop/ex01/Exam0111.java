@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex01;
 
 // # 클래스 사용 : 2) 메서드 활용
-//211230
+//211230 220103
 public class Exam0111 {
   public static void main(String[] args) {
     String name;
@@ -22,6 +22,7 @@ public class Exam0111 {
     printScore(name, kor, eng, math);
   }
 
+  //메서드는 기본이 static이다
   static void printScore(String name, int kor, int eng, int math) {
     int sum = kor + eng + math;
     float aver = sum / 3f;

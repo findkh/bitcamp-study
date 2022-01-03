@@ -1,8 +1,8 @@
 package com.eomcs.oop.ex01;
-//211231
+//211231 220103
 
 // # import - 사용 후 II
-//
+//import com.eomcs.oop.ex01.sub.*;
 import com.eomcs.oop.ex01.sub.Y2;
 
 public class Exam0730 {

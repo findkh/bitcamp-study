@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex02;
-
+//211231 220103
 // # 관련된 기능(메서드)을 묶어 분류하기 : 분류 전
 //
 public class Exam0210 {
@@ -14,9 +14,13 @@ public class Exam0210 {
     // 메서드를 호출하여 작업을 수행하고,
     // 리턴 결과는 로컬 변수에 저장한다.
     result = plus(2, 3);
+    System.out.println(result);
     result = minus(result, 1);
+    System.out.println(result);
     result = multiple(result, 7);
+    System.out.println(result);
     result = divide(result, 3);
+
 
     System.out.printf("result = %d\n", result);
   }

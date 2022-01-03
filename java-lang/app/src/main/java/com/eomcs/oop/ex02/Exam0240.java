@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex02;
-
+//211231 220103
 // # 관련된 기능(메서드)을 묶어 분류하기 - 클래스 변수의 한계
 //
 public class Exam0240 {
