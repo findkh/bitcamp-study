@@ -1,8 +1,10 @@
-// 인스턴스 메서드 - 내장 변수 this
+//220104
 package com.eomcs.oop.ex03;
+// 인스턴스 메서드 - 내장 변수 this
 
 public class Exam0220 {
   static class A {
+
     int value;
 
     static void m1() {

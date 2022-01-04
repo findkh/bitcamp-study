@@ -1,6 +1,6 @@
-// 인스턴스 메서드와 클래스 메서드
-//
+//220104
 package com.eomcs.oop.ex03;
+// 인스턴스 메서드와 클래스 메서드
 
 public class Exam0210 {
   static class A {
@@ -25,7 +25,7 @@ public class Exam0210 {
     A.m1(); // OK!
 
     // => 인스턴스 메서드는 클래스 이름으로 호출할 수 없다.
-    //    A.m2(); // 컴파일 오류!
+    //A.m2(); // 컴파일 오류!
 
     A obj1 = new A();
 

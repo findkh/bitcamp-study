@@ -1,12 +1,14 @@
-// # 클래스 변수와 인스턴스 변수 생성 시점과 메모리 영역
-//
+//220104
 package com.eomcs.oop.ex03;
 
+// # 클래스 변수와 인스턴스 변수 생성 시점과 메모리 영역
+
 public class Exam0140 {
-  static class A {
-    static int v1;
-    int v2;
+  static class A { //중첩클래스
+    static int v1; //스태틱변수
+    int v2; //논스태틱변수 인스턴스필드
   }
+  // 컴파일 될 때 Exam0140, A 클래스가 분리 된다.
 
   public static void main(String[] args) {
 
@@ -24,7 +26,7 @@ public class Exam0140 {
     A p = new A();
     // 이제 v2 변수는 Heap에 생성되었다.
     // A클래스의 인스턴스를 만들 때
-    // static 이 안붙은 변수가 그 대상이다.
+    // static 이 안붙은 변수(non-static 변수 = 인스턴스 변수)가 그 대상이다.
     //
     // v2 인스턴스 변수는 인스턴스 주소를 통해 사용해야 한다.
     // 클래스이름으로 사용할 수 없다.
@@ -34,6 +36,7 @@ public class Exam0140 {
 
     // 인스턴스 변수는 인스턴스를 만들 때 마다 생성된다.
     A p2 = new A(); // 새 v2 변수가 생성된다.
+    //A클래스 설계도에 따라 non-static 변수를 heap에 만들어라
     p2.v2 = 300;
 
     System.out.printf("A.v1=%d, p.v2=%d, p2.v2=%d\n", A.v1, p.v2, p2.v2);

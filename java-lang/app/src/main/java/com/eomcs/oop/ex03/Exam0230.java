@@ -1,10 +1,12 @@
-// 인스턴스와 인스턴스 변수, 인스턴스 메서드 
+//220104
 package com.eomcs.oop.ex03;
+// 인스턴스와 인스턴스 변수, 인스턴스 메서드 
 
 public class Exam0230 {
   static class Calculator {
     // new 명령을 실행하면, 다음 변수 선언이 실행되어 Heap에 메모리를 만든다.
     int result;
+    //변수 선언은 메모리를 만들라는 명령문이다.
 
     // 주의!
     // => 이름에 인스턴스가 붙었다고 해서 인스턴스 메서드는 Heap에 만들어지는 것이 아니다!
@@ -29,8 +31,8 @@ public class Exam0230 {
     // c1이 가리키는 인스턴스를 가지고 Method Area에 있는 plus()를 호출한다.
     c1.plus(123);
 
-    // c2가 가리키는 인스턴스를 가지고 Method Area에 있는 minus()를 호출한다.
-    c2.minus(30);
+    // c2가 가리키는 인스턴스를 가지고 Method Area에 있는 plus()를 호출한다.
+    c2.plus(30);
   }
 }
 

@@ -1,3 +1,4 @@
+//220104
 // 인스턴스 메서드 응용
 package com.eomcs.oop.ex03;
 
@@ -12,6 +13,8 @@ public class Exam0320 {
     int math;
     int sum;
     float average;
+
+    //Score() {} //기본 생성자 
 
     // 다음 메서드와 같이 인스턴스 변수를 사용하는 경우 인스턴스 메서드로 정의한다.
     public void compute() {

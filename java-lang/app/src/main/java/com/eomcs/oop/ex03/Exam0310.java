@@ -1,4 +1,5 @@
-// 클래스 메서드 응용
+//220104
+//클래스 메서드 응용
 package com.eomcs.oop.ex03;
 
 import java.util.Scanner;
@@ -35,6 +36,7 @@ public class Exam0310 {
      */
 
     System.out.printf("절대값=%d\n", result);
+    keyScan.close();
   }
 }
 

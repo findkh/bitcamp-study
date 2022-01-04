@@ -1,7 +1,7 @@
-//# 클래스 변수와 인스턴스 변수 응용
-//
-package com.eomcs.oop.ex03;
+//220104
 
+package com.eomcs.oop.ex03;
+//# 클래스 변수와 인스턴스 변수 응용
 public class Exam0150 {
 
   static class Student {
@@ -10,7 +10,7 @@ public class Exam0150 {
     // - 모든 인스턴스가 공유하는 값을 저장할 때는 클래스 변수를 사용한다.
     static int count; 
 
-    // 인스턴스 필드
+    // 인스턴스 필드 = 논스태틱 필드
     // - 인스턴스마다 개별적으로 관리해야 할 값은 인스턴스 변수에 저장한다.
     String name;
     int age;
