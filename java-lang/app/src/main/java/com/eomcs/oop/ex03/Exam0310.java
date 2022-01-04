@@ -1,6 +1,6 @@
 //220104
-//클래스 메서드 응용
 package com.eomcs.oop.ex03;
+//클래스 메서드 응용
 
 import java.util.Scanner;
 

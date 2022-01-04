@@ -39,7 +39,7 @@ public class Exam0420 {
 
     // Score 인스턴스를 만든 후에는 
     // 생성자를 호출할 때 그 생성자의 파라미터 값을 주어야 한다.
-    Score s1 = new Score("홍길동", 100, 90, 77);
+    Score s1 = new Score("홍길동", 100, 90, 80);
     Score s2 = new Score("임꺽정", 80, 88, 87);
 
     // 생성자에서 이미 계산을 수행했기 때문에 
