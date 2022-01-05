@@ -1,5 +1,6 @@
-// 변수 초기화 문장(variable initializer) - 변수 초기화 문장 순서
+//220105
 package com.eomcs.oop.ex03;
+// 변수 초기화 문장(variable initializer) - 변수 초기화 문장 순서
 
 public class Exam0840 {
 

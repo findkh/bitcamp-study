@@ -1,5 +1,6 @@
-// 종합 정리 - 파라미터가 있는 생성자(constructor) 적용
+//220105
 package com.eomcs.oop.ex03;
+// 종합 정리 - 파라미터가 있는 생성자(constructor) 적용
 
 public class Exam0950 {
 

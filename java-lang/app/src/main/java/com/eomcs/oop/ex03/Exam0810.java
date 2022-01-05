@@ -1,5 +1,6 @@
-// 변수 초기화 문장(variable initializer) - 변수 초기화 문장
+//220105
 package com.eomcs.oop.ex03;
+// 변수 초기화 문장(variable initializer) - 변수 초기화 문장
 
 public class Exam0810 {
 
@@ -7,6 +8,8 @@ public class Exam0810 {
     int a = 100;
     int b = 200;
     int c;
+    //변수 선언이 3개다. 
+    //변수를 할당하는 문장은 2개이다.
 
     // 인스턴스 필드 초기화 문장은
     // 생성자의 앞 부분에 삽입된다.

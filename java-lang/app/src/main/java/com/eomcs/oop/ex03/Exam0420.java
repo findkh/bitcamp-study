@@ -1,6 +1,6 @@
-// 생성자 - 파라미터를 받는 생성자 
+//220104 220105
 package com.eomcs.oop.ex03;
-//220104
+// 생성자 - 파라미터를 받는 생성자 
 public class Exam0420 {
 
   static class Score {
@@ -12,7 +12,7 @@ public class Exam0420 {
     float average;
 
     // 생성자가 한 개라도 있으면 컴파일러는 자동으로 기본 생성자를 만들어주지 않는다.
-    // Score() {}    
+    // Score() {}
     Score(String name, int kor, int eng, int math) {
       System.out.println("Score(String,int,int,int) 호출!");
 

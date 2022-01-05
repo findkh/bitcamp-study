@@ -1,5 +1,6 @@
-// 인스턴스 초기화 블록(instance initializer) - 여러 개의 인스턴스 초기화 블록
+//220105
 package com.eomcs.oop.ex03;
+// 인스턴스 초기화 블록(instance initializer) - 여러 개의 인스턴스 초기화 블록
 
 public class Exam0740 {
 

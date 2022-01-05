@@ -1,17 +1,32 @@
-// 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
+//220105
 package com.eomcs.oop.ex04;
+// 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
 
 public class Exam0111 {
 
   public static void main(String[] args) throws Exception {
     // 생성자를 호출하여 문자열 인스턴스를 초기화시킨다.
 
+    String s0 = new String(); //default constructor 호출
+    System.out.println(s0); //기본 생성자를 호출하면 빈문자열이 출력되고 s0에 주소를 저장한다.
+    System.out.println("----------------");
+
     // => 문자열 리터럴을 사용하여 String 인스턴스를 초기화시키기.
-    String s1 = new String("Hello"); // String(스트링 리터럴) 생성자를 호출하여 인스턴스 초기화
+    String s1 = new String("HelloABC012가각간"); // String(스트링 리터럴) 생성자를 호출하여 인스턴스 초기화
+    System.out.println(s1);
+    System.out.println("----------------");
 
     // => char[] 을 사용하여 String 인스턴스 초기화시키기.
     char[] chars = new char[] {'H', 'e', 'l', 'l', 'o'};
     String s2 = new String(chars); // String(char[]) 생성자를 호출하여 인스턴스 초기화
+    System.out.println(s2);
+    System.out.println("----------------");
+
+    s2 = new String(chars, 1, 3); 
+    // String(char[], offset, count) 생성자를 호출하여 인스턴스 초기화
+    //1번째 배열에서 부터 3개
+    System.out.println(s2);
+    System.out.println("----------------");
 
     // => 바이트 배열을 가지고 String 인스턴스 초기화시키기
     byte[] bytes = {

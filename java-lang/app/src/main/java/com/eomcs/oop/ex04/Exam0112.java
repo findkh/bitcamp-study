@@ -1,5 +1,6 @@
-// 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
+//220105
 package com.eomcs.oop.ex04;
+// 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
 
 import java.nio.charset.Charset;
 
@@ -7,16 +8,23 @@ public class Exam0112 {
 
   public static void main(String[] args) throws Exception {
     System.out.println(Charset.defaultCharset());
+    //JVM이 외부에서 문자코드를 내보낼 떄 사용하는 charset.
+    //JVM에서 문자를 가져올 때 가정하는 charset.
 
     // 한글 문자 코드의 바이트 배열을 가지고 String 인스턴스 초기화시키기.
-    byte[] bytes = {
+    byte[] bytes = { //EUC-KR코드
         (byte)0xb0, (byte)0xa1, // 가
         (byte)0xb0, (byte)0xa2, // 각
         (byte)0xb6, (byte)0xca, // 똘
         (byte)0xb6, (byte)0xcb  // 똥
     };
-    String s1 = new String(bytes);
+    String s1 = new String(bytes); 
+    //바이트 배열에 들어 있는 문자 코드가 어떤 문자집합에 맞춰 작성되었는지 알려주지 않으면
+    //String 클래스는 JVM이 가정하는 문자 집합으로 작성되었을 거라고 생각하고 Unicode로 변환한다.
+
     System.out.println(s1);
+    System.out.println("---------------");
+
     // 결과: 
     // => 한글 출력이 깨진다.
     //
@@ -27,6 +35,7 @@ public class Exam0112 {
     // => OS 마다 기본으로 사용하는 문자 코드표(Character Set)가 다르다.
     //    Windows : MS949
     //    Unix/Linux/macOS : UTF-8
+    //    이클립스에서 실행할 경우: OS에 상관없이 UTF-8이라고 가정한다.
     // => 그런데 위 예제의 바이트 배열은 EUC-KR 코드이다.
     //    그래서 String 클래스는 바이트 배열을 제대로 해석하지 못한 것이다.
     //
@@ -38,6 +47,8 @@ public class Exam0112 {
     // 
     String s2 = new String(bytes, "EUC-KR");
     System.out.println(s2);
+
+
   }
 }
 

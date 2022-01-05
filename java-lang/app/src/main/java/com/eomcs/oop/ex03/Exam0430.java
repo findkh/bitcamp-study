@@ -1,6 +1,6 @@
-// 생성자 - 여러 개의 생성자 정의하기 
+//220104 220105
 package com.eomcs.oop.ex03;
-//220104
+// 생성자 - 여러 개의 생성자 정의하기 
 public class Exam0430 {
 
   static class Score {
@@ -13,6 +13,7 @@ public class Exam0430 {
 
     Score() {
       System.out.println("Score()");
+      this.name = "이름 없음";
     }
 
     Score(String name) {

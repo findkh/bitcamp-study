@@ -1,11 +1,13 @@
-// 변수 자동 초기화 - 스태틱 변수
+//220105
 package com.eomcs.oop.ex03;
+// 변수 자동 초기화 - 스태틱 변수
 
 import java.sql.Date;
 
 public class Exam0510 {
 
   static class A {
+    //A클래스가 로딩될때 method area에 생성된다.
     static byte b;
     static short s;
     static int i;
@@ -28,6 +30,14 @@ public class Exam0510 {
     //
     System.out.printf("%d, %d, %d, %d, %c, %.1f, %.1f, %b, %s, %s\n", 
         A.b, A.s, A.i, A.l, A.c, A.f, A.d, A.bool, A.str, A.date);
+
+    //로컬 변수는 자동으로 초기화 되지 않는다.
+    //사용하기 전에 반드시 초기화 해야 한다. 
+    //다음과 같이 초기화시키지 않은 상태에서 사용하면 컴파일 오류가 발생한다.
+    //어떤 값으로 초기화 시켜야 하나? 
+    //-> 변수를 만든 후 처음에 어떤 값을 시작할 지는 개발자가 결정하면 된다.
+    //int x;
+    //System.out.println(x); //문법오류
   }
 }
 

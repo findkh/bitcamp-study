@@ -1,5 +1,6 @@
-// 스태틱 초기화 블록(static initializer) - 중복 로딩 불가 확인
+//220105
 package com.eomcs.oop.ex03;
+// 스태틱 초기화 블록(static initializer) - 중복 로딩 불가 확인
 
 public class Exam0660 {
 
@@ -25,7 +26,6 @@ public class Exam0660 {
     // 클래스가 로딩되는 경우
     // 1) 클래스 멤버(변수와 메서드)를 사용할 때 클래스가 로딩되어 있지 않다면,
     //    A.a = 100;
-
     //    A.m();
 
     // 2) 해당 클래스의 인스턴스를 생성할 때 클래스가 로딩되어 있지 않다면,

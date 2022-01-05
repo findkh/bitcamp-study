@@ -1,5 +1,6 @@
-// 종합 정리 - 인스턴스 필드 기본 값 사용
+//220105
 package com.eomcs.oop.ex03;
+// 종합 정리 - 인스턴스 필드 기본 값 사용
 
 public class Exam0910 {
 

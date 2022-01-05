@@ -1,4 +1,4 @@
-//220104
+//220104 //220105
 
 package com.eomcs.oop.ex03;
 // 특별한 인스턴스 메서드 - 생성자(constructor)

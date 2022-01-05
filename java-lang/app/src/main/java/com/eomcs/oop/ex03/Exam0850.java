@@ -1,5 +1,6 @@
-// 변수 초기화 문장(variable initializer) - 인스턴스 초기화 블록과 필드 초기화, 생성자의 실행 순서
+//220105
 package com.eomcs.oop.ex03;
+// 변수 초기화 문장(variable initializer) - 인스턴스 초기화 블록과 필드 초기화, 생성자의 실행 순서
 
 public class Exam0850 {
 

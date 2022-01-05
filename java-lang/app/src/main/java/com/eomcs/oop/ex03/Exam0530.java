@@ -1,5 +1,6 @@
-// 변수 자동 초기화 - 로컬 변수
+//220105
 package com.eomcs.oop.ex03;
+// 변수 자동 초기화 - 로컬 변수
 
 import java.sql.Date;
 

@@ -1,5 +1,6 @@
-// 인스턴스 초기화 블록(instance initializer) - 인스턴스 초기화 블록의 위치
+//220105
 package com.eomcs.oop.ex03;
+// 인스턴스 초기화 블록(instance initializer) - 인스턴스 초기화 블록의 위치
 
 public class Exam0750 {
 

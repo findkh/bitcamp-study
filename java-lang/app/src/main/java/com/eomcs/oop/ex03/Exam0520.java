@@ -1,10 +1,12 @@
-// 변수 자동 초기화 - 인스턴스 변수
+//220105
 package com.eomcs.oop.ex03;
+// 변수 자동 초기화 - 인스턴스 변수
 
 import java.sql.Date;
 
 public class Exam0520 {
   static class A {
+    //new 명령을 실행할 때 heap에 만들어진다.
     byte b2;
     short s2;
     int i2;
@@ -30,6 +32,7 @@ public class Exam0520 {
 
     System.out.printf("%d, %d, %d, %d, %c, %.1f, %.1f, %b, %s, %s\n", 
         obj.b2, obj.s2, obj.i2, obj.l2, obj.c2, obj.f2, obj.d2, obj.bool2, obj.str2, obj.date2);
+    //char타입은 빈문자로 출력된다.
   }
 }
 

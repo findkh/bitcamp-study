@@ -1,5 +1,6 @@
-// 종합 정리 - 인스턴스 블록(instance initializer) 적용
+//220105
 package com.eomcs.oop.ex03;
+// 종합 정리 - 인스턴스 블록(instance initializer) 적용
 
 public class Exam0930 {
 

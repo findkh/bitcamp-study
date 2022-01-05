@@ -1,5 +1,6 @@
-// 종합 정리 - 생성자(constructor)를 여러 개 정의하기
+//220105
 package com.eomcs.oop.ex03;
+// 종합 정리 - 생성자(constructor)를 여러 개 정의하기
 
 public class Exam0960 {
 
