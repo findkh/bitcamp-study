@@ -1,5 +1,6 @@
-// String - String 인스터스에 있는 값을 비교하기 : equalsIgnoreCase()
+//220106
 package com.eomcs.basic.ex02;
+// String - String 인스터스에 있는 값을 비교하기 : equalsIgnoreCase()
 
 public class Exam0121 {
   public static void main(String[] args) {

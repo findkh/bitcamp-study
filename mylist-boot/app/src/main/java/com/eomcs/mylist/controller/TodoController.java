@@ -10,6 +10,10 @@ public class TodoController {
 
   ArrayList todoList = new ArrayList();
 
+  public TodoController() {
+    System.out.println("TodoController() 호출됨!");
+  }
+
   @RequestMapping("/todo/list")
   public Object list() {
     return todoList.toArray(); 

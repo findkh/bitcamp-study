@@ -1,5 +1,6 @@
-// String - 문자열 리터럴
+//220106
 package com.eomcs.basic.ex02;
+// String - 문자열 리터럴
 
 public class Exam0111 {
   public static void main(String[] args) {

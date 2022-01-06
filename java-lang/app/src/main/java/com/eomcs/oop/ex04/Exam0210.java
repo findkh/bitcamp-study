@@ -1,5 +1,6 @@
-// 인스턴스 메서드와 클래스 메서드의 활용 - String 클래스
+//220106
 package com.eomcs.oop.ex04;
+// 인스턴스 메서드와 클래스 메서드의 활용 - String 클래스
 
 public class Exam0210 {
   public static void main(String[] args) throws Exception {
@@ -7,15 +8,18 @@ public class Exam0210 {
 
     // s1 인스턴스(s1 레퍼런스가 가리키는 인스턴스)의 값을 조회하는 메서드 사용
     // 따라서 이 메서드를 호출하려면 반드시 String 인스턴스의 주소를 줘야 한다.
-    char c = s1.charAt(1);
+    char c = s1.charAt(1); //주소.인스턴스메서드
     System.out.println(c);
 
     System.out.println(s1.compareTo("Helli"));
     System.out.println(s1.compareTo("Hello"));
     System.out.println(s1.compareTo("Hellq"));
+    //compareTo() 인스턴스 변수 - 파라미터 값보다 이전 문자/ + 파라미터 값보다 뒤에 문자
 
     System.out.println(s1.contains("ll"));
     System.out.println(s1.contains("ee"));
+    //인스턴스 메서드는 인스턴스 주소가 없으면 출력할 수 없다.
+
 
     // 두 문자열을 연결하여 새 문자열을 만들자!
     String s2 = s1.concat(", world!");
@@ -26,6 +30,7 @@ public class Exam0210 {
     System.out.println(s1.equals("aaa")); // false
     System.out.println(s1.equals("Hello")); // true
     System.out.println(s1 == "Hello"); // false
+    //s1의 주소와 String Hello의 주소는 다르다.
 
     System.out.println("-------------------------");
 
@@ -61,9 +66,9 @@ public class Exam0210 {
     System.out.println(s5);
 
     // => primitive 값을 문자열로 만든다.
-    String s6 = String.valueOf(true);
-    String s7 = String.valueOf(3.14f);
-    String s8 = String.valueOf(100);
+    String s6 = String.valueOf(true); //"true"
+    String s7 = String.valueOf(3.14f); //"3.14"
+    String s8 = String.valueOf(100); //"100" 문자로바뀜
     System.out.println(s6);
     System.out.println(s7);
     System.out.println(s8);

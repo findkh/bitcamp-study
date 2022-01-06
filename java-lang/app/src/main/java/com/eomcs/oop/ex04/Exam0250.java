@@ -1,5 +1,6 @@
-// 인스턴스 메서드와 클래스 메서드의 활용 - Calendar 클래스
+//220106
 package com.eomcs.oop.ex04;
+// 인스턴스 메서드와 클래스 메서드의 활용 - Calendar 클래스
 
 import java.util.Calendar;
 
@@ -13,22 +14,10 @@ public class Exam0250 {
     // 달력은 그레고리안 달력을 사용한다.
     Calendar c = Calendar.getInstance();
 
-    
+
     System.out.println(c.get(5));
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
     // 인스턴스 메서드 활용
     System.out.println(c.get(1)); // 년도
     System.out.println(c.get(2) + 1); // 월(0 ~ 11)

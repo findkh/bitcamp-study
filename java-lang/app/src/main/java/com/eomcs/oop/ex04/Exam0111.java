@@ -1,4 +1,4 @@
-//220105
+//220105 //220106
 package com.eomcs.oop.ex04;
 // 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
 
@@ -12,7 +12,10 @@ public class Exam0111 {
     System.out.println("----------------");
 
     // => 문자열 리터럴을 사용하여 String 인스턴스를 초기화시키기.
-    String s1 = new String("HelloABC012가각간"); // String(스트링 리터럴) 생성자를 호출하여 인스턴스 초기화
+    String s1 = new String("HelloABC012가각간"); 
+    // String(스트링 리터럴) 생성자를 호출하여 인스턴스 초기화
+    //Stirng 배열의 주소를 담은 레퍼런스 s1.
+    //단순 변수가 아니다.
     System.out.println(s1);
     System.out.println("----------------");
 

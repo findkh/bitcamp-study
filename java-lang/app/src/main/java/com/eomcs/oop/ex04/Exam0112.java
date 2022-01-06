@@ -1,4 +1,4 @@
-//220105
+//220105 220106
 package com.eomcs.oop.ex04;
 // 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
 
@@ -47,8 +47,6 @@ public class Exam0112 {
     // 
     String s2 = new String(bytes, "EUC-KR");
     System.out.println(s2);
-
-
   }
 }
 

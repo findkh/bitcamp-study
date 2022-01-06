@@ -1,5 +1,6 @@
-// 인스턴스 메서드와 클래스 메서드의 활용 - Date 클래스
+//220106
 package com.eomcs.oop.ex04;
+// 인스턴스 메서드와 클래스 메서드의 활용 - Date 클래스
 
 import java.util.Date;
 
@@ -40,7 +41,6 @@ public class Exam0240 {
     // println()에 문자열을 주지 않고 그냥 객체(의 주소)를 넘기면
     // println() 내부에서 해당 객체의 toString()을 호출한 후에 
     // 그 리턴 값을 출력한다.
-
   }
 }
 

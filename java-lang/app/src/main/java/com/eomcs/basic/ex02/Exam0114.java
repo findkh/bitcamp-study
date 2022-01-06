@@ -1,10 +1,11 @@
-// String - String 인스턴스를 상수풀에 생성하기: intern()
+//220106
 package com.eomcs.basic.ex02;
+// String - String 인스턴스를 상수풀에 생성하기: intern()
 
 public class Exam0114 {
   public static void main(String[] args) {
 
-    String s1 = new String("Hello");
+    String s1 = new String("Hello");//Heap 영역에 String 인스턴스 생성
 
     // 먼저 상수풀에 String 객체를 생성해보자.
     String s2 = "Hello";

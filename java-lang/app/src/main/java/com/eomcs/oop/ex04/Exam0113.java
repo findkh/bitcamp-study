@@ -1,4 +1,4 @@
-//220105
+//220105 //220106
 package com.eomcs.oop.ex04;
 // 생성자 활용 예 - 자바에서 제공하는 클래스 사용을 통해 생성자 활용을 익혀보자!
 
@@ -30,6 +30,7 @@ public class Exam0113 {
 
     String s1 = new String(bytes);
     System.out.println(s1);
+    System.out.println("----------------------");
 
     // 생성자에 바이트 배열을 넘길 때
     // 바이트 배열에 들어 있는 데이터의 문자 코드표를 알려주지 않으면,

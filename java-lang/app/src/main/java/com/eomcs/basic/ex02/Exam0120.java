@@ -1,5 +1,6 @@
-// String - String 인스터스에 있는 값을 비교하기 : equals()
+//220106
 package com.eomcs.basic.ex02;
+// String - String 인스터스에 있는 값을 비교하기 : equals()
 
 public class Exam0120 {
   public static void main(String[] args) {
@@ -9,7 +10,9 @@ public class Exam0120 {
 
     // 두 String 인스턴스는 분명히 서로 다르다.
     System.out.println(s1 == s2);
+    //자바스크립트는 이렇게 비교 해도 되지만
 
+    //자바는 equals를 사용해야 한다.
     // 두 인스턴스가 갖고 있는 문자열이 같은지를 비교하고 싶다면,
     System.out.println(s1.equals(s2));
 

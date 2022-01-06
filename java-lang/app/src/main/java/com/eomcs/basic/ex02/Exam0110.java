@@ -1,5 +1,6 @@
-// String - 문자열 객체 만들기
+//220106
 package com.eomcs.basic.ex02;
+// String - 문자열 객체 만들기
 
 public class Exam0110 {
   public static void main(String[] args) {
@@ -17,6 +18,7 @@ public class Exam0110 {
 
     // 인스턴스가 같은지를 비교해보면,
     System.out.println(s1 == s2); // false => 서로 다른 인스턴스이다.
+    //s1과 s2의 주소를 비교하니 false나온다
   }
 }
 
