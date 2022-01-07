@@ -1,5 +1,7 @@
 package com.eomcs.mylist.controller;
 
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.sql.Date;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,10 +11,31 @@ import com.eomcs.util.ArrayList;
 @RestController 
 public class BoardController {
 
-  ArrayList boardList = new ArrayList();
+  ArrayList boardList;
 
-  public BoardController() {
+  public BoardController() throws Exception {
+
+    boardList = new ArrayList(); 
     System.out.println("BoardController() 호출됨!");
+
+    FileReader in = new FileReader("boards.csv");
+
+    StringBuilder buf = new StringBuilder();
+    int c;
+    while ((c = in.read()) != -1) {
+      if (c == -1) 
+        break;
+
+      if (c== '\n') {
+        boardList.add(Board.valueOf(buf.toString())); 
+        buf.setLength(0); 
+
+      } else { 
+        buf.append((char) c);
+      }
+    }
+
+    in.close();
   }
 
   @RequestMapping("/board/list")
@@ -60,8 +83,18 @@ public class BoardController {
     boardList.remove(index);
     return 1;
   }
+
+  @RequestMapping("/board/save")
+  public Object save() throws Exception {
+    FileWriter out = new FileWriter("boards.csv");
+
+    Object[] arr = boardList.toArray();
+    for (Object obj : arr) {
+      Board board = (Board) obj;
+      out.write(board.toCsvString() + "\n");
+    }
+
+    out.close();
+    return arr.length;
+  }
 }
-
-
-
-

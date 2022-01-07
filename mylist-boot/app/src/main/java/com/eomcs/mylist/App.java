@@ -4,7 +4,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,9 +16,10 @@ public class App {
     //class는 내장변수이다. (클래스에 대한 정보를 가지고 있음)
   }
 
-  @Bean
+  //@Bean
   public CommandLineRunner commandLineRunner(ApplicationContext beanContainer) {
     return args -> {
+
 
       System.out.println("빈 컨테이너가 생성한 객체:(빈 컨테이너에 들어 있는 객체):");
 
@@ -28,7 +28,6 @@ public class App {
         Object bean = beanContainer.getBean(beanNames[i]);
         System.out.printf("----> %03d: %s\n", i+1, bean.getClass().getName() );
       }
-
     };
   }
 
