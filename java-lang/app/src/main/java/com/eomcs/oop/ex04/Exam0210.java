@@ -1,4 +1,4 @@
-//220106
+//220106 //220107
 package com.eomcs.oop.ex04;
 // 인스턴스 메서드와 클래스 메서드의 활용 - String 클래스
 
@@ -8,13 +8,15 @@ public class Exam0210 {
 
     // s1 인스턴스(s1 레퍼런스가 가리키는 인스턴스)의 값을 조회하는 메서드 사용
     // 따라서 이 메서드를 호출하려면 반드시 String 인스턴스의 주소를 줘야 한다.
-    char c = s1.charAt(1); //주소.인스턴스메서드
+
+    //charAt()은 s1에 저장되어 있는 문자열중 첫번째 문자를 꺼낸다
+    char c = s1.charAt(1); 
     System.out.println(c);
 
+    //compareTo() 인스턴스 변수 - 파라미터 값보다 이전 문자는+ 파라미터 값보다 뒤에 문자는 - 
     System.out.println(s1.compareTo("Helli"));
     System.out.println(s1.compareTo("Hello"));
     System.out.println(s1.compareTo("Hellq"));
-    //compareTo() 인스턴스 변수 - 파라미터 값보다 이전 문자/ + 파라미터 값보다 뒤에 문자
 
     System.out.println(s1.contains("ll"));
     System.out.println(s1.contains("ee"));
@@ -30,7 +32,7 @@ public class Exam0210 {
     System.out.println(s1.equals("aaa")); // false
     System.out.println(s1.equals("Hello")); // true
     System.out.println(s1 == "Hello"); // false
-    //s1의 주소와 String Hello의 주소는 다르다.
+    //s1에 들어 있는 String 주소와 String Hello의 주소는 다르다.
 
     System.out.println("-------------------------");
 

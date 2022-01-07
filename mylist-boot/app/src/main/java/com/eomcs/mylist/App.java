@@ -20,8 +20,7 @@ public class App {
   public CommandLineRunner commandLineRunner(ApplicationContext beanContainer) {
     return args -> {
 
-
-      System.out.println("빈 컨테이너가 생성한 객체:(빈 컨테이너에 들어 있는 객체):");
+      System.out.println("빈 컨테이너가 생성한 객체(빈 컨테이너에 들어 있는 객체):");
 
       String[] beanNames = beanContainer.getBeanDefinitionNames();
       for (int i = 0; i < beanNames.length ; i++) {

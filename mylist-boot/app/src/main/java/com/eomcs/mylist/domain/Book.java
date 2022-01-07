@@ -15,42 +15,6 @@ public class Book {
     System.out.println("Book() 호출됨");
   }
 
-  public Book(String csvStr) {
-    String[] values = csvStr.split(","); 
-    this.setTitle(values[0]); 
-    this.setAuthor(values[1]);
-    this.setPress(values[2]);
-    this.setPage(Integer.valueOf(values[3]));
-    this.setPrice(Integer.valueOf(values[4]));
-    this.setReadDate(Date.valueOf(values[5]));
-    this.setFeed(values[6]);
-  }
-
-  public static Book valueOf(String csvStr) {
-    String[] values = csvStr.split(",");
-    Book book = new Book();
-    book.setTitle(values[0]);
-    book.setAuthor(values[1]);
-    book.setPress(values[2]);
-    book.setPage(Integer.valueOf(values[3]));
-    book.setPrice(Integer.valueOf(values[4]));
-    book.setReadDate(Date.valueOf(values[5]));
-    book.setFeed(values[6]);
-
-    return book;
-  }
-
-  public String toCsvString() {
-    return String.format("%s,%s,%s,%d,%d,%s,%s", 
-        this.getTitle(),
-        this.getAuthor(),
-        this.getPress(),
-        this.getPage(),
-        this.getPrice(),
-        this.getReadDate(),
-        this.getFeed());
-  }
-
   public String getTitle() {
     return title;
   }
@@ -95,7 +59,7 @@ public class Book {
     return readDate;
   }
 
-  public void setReadDate(java.sql.Date readDate) {
+  public void setReadDate(Date readDate) {
     this.readDate = readDate;
   }
 
@@ -113,5 +77,3 @@ public class Book {
         + ", price=" + price + ", readDate=" + readDate + ", feed=" + feed + "]";
   }
 }
-
-

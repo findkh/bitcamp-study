@@ -1,7 +1,5 @@
 package com.eomcs.mylist.controller;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.eomcs.mylist.domain.Book;
@@ -12,30 +10,8 @@ public class BookController {
 
   ArrayList bookList = new ArrayList();
 
-  public BookController() throws Exception{
+  public BookController() {
     System.out.println("BookController() 호출됨!");
-
-    FileReader in = new FileReader("books.csv");
-
-    StringBuilder buf = new StringBuilder();
-    int c;
-    while ((c = in.read()) != -1) {
-      if (c == -1) 
-        break;
-
-      if (c == -1) 
-        break;
-
-      if (c== '\n') { 
-        bookList.add(Book.valueOf(buf.toString())); 
-        buf.setLength(0); 
-
-      } else { 
-        buf.append((char) c);
-      }
-    }
-
-    in.close();
   }
 
   @RequestMapping("/book/list")
@@ -46,8 +22,9 @@ public class BookController {
   @RequestMapping("/book/add")
   public Object add(Book book) {
     bookList.add(book);
-    return bookList.size();
+    return bookList.size(); 
   }
+
 
   @RequestMapping("/book/get")
   public Object get(int index) {
@@ -62,10 +39,6 @@ public class BookController {
     if (index < 0 || index >= bookList.size()) {
       return 0;
     }
-
-    Book old = (Book) bookList.get(index);
-    book.setReadDate(old.getReadDate());
-
     return bookList.set(index, book) == null ? 0 : 1;
   }
 
@@ -76,18 +49,5 @@ public class BookController {
     }
     bookList.remove(index);
     return 1;
-  }
-
-  public Object save() throws Exception {
-    FileWriter out = new FileWriter("books.csv");
-
-    Object[] arr = bookList.toArray();
-    for (Object obj : arr) {
-      Book book = (Book) obj;
-      out.write(book.toCsvString() + "\n");
-    }
-
-    out.close();
-    return arr.length;
   }
 }

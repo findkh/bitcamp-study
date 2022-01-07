@@ -1,4 +1,4 @@
-//220106
+//220106 220107
 package com.eomcs.oop.ex04;
 // 인스턴스 메서드와 클래스 메서드의 활용 - Calendar 클래스
 
@@ -16,6 +16,7 @@ public class Exam0250 {
 
 
     System.out.println(c.get(5));
+    //숫자만 보고 알기 힘들다! 그래서 상수를 활용한다.
 
 
     // 인스턴스 메서드 활용
@@ -31,7 +32,7 @@ public class Exam0250 {
 
     System.out.println("-----------------------");
 
-    // 상수의 활용
+    // 상수의 활용 public final static 변수
     System.out.println(c.get(Calendar.YEAR)); // 년도
     System.out.println(c.get(Calendar.MONTH) + 1); // 월(0 ~ 11)
     System.out.println(c.get(Calendar.DATE)); // 일

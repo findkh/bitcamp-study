@@ -1,4 +1,4 @@
-//220106
+//220106 220107
 package com.eomcs.oop.ex04;
 // Inteeger 클래스 : new Ingerger() VS Integer.valueOf
 

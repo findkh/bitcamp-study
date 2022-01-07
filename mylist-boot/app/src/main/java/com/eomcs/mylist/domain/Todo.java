@@ -8,28 +8,6 @@ public class Todo {
     System.out.println("Todo() 호출됨");
   }
 
-  public Todo(String csvStr) {
-    String[] values = csvStr.split(",");
-    this.setTitle(values[0]);
-    this.setDone(Boolean.valueOf(values[1]));
-  }
-
-  public static Todo valueOf(String csvStr) {
-    String[] values = csvStr.split(",");
-
-    Todo todo= new Todo();
-    todo.setTitle(values[0]);
-    todo.setDone(Boolean.valueOf(values[1]));
-
-    return todo;
-  }
-
-  public String toCsvString() {
-    return String.format("%s,%s", 
-        this.getTitle(), 
-        this.isDone());
-  }
-
   public String getTitle() {
     return title;
   }
@@ -46,4 +24,6 @@ public class Todo {
   public String toString() {
     return "Todo [title=" + title + ", done=" + done + "]";
   }
+
+
 }
