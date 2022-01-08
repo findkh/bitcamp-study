@@ -1,5 +1,7 @@
 package com.eomcs.mylist.controller;
 
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.sql.Date;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,8 +13,24 @@ public class BoardController {
 
   ArrayList boardList = new ArrayList();
 
-  public BoardController() {
+  public BoardController() throws Exception {
     System.out.println("BoardController() 호출됨!");
+
+    FileReader in = new FileReader("boards.csv");
+
+    StringBuilder buf = new StringBuilder();
+
+    int c;
+    while((c = in.read()) != -1 ) {
+      if (c == '\n') {
+        //boardList.add(new Board(buf.toString()));
+        boardList.add(Board.valueOf(buf.toString()));
+        buf.setLength(0);
+      }else {
+        buf.append((char) c);
+      }
+    }
+    in.close();
   }
 
   @RequestMapping("/board/list")
@@ -52,6 +70,7 @@ public class BoardController {
     return boardList.set(index, board) == null ? 0 : 1;
   }
 
+
   @RequestMapping("/board/delete")
   public Object delete(int index) {
     if (index < 0 || index >= boardList.size()) {
@@ -59,5 +78,20 @@ public class BoardController {
     }
     boardList.remove(index);
     return 1;
+  }
+
+  @RequestMapping("/board/save")
+  public Object save() throws Exception {
+    FileWriter out = new FileWriter("boards.csv");
+
+    Object[] arr = boardList.toArray();
+
+    for (Object obj : arr) {
+      Board board = (Board) obj;
+      out.write(board.toCsvString() + "\n");
+    }
+
+    out.close();
+    return 0;
   }
 }

@@ -101,7 +101,7 @@ public class ContactController {
     }
 
     out.close();
-    return 0;
+    return arr.length;
   }
 
   int indexOf(String email) {
