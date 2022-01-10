@@ -23,7 +23,7 @@ public class Todo {
   }
 
   public String toCsvString() {
-    return String.format("%s, %s", 
+    return String.format("%s,%s", 
         this.getTitle(),
         this.isDone());
   }
