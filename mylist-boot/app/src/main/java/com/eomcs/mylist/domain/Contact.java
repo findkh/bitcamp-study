@@ -16,7 +16,7 @@ public class Contact {
     //String csvStr = "홍길동,hong@test.com,010-111-222,비트캠프"
     //생성자가 호출될 때 콤마로 잘라서 초기화 시키기 위해 이 작업을 한다.
     String[] values = csvStr.split(","); //ex) ["홍길동","hong@test.com","010-111-222","비트캠프"]
-    this.setName(values[0]); 
+    this.setName(values[0]);
     this.setEmail(values[1]);
     this.setTel(values[2]);
     this.setCompany(values[3]);
@@ -39,19 +39,19 @@ public class Contact {
     String[] values = csvStr.split(","); //ex) ["홍길동","hong@test.com","010-111-222","비트캠프"]
 
     Contact contact = new Contact();
-    //new 명령어를 메서드 안으로 숨긴다. -> 이것이 캡슐화! 
+    //new 명령어를 메서드 안으로 숨긴다. -> 이것이 캡슐화!
 
-    contact.setName(values[0]); 
+    contact.setName(values[0]);
     contact.setEmail(values[1]);
     contact.setTel(values[2]);
     contact.setCompany(values[3]);
 
     return contact;
-  } 
+  }
 
-  //인스턴스 메서드 
+  //인스턴스 메서드
   //    -> 특정 인스턴스를 사용한다면 인스턴스 메서드로 만든다
-  //       인스턴스 메서드는 내장변수 this가 있다. 
+  //       인스턴스 메서드는 내장변수 this가 있다.
   //       this안에 있는 연락처 객체들을 꺼내서 문자열로 만든다
   //GRASP의 Information Expert 패턴
   //    -> 데이터를 가공하는 일은 데이터를 가지고 있는 클래스에 둬야 한다!!!!!!!!!
@@ -102,6 +102,4 @@ public class Contact {
   public void setCompany(String company) {
     this.company = company;
   }
-
-
 }

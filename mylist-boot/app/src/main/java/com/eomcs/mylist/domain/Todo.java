@@ -23,7 +23,7 @@ public class Todo {
   }
 
   public String toCsvString() {
-    return String.format("%s,%s", 
+    return String.format("%s,%s",
         this.getTitle(),
         this.isDone());
   }
@@ -44,6 +44,4 @@ public class Todo {
   public String toString() {
     return "Todo [title=" + title + ", done=" + done + "]";
   }
-
-
 }

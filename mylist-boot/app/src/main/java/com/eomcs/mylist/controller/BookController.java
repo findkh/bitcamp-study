@@ -1,49 +1,36 @@
 package com.eomcs.mylist.controller;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import com.eomcs.io.FileWriter2;
 import com.eomcs.mylist.domain.Book;
 import com.eomcs.util.ArrayList;
 
-@RestController 
+@RestController
 public class BookController {
 
   ArrayList bookList = new ArrayList();
 
   public BookController() throws Exception {
     System.out.println("BookController() 호출됨!");
+    com.eomcs.io.FileReader2 in = new com.eomcs.io.FileReader2("books.csv");
 
-    FileReader in = new FileReader("books.csv");
-
-    StringBuilder buf = new StringBuilder();
-
-    int c;
-    while (true) {
-      c = in.read();
-      if (c == -1) break;
-      //      System.out.print((char)c);
-      if (c == '\n') {
-        //bookList.add(new Book(buf.toString()));
-        bookList.add(Book.valueOf(buf.toString()));
-        buf.setLength(0);
-      }else {
-        buf.append((char) c);
-      }
+    String line;
+    while ((line = in.readLine()).length() != 0) {
+      bookList.add(Book.valueOf(line));
     }
     in.close();
   }
 
   @RequestMapping("/book/list")
   public Object list() {
-    return bookList.toArray(); 
+    return bookList.toArray();
   }
 
   @RequestMapping("/book/add")
   public Object add(Book book) {
     bookList.add(book);
-    return bookList.size(); 
+    return bookList.size();
   }
 
 
@@ -74,12 +61,14 @@ public class BookController {
 
   @RequestMapping("/book/save")
   public Object save() throws Exception {
-    FileWriter out = new FileWriter("books.csv");
+    FileWriter2 out = new FileWriter2("books.csv"); // 따로 경로를 지정하지 않으면 파일은 프로젝트 폴더에 생성된다.
+
     Object[] arr = bookList.toArray();
     for (Object obj : arr) {
       Book book = (Book) obj;
-      out.write(book.toCsvString() + "\n");
+      out.println(book.toCsvString());
     }
+
     out.close();
     return arr.length;
   }
