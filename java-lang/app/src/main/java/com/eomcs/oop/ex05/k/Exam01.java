@@ -1,5 +1,6 @@
-// 상속 - Generalization 수행 전
+//220111
 package com.eomcs.oop.ex05.k;
+// 상속 - Generalization 수행 전
 
 // 상속의 종류
 // 1) specialization

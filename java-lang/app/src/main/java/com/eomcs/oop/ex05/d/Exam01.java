@@ -1,5 +1,6 @@
-// 상속 - 상속 문법을 이용한 기능 추가
+//220111
 package com.eomcs.oop.ex05.d;
+// 상속 - 상속 문법을 이용한 기능 추가
 
 public class Exam01 {
   public static void main(String[] args) {

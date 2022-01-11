@@ -1,5 +1,6 @@
-// 상속 - 추상클래스를 파라미터로 사용하기
+//나중에
 package com.eomcs.oop.ex05.m;
+// 상속 - 추상클래스를 파라미터로 사용하기
 
 public class Exam02 {
 

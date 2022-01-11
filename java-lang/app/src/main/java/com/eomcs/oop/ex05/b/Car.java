@@ -1,5 +1,6 @@
-// 기존 클래스에 코드를 추가한다.
+//220111
 package com.eomcs.oop.ex05.b;
+// 기존 클래스에 코드를 추가한다.
 
 public class Car {
 

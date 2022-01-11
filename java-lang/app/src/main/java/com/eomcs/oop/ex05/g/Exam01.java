@@ -1,5 +1,6 @@
-// 상속 - 생성자 호출 순서
+//220111
 package com.eomcs.oop.ex05.g;
+// 상속 - 생성자 호출 순서
 
 public class Exam01 {
   public static void main(String[] args) {

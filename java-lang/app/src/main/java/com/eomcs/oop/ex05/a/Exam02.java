@@ -1,5 +1,6 @@
-// 상속 - 사용 전
+//220111
 package com.eomcs.oop.ex05.a;
+// 상속 - 사용 전
 
 public class Exam02 {
   public static void main(String[] args) {

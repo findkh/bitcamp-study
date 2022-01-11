@@ -1,5 +1,6 @@
-// 상속 - 다중 상속
+//220111
 package com.eomcs.oop.ex05.i;
+// 상속 - 다중 상속
 
 public class Exam01 {
 

@@ -1,5 +1,6 @@
-// 상속 - 상속하지 않고 기능 추가 I
+//220111
 package com.eomcs.oop.ex05.b;
+// 상속 - 상속하지 않고 기능 추가 I
 
 public class Exam01 {
   public static void main(String[] args) {
@@ -16,9 +17,6 @@ public class Exam01 {
     //       => 쓰지도 않는 코드가 계속 누적되는 문제가 있다.
     //
     Car c1 = new Car("비트자동차", "티코", 5, true, true);
-
-
-
   }
 }
 

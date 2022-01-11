@@ -1,3 +1,4 @@
+//220111
 package com.eomcs.oop.ex05.m;
 
 // 이렇게 Sedan과 Truck의 경우처럼

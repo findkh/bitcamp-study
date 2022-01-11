@@ -1,5 +1,6 @@
-// 상속 - Generalization 수행 후
+//220111
 package com.eomcs.oop.ex05.l;
+// 상속 - Generalization 수행 후
 
 // 여러 클래스에 공통으로 들어 가는 기능이나 필드가 있다면
 // 유지보수가 쉽도록 별도의 클래스로 추출한다.

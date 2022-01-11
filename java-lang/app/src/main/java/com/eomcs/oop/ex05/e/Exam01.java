@@ -1,5 +1,6 @@
-// 상속의 실제적인 의미
+//220111
 package com.eomcs.oop.ex05.e;
+// 상속의 실제적인 의미
 
 public class Exam01 {
 
@@ -23,5 +24,4 @@ public class Exam01 {
     //
 
   }
-
 }

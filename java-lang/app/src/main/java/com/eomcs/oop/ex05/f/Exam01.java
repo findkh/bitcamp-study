@@ -1,5 +1,6 @@
-// 상속 - 클래스 로딩과 인스턴스 생성 과정
+//220111
 package com.eomcs.oop.ex05.f;
+// 상속 - 클래스 로딩과 인스턴스 생성 과정
 
 public class Exam01 {
   public static void main(String[] args) {
