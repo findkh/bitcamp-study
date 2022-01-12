@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - 필드 오버라이딩
+//220112
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 필드 오버라이딩
 
 public class Exam0130 {
 
@@ -16,7 +17,7 @@ public class Exam0130 {
     }
   }
 
-  static class A4 extends A {
+  static class B extends A {
     // 필드 오버라이딩
     // - 필드 오버라이딩은 메서드와 달리 변수의 타입이 달라도 된다.
     //
@@ -25,10 +26,10 @@ public class Exam0130 {
 
 
   public static void main(String[] args) {
-    A4 obj = new A4();
+    B obj = new B();
     obj.name = "홍길동"; // A의 name
     obj.tel = "1111-1111"; // A의 tel
-    //    obj.working = true; // A4의 working : obj의 클래스에서 먼저 필드를 찾기 때문이다.
+    //    obj.working = true; // B4의 working : obj의 클래스에서 먼저 필드를 찾기 때문이다.
     obj.working = "취업";
 
     obj.print(); 

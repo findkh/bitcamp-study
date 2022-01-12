@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수와 형변환(type casting)
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수와 형변환(type casting)
 
 public class Exam0211 {
 

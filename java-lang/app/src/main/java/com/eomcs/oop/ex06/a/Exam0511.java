@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수와 instanceof 연산자
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수와 instanceof 연산자
 
 public class Exam0511 {
 
@@ -13,13 +14,13 @@ public class Exam0511 {
     // 클래스명.class
     // => 클래스 정보를 갖고 있는 스태틱 변수이다.
     //
-    System.out.println(v.getClass() == Sedan.class);
+    System.out.println(Sedan.class);
+    System.out.println(v.getClass() == Sedan.class); //class는 확장자가 아니라 빌트인변수이다.
     System.out.println(v.getClass() == Car.class);
     System.out.println(v.getClass() == Vehicle.class);
     System.out.println(v.getClass() == Truck.class);
     System.out.println(v.getClass() == Bike.class);
   }
-
 }
 
 

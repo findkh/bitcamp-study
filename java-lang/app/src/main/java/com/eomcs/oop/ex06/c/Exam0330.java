@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - 오버라이딩할 때 접근 범위 조정하기 II
+//220112
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 오버라이딩할 때 접근 범위 조정하기 II
 
 public class Exam0330 {
   static class C {

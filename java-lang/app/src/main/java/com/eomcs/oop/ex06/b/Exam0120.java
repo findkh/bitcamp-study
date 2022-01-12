@@ -1,5 +1,6 @@
-// 메서드 오버로딩(overloading) - 문법 사용 후
+//220112
 package com.eomcs.oop.ex06.b;
+// 메서드 오버로딩(overloading) - 문법 사용 후
 
 public class Exam0120 {
 
@@ -30,6 +31,7 @@ public class Exam0120 {
     int r2 = Calculator.plus(100);
     float r3 = Calculator.plus(35.7f, 22.2f);
     //    double f4 = Calculator.plus(35.7, 22.2); // 파라미터 타입이나 개수가 일치하는 메서드가 없다.
+    //f를 붙이지 않으면 double타입의 리터럴이 되므로 일치하는 메서드가 없다.
 
     System.out.printf("%d, %d, %.1f\n", r1, r2, r3);
 

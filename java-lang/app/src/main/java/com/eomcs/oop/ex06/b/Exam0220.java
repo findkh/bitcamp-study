@@ -1,5 +1,6 @@
-// 메서드 오버로딩(overloading) - 서브 클래스에서 오버로딩하기
+//220112
 package com.eomcs.oop.ex06.b;
+// 메서드 오버로딩(overloading) - 서브 클래스에서 오버로딩하기
 
 public class Exam0220 {
   public static void main(String[] args) {

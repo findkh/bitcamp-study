@@ -1,5 +1,6 @@
-// 메서드 오버로딩(overloading) - 정의하는 규칙과 사용 규칙
+//220112
 package com.eomcs.oop.ex06.b;
+// 메서드 오버로딩(overloading) - 정의하는 규칙과 사용 규칙
 
 public class Exam0210 {
   public static void main(String[] args) {

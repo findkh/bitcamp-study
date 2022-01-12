@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - 오버라이딩을 하는 이유?
+//220112
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 오버라이딩을 하는 이유?
 
 public class Exam0010 {
 

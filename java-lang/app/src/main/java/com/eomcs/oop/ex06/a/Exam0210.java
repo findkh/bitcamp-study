@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수와 형변환(type casting)
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수와 형변환(type casting)
 
 public class Exam0210 {
 
@@ -24,7 +25,7 @@ public class Exam0210 {
 
     // 해결책?
     // => 레퍼런스 변수가 실제 가리키는 것이 무엇인지 알려줘야 한다.
-    // => ((원래인스턴스타입) 레퍼런스).멤버
+    // => ((실제 레퍼런스가 가리키는 인스턴스의 인스턴스타입) 레퍼런스).멤버
     ((Sedan)c).sunroof = true; // OK!
     ((Sedan)c).auto = true;    // OK!
 
@@ -35,15 +36,4 @@ public class Exam0210 {
 
     System.out.println("종료!");
   }
-
 }
-
-
-
-
-
-
-
-
-
-

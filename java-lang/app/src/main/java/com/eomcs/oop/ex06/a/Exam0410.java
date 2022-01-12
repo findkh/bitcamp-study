@@ -1,11 +1,12 @@
-// 다형성 - 다형적 변수의 활용
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수의 활용
 
 public class Exam0410 {
 
   // Sedan과 Truck의 모델명과 cc를 출력하라!
 
-  public static void printSedan(Sedan sedan) {
+  public static void printSedan(Sedan sedan) { 
     System.out.printf("모델명: %s\n", sedan.model); // Vehicle의 설계도로 만든 인스턴스 변수
     System.out.printf("cc: %d\n", sedan.cc); // Car 설계도로 만든 인스턴스 변수
     System.out.println("-------------------------");

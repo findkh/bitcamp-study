@@ -1,8 +1,7 @@
-// 다형성 - 다형적 변수(polymorphic variables)
+//220112
 package com.eomcs.oop.ex06.a;
-
+// 다형성 - 다형적 변수(polymorphic variables)
 public class Exam0110 {
-
   public static void main(String[] args) {
     Vehicle vehicle = new Vehicle();
     Bike bike = new Bike();
@@ -36,7 +35,6 @@ public class Exam0110 {
     //    bike2 = sedan; // Error!
     //    bike2 = truck; // Error!
   }
-
 }
 
 

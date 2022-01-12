@@ -49,11 +49,3 @@ public class Exam0511 {
     ((X)x4).m1();
   }
 }
-
-
-
-
-
-
-
-

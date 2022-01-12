@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수(polymorphic variables)
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수(polymorphic variables)
 
 public class Exam0111 {
 
@@ -22,7 +23,6 @@ public class Exam0111 {
     // 왜?
     // => Bike 인스턴스에는 수퍼 클래스인 Vehicle의 인스턴스 변수가 있기 때문.
   }
-
 }
 
 

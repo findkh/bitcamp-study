@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수(polymorphic variables)
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수(polymorphic variables)
 
 public class Exam0113 {
 

@@ -1,8 +1,8 @@
-// 다형성 - 다형적 변수(polymorphic variables)
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수(polymorphic variables)
 
 public class Exam0112 {
-
   public static void main(String[] args) {
 
     Vehicle v = new Vehicle();
@@ -19,14 +19,12 @@ public class Exam0112 {
 
     // 만약 위의 코드가 가능하다면,
     // 다음과 같이 Bike 레퍼런스로 Bike 인스턴스 변수를 사용하려 할 것이다.
-    b2.engine = true;
+    //    b2.engine = true;
 
     // 그러나, b2가 실제 가리키는 것은 Bike의 인스턴스가 아니기 때문에
     // Bike의 engine 변수를 사용할 수 없다.
     //
     // 이렇게 개발자가 레퍼런스를 통해 존재하지 않는 인스턴스 멤버를 사용할까봐,
     // 이것을 미리 방지하려고 컴파일 단계에서 이런 사용을 막는 것이다.
-
   }
-
 }

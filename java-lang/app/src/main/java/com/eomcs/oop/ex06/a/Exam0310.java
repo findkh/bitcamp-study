@@ -1,5 +1,6 @@
-// 다형성 - 다형적 변수와 형변환(type casting) II
+//220112
 package com.eomcs.oop.ex06.a;
+// 다형성 - 다형적 변수와 형변환(type casting) II
 
 public class Exam0310 {
 
@@ -19,9 +20,7 @@ public class Exam0310 {
     Sedan s = (Sedan) c; // 실행할 때 오류 발생! (runtime exception)
     s.sunroof = true;
     s.auto = true;
-
   }
-
 }
 
 

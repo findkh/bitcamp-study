@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - private 메서드 오버라이딩?
+//220112
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - private 메서드 오버라이딩?
 
 
 public class Exam0310 {
