@@ -1,5 +1,6 @@
-// final 사용법: 상수 필드 만들기
+//220112 220113
 package com.eomcs.oop.ex06.e;
+// final 사용법: 상수 필드 만들기
 
 class C {
   // 필드에 final 을 붙이면 상수 필드가 된다.

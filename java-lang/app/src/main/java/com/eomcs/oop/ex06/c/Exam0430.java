@@ -1,7 +1,6 @@
-// 오버라이딩(overriding) - 준비
+//220112
 package com.eomcs.oop.ex06.c;
-
-
+// 오버라이딩(overriding) - 준비
 
 public class Exam0430 {
 

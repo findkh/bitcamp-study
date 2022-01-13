@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - 레퍼런스가 가리키는 필드
+//220112 220113
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 레퍼런스가 가리키는 필드
 
 public class Exam0510 {
 

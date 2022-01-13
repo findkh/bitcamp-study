@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - 리턴 타입
+//220112 220113
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 리턴 타입
 
 class Car {
   String maker;

@@ -1,5 +1,6 @@
-// final 사용법: 로컬 변수
+//220112 220113
 package com.eomcs.oop.ex06.e;
+// final 사용법: 로컬 변수
 
 public final class Exam0410 {
 

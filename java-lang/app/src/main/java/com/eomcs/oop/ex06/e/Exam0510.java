@@ -1,5 +1,6 @@
-// final 사용법: 파라미터
+//220112 220113
 package com.eomcs.oop.ex06.e;
+// final 사용법: 파라미터
 
 class G {
   public void m1(final int a) {

@@ -1,5 +1,6 @@
-// final 사용법: 오버라이딩 불가!
+//220113
 package com.eomcs.oop.ex06.e;
+// final 사용법: 오버라이딩 불가!
 
 class B {
   // 메서드에 final 을 붙이면 서브 클래스에서 오버라이딩 할 수 없다.

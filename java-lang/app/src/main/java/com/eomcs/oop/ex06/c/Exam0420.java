@@ -1,5 +1,6 @@
-// 오버라이딩(overriding) - this/super의 사용
+//220112
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - this/super의 사용
 
 // this.메서드() 호출?
 // => 현재 클래스(this의 실제 타입)부터 호출할 메서드를 찾아 올라 간다.

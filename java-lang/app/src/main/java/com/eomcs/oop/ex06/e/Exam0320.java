@@ -1,5 +1,6 @@
-// final 사용법: 상수 필드 만들기
+//220112 220113
 package com.eomcs.oop.ex06.e;
+// final 사용법: 상수 필드 만들기
 
 class D {
   // 변수 초기화 문장으로 값을 초기화시킬 수 있다.

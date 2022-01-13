@@ -1,10 +1,12 @@
-// 오버라이딩(overriding) - 리턴 타입
+//220112 220113
 package com.eomcs.oop.ex06.c;
+// 오버라이딩(overriding) - 리턴 타입
 
 public class Exam0610 {
 
   static class Car {}
   static class Sedan extends Car {}
+  static class Truck extends Car {}
   static class Tico extends Sedan {}
 
   static class CarFactory {

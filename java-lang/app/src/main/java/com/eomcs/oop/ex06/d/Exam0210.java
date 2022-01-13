@@ -1,5 +1,6 @@
-// 다형적 변수와 오버라이딩 - 레퍼런스와 메서드 호출
+//220112 220113
 package com.eomcs.oop.ex06.d;
+// 다형적 변수와 오버라이딩 - 레퍼런스와 메서드 호출
 
 
 abstract class Car {
