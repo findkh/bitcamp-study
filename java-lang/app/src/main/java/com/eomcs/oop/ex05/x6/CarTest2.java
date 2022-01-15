@@ -12,8 +12,9 @@ public class CarTest2 {
 
     System.out.println("=============");
 
+
     Suv suv = new Suv();
-    //    suv.actvie4wd = true;
+    suv.actvie4wd = false;
     testCar(suv);
   }
 
