@@ -1,5 +1,6 @@
-// 특정 폴더를 생성하여 그 폴더에 파일을 만든다.
+//220117
 package com.eomcs.io.ex01;
+// 특정 폴더를 생성하여 그 폴더에 파일을 만든다.
 
 import java.io.File;
 

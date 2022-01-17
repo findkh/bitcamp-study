@@ -1,5 +1,6 @@
-// 활용 - 지정한 폴더에서 .class 파일만 찾아 출력하라.
+//220117
 package com.eomcs.io.ex01;
+// 활용 - 지정한 폴더에서 .class 파일만 찾아 출력하라.
 
 import java.io.File;
 import java.io.FileFilter;

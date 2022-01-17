@@ -1,5 +1,6 @@
-// 파일 정보 조회 - java.io.File 클래스
+//220117
 package com.eomcs.io.ex01;
+// 파일 정보 조회 - java.io.File 클래스
 
 import java.io.File;
 
@@ -29,9 +30,8 @@ public class Exam0210 {
     System.out.printf("파일여부: %b\n", file1.isFile());
     System.out.printf("감춤여부: %b\n", file1.isHidden());
     System.out.printf("존재여부: %b\n", file1.exists());
-    System.out.printf("실행가능여부: %b\n", file1.canExecute());
+    System.out.printf("실행가능여부: %b\n", file1.canExecute()); //접근할 수 있냐?
   }
-
 }
 
 

@@ -1,5 +1,6 @@
-// 디렉토리 생성
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리 생성
 
 import java.io.File;
 

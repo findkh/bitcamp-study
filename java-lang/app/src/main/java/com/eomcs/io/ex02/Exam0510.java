@@ -1,5 +1,6 @@
-// Byte Stream - 텍스트 출력 하기
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 텍스트 출력 하기
 
 import java.io.FileOutputStream;
 
@@ -33,7 +34,8 @@ public class Exam0510 {
     //
     // JVM에 문자를 입출력할 때 사용하는 기본 문자 집합이 무엇인지 알아 본다.
     System.out.printf("file.encoding=%s\n", System.getProperty("file.encoding"));
-    byte[] bytes = str.getBytes();
+    byte[] bytes = str.getBytes(); //"UTF-8" 적어주는게 좋음.
+    //문자 집합을 지정하지 않으면, file.encoding에 설정된 문자집합으로 인코딩하여 리턴한다.
     //
     // 이클립스: 
     //      UCS2 ==> UTF-8

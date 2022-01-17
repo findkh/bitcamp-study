@@ -1,11 +1,11 @@
-// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기
 
 import java.io.File;
 import java.io.FilenameFilter;
 
 public class Exam0611 {
-
 
   public static void main(String[] args) throws Exception {
 
@@ -19,7 +19,7 @@ public class Exam0611 {
         File file = new File(dir, name);
         // 디렉토리 정보와 이름을 합쳐 파일 객체를 생성할 수 있다.
 
-        if (file.isFile() && name.endsWith(".java"))
+        if (file.isFile() && name.endsWith(".java")) //파일이어야하고 끝에 .java로 끝나야 한다.
           return true; // 조회 결과에 포함시켜라!
         return false; // 조회 결과에서 제외하라!
       }
@@ -37,9 +37,7 @@ public class Exam0611 {
     for (String name : names) {
       System.out.println(name);
     }
-
   }
-
 }
 
 

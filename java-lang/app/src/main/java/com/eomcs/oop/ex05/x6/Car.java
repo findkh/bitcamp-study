@@ -1,7 +1,7 @@
 package com.eomcs.oop.ex05.x6;
 
 public abstract class Car {
-  //Sedan과 Truck의 공통점을 뽑아서 Car 클래스를 만든다.(일반화)
+  //Sedan과 Truck의 공통점을 뽑아서 Car 클래스를 만든다.(일반화 - generalization)
   int cc;
   boolean valve;
 

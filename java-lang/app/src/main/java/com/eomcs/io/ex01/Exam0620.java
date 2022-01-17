@@ -1,11 +1,14 @@
-// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기 II
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기 II
+//FileFilter 사용 : 파라미터가 하나
+// 이름하고 정보가 합쳐서 하나의 파일 객체로 넘어온다.
+//대신 list 사용하지 않고 listFiles을 사용한다
 
 import java.io.File;
 import java.io.FileFilter;
 
 public class Exam0620 {
-
 
   public static void main(String[] args) throws Exception {
 
@@ -39,9 +42,7 @@ public class Exam0620 {
               file.length(),
               file.getName());
     }
-
   }
-
 }
 
 

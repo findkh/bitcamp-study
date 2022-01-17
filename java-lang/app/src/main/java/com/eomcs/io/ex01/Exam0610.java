@@ -1,5 +1,6 @@
-// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리에 들어있는 파일(디렉토리) 목록을 꺼낼 때 필터 적용하기
 
 import java.io.File;
 import java.io.FilenameFilter;
@@ -12,7 +13,7 @@ public class Exam0610 {
     class JavaFilter implements FilenameFilter {
       @Override
       public boolean accept(File dir/* 부모 경로 */, String name /* 파일,디렉토리 이름 */) {
-        // 이 메서드는 list()에서 호출한다.
+        // 이 메서드는 list()에서 호출한다.(파일에서)
         // 해당 폴더에 들어 있는 파일이나 디렉토리를 찾을 때 마다 호출한다.
         // (하위 폴더 아래는 뒤지지 않는다)
         // 이 메서드에서 해야 할 일은 찾은 파일이나 디렉토리를
@@ -21,7 +22,7 @@ public class Exam0610 {
         // false를 리턴하면 배열에 포함되지 않는다.
 
         // 파일,디렉토리 이름이 .java 로 끝나는 경우만 리턴 배열에 포함시키다.
-        if (name.endsWith(".java"))
+        if (name.endsWith("java")) //폴더 이름이 temp.java여도 필터에서 true를 반환한다.
           return true; // 조회 결과에 포함시켜라!
         return false; // 조회 결과에서 제외하라!
       }
@@ -35,6 +36,11 @@ public class Exam0610 {
 
     // 2) 필터를 사용하여 디렉토리의 목록을 가져오기
     String[] names = dir.list(javaFilter);
+    //인터페이스는 객체를를 만들 수 없다. 
+    //ex)
+    //new String("okok");
+    //new File("okok");
+    //new FilenameFilter(); //=> 오류 Cannot instantiate the type FilenameFilter
 
     for (String name : names) {
       System.out.println(name);
@@ -47,7 +53,6 @@ public class Exam0610 {
     // - 해결책?
     //   다음 예제를 보라!
   }
-
 }
 
 

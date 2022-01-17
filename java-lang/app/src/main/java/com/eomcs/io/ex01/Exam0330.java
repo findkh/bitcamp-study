@@ -1,5 +1,6 @@
-// 디렉토리 삭제
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리 삭제
 
 import java.io.File;
 
@@ -7,7 +8,7 @@ public class Exam0330 {
 
   public static void main(String[] args) throws Exception {
 
-    File dir = new File("temp");
+    File dir = new File("temp2/a");
 
     if (dir.delete()) {
       System.out.println("temp 디렉토리를 삭제하였습니다.");
@@ -17,5 +18,4 @@ public class Exam0330 {
       System.out.println("temp 디렉토리를 삭제할 수 없습니다.");
     }
   }
-
 }

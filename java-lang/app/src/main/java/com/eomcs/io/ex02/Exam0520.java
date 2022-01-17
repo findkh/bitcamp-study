@@ -1,13 +1,12 @@
-// Byte Stream - 텍스트 데이터 읽기
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 텍스트 데이터 읽기
 
 import java.io.FileInputStream;
 
 public class Exam0520 {
 
   public static void main(String[] args) throws Exception {
-    StringBuffer strbuf = new StringBuffer();
-
     FileInputStream in = new FileInputStream("sample/ms949.txt");
 
     int b = 0;
@@ -22,11 +21,11 @@ public class Exam0520 {
         b = b << 8 | in.read();
       }
       System.out.printf("%x\n", b);
+
     }
 
     in.close();
 
-    System.out.println(strbuf.toString());
   }
 
 }

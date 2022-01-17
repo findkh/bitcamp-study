@@ -1,5 +1,6 @@
-// Byte Stream - 바이트 배열 읽기
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 바이트 배열 읽기
 
 import java.io.FileInputStream;
 
@@ -32,7 +33,6 @@ public class Exam0220 {
 
     System.out.println();
   }
-
 }
 
 

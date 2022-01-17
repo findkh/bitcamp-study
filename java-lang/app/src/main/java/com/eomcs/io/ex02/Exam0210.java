@@ -1,5 +1,6 @@
-// Byte Stream - 바이트 배열 출력하기
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 바이트 배열 출력하기
 
 import java.io.FileOutputStream;
 
@@ -23,5 +24,4 @@ public class Exam0210 {
     System.out.println("데이터 출력 완료!");
 
   }
-
 }

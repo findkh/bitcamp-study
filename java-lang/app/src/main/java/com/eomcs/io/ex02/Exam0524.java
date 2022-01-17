@@ -1,5 +1,6 @@
-// Byte Stream - 텍스트 데이터 읽기 II
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 텍스트 데이터 읽기 II
 
 import java.io.FileInputStream;
 

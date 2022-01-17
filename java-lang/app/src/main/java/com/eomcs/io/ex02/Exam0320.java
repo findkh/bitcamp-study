@@ -1,5 +1,6 @@
-// Byte Stream - 읽은 데이터를 바이트 배열의 특정 위치에 저장하기
+//220117
 package com.eomcs.io.ex02;
+// Byte Stream - 읽은 데이터를 바이트 배열의 특정 위치에 저장하기
 
 import java.io.FileInputStream;
 
@@ -24,8 +25,8 @@ public class Exam0320 {
 
     System.out.printf("%d\n", count);
 
-    for (int i = 0; i < 20; i++)
-      System.out.printf("%02x ", buf[i]);
+    for (int i = 0; i < 100; i++)
+      System.out.printf("%d : %02x \n", i, buf[i]);
 
     System.out.println();
 

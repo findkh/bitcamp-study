@@ -1,5 +1,6 @@
-// 디렉토리에 들어 있는 파일이나 하위 디렉토리 정보 알아내기 II
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리에 들어 있는 파일이나 하위 디렉토리 정보 알아내기 II
 
 import java.io.File;
 import java.sql.Date;
@@ -18,13 +19,12 @@ public class Exam0520 {
     for (File file : files) {
       System.out.printf("%s   %s %12d %s\n",
           file.isDirectory() ? "d" : "-",
-              new Date(file.lastModified()),
+              new Date(file.lastModified()), 
+              // lastModivied()는 마지막에 수정된 날짜 리턴 값이 long이다.
               file.length(),
               file.getName());
     }
-
   }
-
 }
 
 

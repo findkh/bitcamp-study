@@ -1,5 +1,6 @@
-// 활용 - 지정한 폴더를 삭제하라.
+//220117
 package com.eomcs.io.ex01;
+// 활용 - 지정한 폴더를 삭제하라.
 
 import java.io.File;
 

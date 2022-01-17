@@ -1,5 +1,6 @@
-// 파일 생성
+//220117
 package com.eomcs.io.ex01;
+// 파일 생성
 
 import java.io.File;
 
@@ -16,8 +17,5 @@ public class Exam0410 {
       // 해당 경로에 디렉토리가 없다면 파일을 생성할 수 없다. 예외 발생!
       System.out.println("test.txt 파일을 생성할 수 없습니다.");
     }
-
-
   }
-
 }

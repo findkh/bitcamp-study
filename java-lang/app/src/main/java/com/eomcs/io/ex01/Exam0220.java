@@ -1,5 +1,6 @@
-// 파일 정보 조회 - java.io.File 클래스
+//220117
 package com.eomcs.io.ex01;
+// 파일 정보 조회 - java.io.File 클래스
 
 import java.io.File;
 

@@ -1,5 +1,6 @@
-// 활용 - 클래스 파일 이름을 출력할 때 패키지 이름을 포함하라.
+//220117
 package com.eomcs.io.ex01;
+// 활용 - 클래스 파일 이름을 출력할 때 패키지 이름을 포함하라.
 
 import java.io.File;
 import java.io.FileFilter;

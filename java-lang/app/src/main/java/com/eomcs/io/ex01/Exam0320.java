@@ -1,5 +1,6 @@
-// 디렉토리 생성
+//220117
 package com.eomcs.io.ex01;
+// 디렉토리 생성
 
 import java.io.File;
 
@@ -17,5 +18,4 @@ public class Exam0320 {
       System.out.println("temp/a 디렉토리를 생성할 수 없습니다.");
     }
   }
-
 }

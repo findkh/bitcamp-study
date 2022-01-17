@@ -1,4 +1,5 @@
 package com.eomcs.oop.ex05.x6;
+//슈퍼 클래스를 상속 받아 특별한 클래스를 만드는 specialization
 
 public class Suv extends Car {
   boolean actvie4wd;

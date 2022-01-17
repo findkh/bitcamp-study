@@ -1,5 +1,6 @@
-// FileInputStream 활용 - JPEG 파일 읽기
+//220117
 package com.eomcs.io.ex02;
+// FileInputStream 활용 - JPEG 파일 읽기
 
 import java.io.File;
 import java.io.FileInputStream;
