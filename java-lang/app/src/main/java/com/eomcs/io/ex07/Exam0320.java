@@ -1,5 +1,6 @@
-// 메모리에서 데이터를 읽기 - 읽은 데이터를 Member 객체에 저장한다.
+//220118
 package com.eomcs.io.ex07;
+// 메모리에서 데이터를 읽기 - 읽은 데이터를 Member 객체에 저장한다.
 
 import java.io.ByteArrayInputStream;
 

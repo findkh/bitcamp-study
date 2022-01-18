@@ -1,5 +1,6 @@
-// 데이터 출력 - int 값 출력
+//220118
 package com.eomcs.io.ex04;
+// 데이터 출력 - int 값 출력
 
 import java.io.FileOutputStream;
 
@@ -10,12 +11,11 @@ public class Exam0110 {
 
     int money = 1_3456_7890; // = 0x080557d2
 
-    out.write(money); //항상 출력할 때는 맨 끝 1바이트만 출력한다.
+    out.write(money); //write()메서드는 항상 출력할 때는 맨 끝 1바이트만 출력한다.
 
     out.close();
 
     System.out.println("데이터 출력 완료!");
 
   }
-
 }

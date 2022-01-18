@@ -1,4 +1,5 @@
 package com.eomcs.io.ex06;
+//220118
 
 import java.io.FileOutputStream;
 

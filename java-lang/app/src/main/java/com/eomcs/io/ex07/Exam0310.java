@@ -1,5 +1,6 @@
-// 메모리에서 데이터를 읽기
+//220118
 package com.eomcs.io.ex07;
+// 메모리에서 데이터를 읽기
 
 import java.io.ByteArrayInputStream;
 
@@ -12,6 +13,7 @@ public class Exam0310 {
 
     // 바이트 배열에서 데이터를 읽는 도구
     ByteArrayInputStream in = new ByteArrayInputStream(buf);
+    //파일 대신 메모리에서 읽음
 
     // 보통 바이트 배열에서 데이터를 읽을 때 인덱스를 가지고 직접
     // 바이트 배열의 값을 읽는다.

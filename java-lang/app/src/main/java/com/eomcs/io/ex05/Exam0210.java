@@ -1,5 +1,6 @@
-// DataFileOutputStream을 이용하여 객체 출력 - 인스턴스의 값을 출력
+//220118
 package com.eomcs.io.ex05;
+// DataFileOutputStream을 이용하여 객체 출력 - 인스턴스의 값을 출력
 
 public class Exam0210 {
 

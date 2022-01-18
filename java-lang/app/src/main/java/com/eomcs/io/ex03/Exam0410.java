@@ -1,5 +1,6 @@
-// Character Stream - String 출력하기
+//220118
 package com.eomcs.io.ex03;
+// Character Stream - String 출력하기
 
 import java.io.FileWriter;
 
@@ -15,7 +16,6 @@ public class Exam0410 {
     out.close();
 
     System.out.println("데이터 출력 완료!");
-
+    //String 객체를 주면 UTF-8로 바꿔 출력
   }
-
 }

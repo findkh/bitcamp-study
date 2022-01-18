@@ -1,5 +1,5 @@
 package com.eomcs.io.ex05;
-
+//220118
 import java.io.FileOutputStream;
 
 public class DataFileOutputStream extends FileOutputStream {
@@ -11,7 +11,7 @@ public class DataFileOutputStream extends FileOutputStream {
   public void writeUTF(String str) throws Exception {
     // 상속 받은 write() 메서드를 사용하여 문자열 출력
     byte[] bytes = str.getBytes("UTF-8");
-    this.write(bytes.length);
+    this.write(bytes.length); //몇바이트까지가 이름인지 알기 위해 출력
     this.write(bytes);
   }
 

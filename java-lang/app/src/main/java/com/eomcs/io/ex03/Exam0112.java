@@ -1,5 +1,6 @@
-// character stream - 출력할 문자 집합 설정하기
+//220118
 package com.eomcs.io.ex03;
+// character stream - 출력할 문자 집합 설정하기
 
 import java.io.FileWriter;
 import java.nio.charset.Charset;

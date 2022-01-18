@@ -1,5 +1,6 @@
-// BufferedFileInputStream과 BufferedFileOutputStream을 사용하여 파일 복사 및 시간 측정
+//220118
 package com.eomcs.io.ex06;
+// BufferedFileInputStream과 BufferedFileOutputStream을 사용하여 파일 복사 및 시간 측정
 
 public class Exam0330 {
 
@@ -29,5 +30,4 @@ public class Exam0330 {
     in.close();
     out.close();
   }
-
 }

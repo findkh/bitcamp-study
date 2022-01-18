@@ -1,5 +1,6 @@
-// 객체 출력 - 인스턴스의 값을 출력
+//220118
 package com.eomcs.io.ex05;
+// 객체 출력 - 인스턴스의 값을 출력
 
 import java.io.FileOutputStream;
 
@@ -16,7 +17,9 @@ public class Exam0110 {
     // 인스턴스의 값을 출력하라!
     // 1) 이름 출력 
     byte[] bytes = member.name.getBytes("UTF-8");
-    out.write(bytes.length); // 1 바이트
+    out.write(bytes.length); 
+    // 1 바이트 문자열이 몇바이트인지 알려줌
+    // 이부분이 없으면 읽을 때 문제가 생간다.
     out.write(bytes); // 문자열 바이트 
 
     // 2) 나이 출력 (4바이트)

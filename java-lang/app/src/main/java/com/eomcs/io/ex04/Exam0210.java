@@ -1,5 +1,6 @@
-// 데이터 출력 - int 값 출력 II
+//220118
 package com.eomcs.io.ex04;
+// 데이터 출력 - int 값 출력 II
 
 import java.io.FileOutputStream;
 

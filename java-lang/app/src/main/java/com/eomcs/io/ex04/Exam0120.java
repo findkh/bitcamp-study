@@ -1,5 +1,6 @@
-// 데이터 읽기 - int 값 읽기
+//220118
 package com.eomcs.io.ex04;
+// 데이터 읽기 - int 값 읽기
 
 import java.io.FileInputStream;
 
@@ -11,6 +12,7 @@ public class Exam0120 {
     // Exam0110 실행하여 출력한 데이터를 read()로 읽는다.
     // read()는 1바이트를 읽어 int 값으로 만든 후 리턴한다.
     int value = in.read(); // 실제 리턴한 값은 0xD2이다.
+    //1바이트를 읽은 값을 4바이트에 담아서 리턴한다
 
     in.close();
 

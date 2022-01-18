@@ -1,5 +1,6 @@
-// character stream - 문자 단위로 읽기 
+//220118
 package com.eomcs.io.ex03;
+// character stream - 문자 단위로 읽기 
 
 import java.io.FileReader;
 import java.nio.charset.Charset;

@@ -1,5 +1,6 @@
-// 데이터 출력 - String 출력
+//220118
 package com.eomcs.io.ex04;
+// 데이터 출력 - String 출력
 
 import java.io.FileOutputStream;
 
@@ -15,6 +16,7 @@ public class Exam0410 {
     // => str.getBytes("UTF-8")
     //    UCS2 문자 ===> UTF-8 문자 
     out.write(str.getBytes("UTF-8"));
+    //write는 오버로드 되어 있어서 String을 byte로 출력할 수 있다.
 
     out.close();
 

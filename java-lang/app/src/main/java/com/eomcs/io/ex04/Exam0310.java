@@ -1,5 +1,6 @@
-// 데이터 출력 - long 값 출력
+//220118
 package com.eomcs.io.ex04;
+// 데이터 출력 - long 값 출력
 
 import java.io.FileOutputStream;
 

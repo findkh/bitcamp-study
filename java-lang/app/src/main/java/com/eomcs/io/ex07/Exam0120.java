@@ -1,5 +1,6 @@
-// DataBufferedFileOutputStream을 이용하여 객체 출력
+//220118
 package com.eomcs.io.ex07;
+// DataBufferedFileOutputStream을 이용하여 객체 출력
 
 public class Exam0120 {
 

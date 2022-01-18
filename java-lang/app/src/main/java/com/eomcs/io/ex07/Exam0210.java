@@ -1,5 +1,6 @@
-// DataFileInputStream으로 객체 읽기
+//220118
 package com.eomcs.io.ex07;
+// DataFileInputStream으로 객체 읽기
 
 public class Exam0210 {
 

@@ -1,5 +1,6 @@
-// 데이터 읽기 - long 값 읽기 
+//220118
 package com.eomcs.io.ex04;
+// 데이터 읽기 - long 값 읽기 
 
 import java.io.FileInputStream;
 

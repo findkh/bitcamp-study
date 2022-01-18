@@ -1,5 +1,6 @@
-// DataFileInputStream으로 객체 읽기 - 파일이 데이터를 읽어 인스턴스로 만들기 
+//220118
 package com.eomcs.io.ex05;
+// DataFileInputStream으로 객체 읽기 - 파일이 데이터를 읽어 인스턴스로 만들기 
 
 public class Exam0220 {
 

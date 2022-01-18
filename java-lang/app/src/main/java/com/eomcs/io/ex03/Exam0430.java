@@ -1,5 +1,6 @@
-// Character Stream - 텍스트 읽기 II
+//220118
 package com.eomcs.io.ex03;
+// Character Stream - 텍스트 읽기 II
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -17,7 +18,6 @@ public class Exam0430 {
 
     in.close();
   }
-
 }
 
 
