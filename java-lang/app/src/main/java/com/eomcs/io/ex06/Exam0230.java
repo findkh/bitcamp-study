@@ -1,4 +1,5 @@
 package com.eomcs.io.ex06;
+//220118 220119
 
 public class Exam0230 {
   public static void main(String[] args) throws Exception {

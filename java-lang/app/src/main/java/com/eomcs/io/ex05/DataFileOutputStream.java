@@ -1,5 +1,5 @@
 package com.eomcs.io.ex05;
-//220118
+//220118 220119
 import java.io.FileOutputStream;
 
 public class DataFileOutputStream extends FileOutputStream {

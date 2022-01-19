@@ -1,10 +1,10 @@
-// 포함 관계로 기능 확장하기 - FileInputStream + DataInputStream
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - FileInputStream + DataInputStream
 
 import java.io.FileInputStream;
 
-public class Exam0220 {
-
+public class Exam0220 { //판36
   public static void main(String[] args) throws Exception {
 
     FileInputStream in1 = new FileInputStream("temp/member.data");
@@ -23,5 +23,4 @@ public class Exam0220 {
 
     System.out.println(member);
   }
-
 }

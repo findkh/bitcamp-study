@@ -1,5 +1,5 @@
 package com.eomcs.io.ex06;
-//220118
+//220118 220119
 import java.io.FileOutputStream;
 
 public class Exam0220 {

@@ -1,5 +1,5 @@
 package com.eomcs.io.ex06;
-//220118
+//220118 220119
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -40,7 +40,6 @@ public class BufferedFileInputStream extends FileInputStream {
     //    temp = buf[cursor];
     //    cursor++;
     //    return temp & 0x000000ff;
-
   }
 }
 

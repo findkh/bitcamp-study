@@ -1,9 +1,10 @@
-// 포함 관계로 기능 확장하기 - ByteArrayInputStream + DataInputStream
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - ByteArrayInputStream + DataInputStream
 
 import java.io.ByteArrayInputStream;
 
-public class Exam0230 {
+public class Exam0230 { //판36
 
   public static void main(String[] args) throws Exception {
     byte[] buf = {0x0b, 0x41, 0x42, (byte) 0xea, (byte) 0xb0, (byte) 0x80, (byte) 0xea, (byte) 0xb0,
@@ -37,5 +38,4 @@ public class Exam0230 {
     // => 즉 재사용성이 높고 유지보수가 쉬워진다.
 
   }
-
 }

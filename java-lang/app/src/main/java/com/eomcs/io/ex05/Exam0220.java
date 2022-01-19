@@ -1,9 +1,8 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex05;
 // DataFileInputStream으로 객체 읽기 - 파일이 데이터를 읽어 인스턴스로 만들기 
 
 public class Exam0220 {
-
   public static void main(String[] args) throws Exception {
     DataFileInputStream in = new DataFileInputStream("temp/test4_2.data");
 

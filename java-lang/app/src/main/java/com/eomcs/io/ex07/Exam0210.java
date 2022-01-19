@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex07;
 // DataFileInputStream으로 객체 읽기
 

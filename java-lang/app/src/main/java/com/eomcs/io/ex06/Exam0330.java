@@ -20,7 +20,7 @@ public class Exam0330 {
 
     // 아직 파일로 출력되지 않고 버퍼 남아 있는 데이터를
     // 마무리로 출력한다.
-    // out.flush();
+    out.flush();
 
     long endTime = System.currentTimeMillis();
 

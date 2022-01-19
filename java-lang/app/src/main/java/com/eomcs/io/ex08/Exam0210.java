@@ -1,14 +1,13 @@
-// 포함 관계로 기능 확장하기 - FileOutputStream + DataOutputStream
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - FileOutputStream + DataOutputStream
 
 import java.io.FileOutputStream;
 
-public class Exam0210 {
+public class Exam0210 { //판34)
 
   public static void main(String[] args) throws Exception {
 
-    // FileInputStream
-    // - 파일 저장소에서 데이터를 읽는 일을 한다.
     FileOutputStream out1 = new FileOutputStream("temp/member.data");
 
     // FileOutputStream + DataOutputStream
@@ -29,5 +28,4 @@ public class Exam0210 {
 
     System.out.println("출력 완료!");
   }
-
 }

@@ -1,5 +1,6 @@
-// 포함 관계로 기능 확장하기 - 현재 구조의 문제점
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - 현재 구조의 문제점
 
 import java.io.FileOutputStream;
 
@@ -52,5 +53,4 @@ public class Exam0410 {
     //    좀 더 기능 확장이 쉬워진다.
     // => ex09 예제를 확인하라!
   }
-
 }

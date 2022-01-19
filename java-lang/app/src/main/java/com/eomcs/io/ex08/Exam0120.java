@@ -1,5 +1,6 @@
-// 포함 관계로 기능 확장하기 - BufferedInputStream, BufferedOutputStream
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - BufferedInputStream, BufferedOutputStream
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,10 +10,10 @@ public class Exam0120 {
   public static void main(String[] args) throws Exception {
 
     FileInputStream in = new FileInputStream("temp/jls11.pdf");
-    BufferedInputStream in2 = new BufferedInputStream(in);
+    BufferedInputStream in2 = new BufferedInputStream(in); // 버퍼에 하나씩 담아뒀다가 리턴함
 
     FileOutputStream out = new FileOutputStream("temp/jls11_3.pdf");
-    BufferedOutputStream out2 = new BufferedOutputStream(out);
+    BufferedOutputStream out2 = new BufferedOutputStream(out); //버퍼가 꽉차면 출력함
 
     int b;
 

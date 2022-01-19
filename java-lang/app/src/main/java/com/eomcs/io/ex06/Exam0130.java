@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex06;
 // BufferedFileInputStream 사용 후 - 데이터 읽는데 걸린 시간 측정
 
@@ -32,5 +32,4 @@ public class Exam0130 {
 
     in.close();
   }
-
 }

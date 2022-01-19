@@ -1,10 +1,10 @@
-// 포함 관계로 기능 확장하기 - FileInputStream + BufferedInputStream
+//220119
 package com.eomcs.io.ex08;
+// 포함 관계로 기능 확장하기 - FileInputStream + BufferedInputStream
 
 import java.io.FileInputStream;
 
-public class Exam0110 {
-
+public class Exam0110 { //판32)
   public static void main(String[] args) throws Exception {
 
     // 실제 파일을 읽는 일을 수행하는 객체를 준비한다.
@@ -31,5 +31,4 @@ public class Exam0110 {
 
     in2.close();
   }
-
 }

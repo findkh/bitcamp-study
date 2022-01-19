@@ -8,11 +8,14 @@ public class Exam0120 {
 
   public static void main(String[] args) throws Exception {
 
-    FileInputStream fileIn = new FileInputStream("temp/member.data");
-    DataInputStream in = new DataInputStream(fileIn);
+    //    FileInputStream fileIn = new FileInputStream("temp/member.data");
+    //    DataInputStream in = new DataInputStream(fileIn);
+
+    DataInputStream in = new DataInputStream(new FileInputStream("temp/member.data"));
 
     Member member = new Member();
 
+    //저장한 순서대로 읽어야 한다.
     member.name = in.readUTF();
     member.age = in.readInt();
     member.gender = in.readBoolean();

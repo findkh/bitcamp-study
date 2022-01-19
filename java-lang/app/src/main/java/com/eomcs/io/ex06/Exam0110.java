@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex06;
 // 버퍼 사용 전 - 데이터 읽는데 걸린 시간 측정
 
@@ -28,5 +28,4 @@ public class Exam0110 {
 
     in.close();
   }
-
 }

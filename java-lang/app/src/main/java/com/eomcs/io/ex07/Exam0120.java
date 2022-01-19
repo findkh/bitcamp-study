@@ -1,9 +1,8 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex07;
 // DataBufferedFileOutputStream을 이용하여 객체 출력
 
 public class Exam0120 {
-
   public static void main(String[] args) throws Exception {
     DataBufferedFileOutputStream out = new DataBufferedFileOutputStream("temp/members.data");
 
@@ -27,5 +26,4 @@ public class Exam0120 {
     System.out.println("출력 완료!");
     System.out.printf("경과된 시간: %d\n", end - start);
   }
-
 }

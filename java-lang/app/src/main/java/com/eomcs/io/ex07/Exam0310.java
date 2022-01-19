@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex07;
 // 메모리에서 데이터를 읽기
 
@@ -38,7 +38,5 @@ public class Exam0310 {
     System.out.println();
 
     in.close();
-
   }
-
 }

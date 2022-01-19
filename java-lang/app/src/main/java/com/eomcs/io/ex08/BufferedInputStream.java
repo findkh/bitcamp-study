@@ -1,15 +1,19 @@
 package com.eomcs.io.ex08;
-
+//220119
 import java.io.IOException;
 import java.io.InputStream;
 
-public class BufferedInputStream {
-  InputStream in;
+//판31)
+public class BufferedInputStream { //상속 안받은 독립적인 클래스
+  InputStream in; //다형적 변수의 특징. 자식까지 가리킬 수 있다. 
+  //레퍼런스의 타입이 인터페이스나 추상 클래스라면 자식 클래스를 가리킨다. 
+  //모든 InputStream을 가리킬 수 있다. 
 
   byte[] buf = new byte[8192];
   int size; // 배열에 저장되어 있는 바이트의 수
   int cursor; // 바이트 읽은 배열의 위치
 
+  //생성자
   public BufferedInputStream(InputStream in) {
     this.in = in;
   }

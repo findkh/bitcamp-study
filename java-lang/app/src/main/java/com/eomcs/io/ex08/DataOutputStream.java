@@ -1,12 +1,14 @@
 package com.eomcs.io.ex08;
+//220119
 
 import java.io.IOException;
 import java.io.OutputStream;
 
-public class DataOutputStream {
+public class DataOutputStream { //상속 안받음
 
-  OutputStream out;
+  OutputStream out; 
 
+  //생성자에서 OutputStream을 받아서 보관함
   public DataOutputStream(OutputStream out) throws Exception {
     this.out = out;
   }

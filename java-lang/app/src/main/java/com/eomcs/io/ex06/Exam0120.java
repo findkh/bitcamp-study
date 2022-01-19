@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex06;
 // 버퍼 사용 후 - 데이터 읽는데 걸린 시간 측정
 
@@ -9,7 +9,7 @@ public class Exam0120 {
   public static void main(String[] args) throws Exception {
     FileInputStream in = new FileInputStream("temp/jls11.pdf");
 
-    byte[] buf = new byte[8192]; // 보통 8KB(8192byte) 정도 메모리를 준비한다.
+    byte[] buf = new byte[8192]; // 보통 8KB정도 메모리를 준비한다.
     int len = 0;
 
     long startTime = System.currentTimeMillis(); // 밀리초
@@ -27,5 +27,4 @@ public class Exam0120 {
     System.out.println(callCount);
     in.close();
   }
-
 }

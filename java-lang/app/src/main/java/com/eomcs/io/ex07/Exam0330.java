@@ -1,4 +1,4 @@
-//220118
+//220118 220119
 package com.eomcs.io.ex07;
 // DataByteArrayInputStream 을 사용하기 - 바이트 배열에서 String, int, boolean 값 읽기
 
@@ -32,5 +32,4 @@ public class Exam0330 {
     //    - 상속이 아닌 포함 관계로 변경하라.
 
   }
-
 }
