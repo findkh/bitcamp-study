@@ -1,5 +1,6 @@
-// Java I/O API 사용하기 - DataOutputStream
+//220119
 package com.eomcs.io.ex10;
+// Java I/O API 사용하기 - DataOutputStream
 
 import java.io.DataOutputStream;
 import java.io.FileOutputStream;
@@ -36,7 +37,6 @@ public class Exam0110 {
     System.out.println("데이터 출력 완료!");
     System.out.println(endTime - startTime);
   }
-
 }
 
 // java.io 패키지의 클래스들

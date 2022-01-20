@@ -37,5 +37,4 @@ public class Exam0110 {
 
     System.out.println(member);
   }
-
 }

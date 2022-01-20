@@ -1,5 +1,6 @@
-// 인스턴스 입출력 - 직렬화 유효성 검사
+//220120
 package com.eomcs.io.ex11.c;
+// 인스턴스 입출력 - 직렬화 유효성 검사
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -21,7 +22,6 @@ public class Exam0310 {
 
     System.out.println("출력 완료!");
   }
-
 }
 
 

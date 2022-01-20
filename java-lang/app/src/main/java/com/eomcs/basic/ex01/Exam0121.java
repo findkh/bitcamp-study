@@ -1,8 +1,6 @@
-// Object 클래스 - toString() 을 오버라이딩 할 때 
+//220120
 package com.eomcs.basic.ex01;
-
-
-
+// Object 클래스 - toString() 을 오버라이딩 할 때 
 public class Exam0121 {
 
   static class My {
@@ -15,6 +13,8 @@ public class Exam0121 {
     public String toString() {
       return "My [name=" + name + ", age=" + age + "]";
     }
+    //재정의 하지 않으면 Object의 toString()을 사용한다.
+    //패키지명.클래스명@16진수해시값
   }
 
   public static void main(String[] args) {
@@ -32,7 +32,6 @@ public class Exam0121 {
     // 따라서 그냥 객체(주소)를 넘겨줘도 된다.
     System.out.println(obj1);
   }
-
 }
 
 

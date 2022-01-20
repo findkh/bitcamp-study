@@ -1,5 +1,6 @@
-// Object 클래스의 메서드를 오버라이딩 하기 - equals()
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스의 메서드를 오버라이딩 하기 - equals()
 
 import java.util.Objects;
 

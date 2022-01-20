@@ -1,5 +1,6 @@
-// java.io.Serializable 처럼 사용되는 인터페이스 : java.lang.Cloneable 인터페이스
+//220119
 package com.eomcs.io.ex11.b;
+// java.io.Serializable 처럼 사용되는 인터페이스 : java.lang.Cloneable 인터페이스
 
 public class Exam0232 {
 

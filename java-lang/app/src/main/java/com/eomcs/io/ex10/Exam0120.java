@@ -1,5 +1,6 @@
-// Java I/O API 사용하기 - BufferedOutputStream
+//220119
 package com.eomcs.io.ex10;
+// Java I/O API 사용하기 - BufferedOutputStream
 
 import java.io.BufferedOutputStream;
 import java.io.DataOutputStream;
@@ -33,5 +34,4 @@ public class Exam0120 {
     System.out.println("데이터 출력 완료!");
     System.out.println(endTime - startTime);
   }
-
 }

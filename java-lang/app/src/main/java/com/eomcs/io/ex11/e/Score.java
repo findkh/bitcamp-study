@@ -1,5 +1,5 @@
 package com.eomcs.io.ex11.e;
-
+//220120
 import java.io.Serializable;
 
 public class Score implements Serializable {
@@ -46,8 +46,6 @@ public class Score implements Serializable {
     return "Score [name=" + name + ", kor=" + kor + ", eng=" + eng + ", math=" + math + ", sum="
         + sum + ", aver=" + aver + "]";
   }
-
-
 }
 
 

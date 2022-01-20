@@ -1,5 +1,6 @@
-// Object 클래스의 메서드를 오버라이딩 하기 - toString()
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스의 메서드를 오버라이딩 하기 - toString()
 
 public class Exam0123 {
 
@@ -26,7 +27,7 @@ public class Exam0123 {
     // => 프로그램을 실행하는 중에 인스턴스의 내부 값을 빠르게 확인하고 싶을 때 
     //    개발자들이 종종 이 메서드를 오버라이딩 한다.
     //
-    @Override
+    @Override //인스턴스의 값을 간단히 확인하기 위해 오버라이딩 한다. 필드값 출력 용도
     public String toString() {
       return String.format("%s,%d,%d,%d,%d,%.1f",
           this.name, this.kor, this.eng, this.math, 
@@ -35,13 +36,13 @@ public class Exam0123 {
   }
 
   public static void main(String[] args) {
-    
+
     Score s1 = new Score("홍길동", 100, 100, 100);
-    
+
     String str = s1.toString();
     // Score 클래스에서 Object의 toString()을 오버라이딩 했기 때문에,
     // Score의 toString()을 호출한다.
-    
+
     System.out.println(str);
 
     // println()에 String이 아닌 객체를 넘기면,

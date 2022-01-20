@@ -1,5 +1,6 @@
-// 인스턴스 입출력 - 'transient' modifier
+//220120
 package com.eomcs.io.ex11.e;
+// 인스턴스 입출력 - 'transient' modifier
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -17,6 +18,8 @@ public class Exam0510 {
     s.math = 92;
     s.compute();
 
+    System.out.println(s);
+
     // serialize 대상에서 제외된 필드(transient가 붙은 필드)는 
     // 다음과 같이 임의로 값을 설정해봐야 소용없다.
     s.sum = 300;
@@ -28,7 +31,6 @@ public class Exam0510 {
     out.close();
     System.out.println("출력 완료!");
   }
-
 }
 
 

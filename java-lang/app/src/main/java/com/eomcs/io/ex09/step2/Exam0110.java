@@ -1,5 +1,6 @@
-// 데코레이터 패턴 적용 II - 데코레이터 객체의 공통 기능을 수퍼 클래스로 추출하여 추상 클래스로 정의한다.
+//220119
 package com.eomcs.io.ex09.step2;
+// 데코레이터 패턴 적용 II - 데코레이터 객체의 공통 기능을 수퍼 클래스로 추출하여 추상 클래스로 정의한다.
 
 import java.io.FileInputStream;
 
@@ -35,5 +36,4 @@ public class Exam0110 {
 
     System.out.println(member);
   }
-
 }

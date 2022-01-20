@@ -1,5 +1,6 @@
-// 인스턴스 입출력 - serialVersionUID의 사용법
+//220120
 package com.eomcs.io.ex11.d;
+// 인스턴스 입출력 - serialVersionUID의 사용법
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -22,7 +23,6 @@ public class Exam0410 {
 
     System.out.println("출력 완료!");
   }
-
 }
 
 

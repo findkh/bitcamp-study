@@ -1,5 +1,6 @@
-// 인스턴스 입출력 - ObjectOutputStream으로 인스턴스 출력하기
+//220119
 package com.eomcs.io.ex11.b;
+// 인스턴스 입출력 - ObjectOutputStream으로 인스턴스 출력하기
 
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
@@ -43,7 +44,6 @@ public class Exam0210 {
     out.close();
     System.out.println("데이터 출력 완료!");
   }
-
 }
 
 

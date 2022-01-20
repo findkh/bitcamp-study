@@ -1,5 +1,6 @@
-// Java I/O API : FileInputStream --> BufferedInputStream --> DataInputStream
+//220119
 package com.eomcs.io.ex10;
+// Java I/O API : FileInputStream --> BufferedInputStream --> DataInputStream
 
 import java.io.BufferedInputStream;
 import java.io.DataInputStream; // Data Processing Stream Class = Decorator

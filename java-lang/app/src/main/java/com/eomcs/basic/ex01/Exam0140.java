@@ -1,9 +1,10 @@
-// Object 클래스 - hashCode()에 대하여
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스 - hashCode()에 대하여
 
 public class Exam0140 {
 
-  static class My {
+  static class My { //Object 메서드 그대로 쓰겠다. 오버라이딩 안함.
     String name;
     int age;
   }
@@ -20,10 +21,15 @@ public class Exam0140 {
     // Object에서 상속 받은 hashCode()는 인스턴스마다 고유의 4바이트 정수 값을 리턴한다.
     // => 이 값은 toString()의 출력 값으로 사용된다.
     System.out.println(Integer.toHexString(obj1.hashCode()));
+    //그냥 println으로 출력하면 10진수로 출력된다
     System.out.println(Integer.toHexString(obj2.hashCode()));
 
-    System.out.println(obj1);
+    System.out.println(obj1); //toString이 리턴한 문자열로 바꿔서 출력한다. 
     System.out.println(obj2);
+
+    //cf. 인스턴스가 달라도 해시코드를 갖게 만들 수 있다.
+    //해시코드는 인스턴스 주소가 아니다.
+
 
     // hash value?
     // - 데이터를 다른 데이터와 구분하기 위해 사용하는 특별한 정수 값이다.
@@ -55,7 +61,6 @@ public class Exam0140 {
     // - 해시 알고리즘
     //   => SHA, MD, PGP 등 
   }
-
 }
 
 

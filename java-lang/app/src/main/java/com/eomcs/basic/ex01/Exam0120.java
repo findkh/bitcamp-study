@@ -1,12 +1,10 @@
-// Object 클래스 - toString() 메서드에 대하여
+//220120
 package com.eomcs.basic.ex01;
-
-
+// Object 클래스 - toString() 메서드에 대하여
 
 public class Exam0120 {
-
   static class My {
-
+    //인스턴스 필드가 없더라도 클래스 정보 등을 저장한 기본 객체가 생성된다.
   }
 
   public static void main(String[] args) {
@@ -37,12 +35,11 @@ public class Exam0120 {
     My obj2 = new My();
     My obj3 = new My();
 
-    System.out.println(obj2 == obj3);
+    System.out.println(obj2 == obj3); // 인스턴스는 다르다.
 
     System.out.println(obj2.toString());
     System.out.println(obj3.toString());
   }
-
 }
 
 

@@ -1,5 +1,6 @@
-// 인스턴스 입출력 - 'transient' modifier
+//220120
 package com.eomcs.io.ex11.e;
+// 인스턴스 입출력 - 'transient' modifier
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
@@ -28,7 +29,6 @@ public class Exam0520 {
     // => 그러니 번거롭다 생각말고 다른 인스턴스 변수의 값으로 계산한 결과는
     //    가능한 출력하지 말고, 읽을 때 다시 계산하도록 하라!
   }
-
 }
 
 

@@ -1,5 +1,6 @@
-// Object 클래스 - hashCode() 오버라이딩
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스 - hashCode() 오버라이딩
 
 public class Exam0141 {
 
@@ -15,6 +16,7 @@ public class Exam0141 {
       //
       String str = String.format("%s,%d", this.name, this.age);
       return str.hashCode();
+      //인스턴스가 다르면 다른 해시코드를 내보낸다
     }
   }
 
@@ -28,7 +30,7 @@ public class Exam0141 {
     obj2.age = 20;
 
     System.out.println(obj1 == obj2); // false
-    System.out.println(obj1.equals(obj2)); // false
+    System.out.println(obj1.equals(obj2)); // false object의 equals
 
     System.out.println(Integer.toHexString(obj1.hashCode()));
     System.out.println(Integer.toHexString(obj2.hashCode()));
@@ -65,7 +67,6 @@ public class Exam0141 {
     // - 해시 알고리즘
     //   => SHA, MD, PGP 등 
   }
-
 }
 
 

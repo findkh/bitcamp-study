@@ -1,5 +1,6 @@
-// Object 클래스 - hashCode() 오버라이딩
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스 - hashCode() 오버라이딩
 
 import java.util.Objects;
 
@@ -46,7 +47,6 @@ public class Exam0142 {
       return age == other.age && Objects.equals(name, other.name);
     }
   }
-
 }
 
 

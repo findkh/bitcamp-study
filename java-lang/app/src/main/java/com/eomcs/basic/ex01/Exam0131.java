@@ -1,10 +1,10 @@
-// Object 클래스 - equals() 오버라이딩 
+//220120
 package com.eomcs.basic.ex01;
+// Object 클래스 - equals() 오버라이딩 
 
 import java.util.Objects;
 
 public class Exam0131 {
-
   public static void main(String[] args) {
     My obj1 = new My();
     obj1.name = "홍길동";
@@ -48,14 +48,12 @@ public class Exam0131 {
         return false;
       if (getClass() != obj.getClass())
         return false;
-      My other = (My) obj;
+      My other = (My) obj; //형변환 후 필드 값을 확인해봄
       return age == other.age && Objects.equals(email, other.email) && gender == other.gender
           && Objects.equals(name, other.name) && Objects.equals(tel, other.tel)
           && working == other.working;
     }
-
   }
-
 }
 
 
