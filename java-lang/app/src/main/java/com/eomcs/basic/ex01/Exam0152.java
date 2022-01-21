@@ -1,4 +1,4 @@
-//220120
+//220120 220121
 package com.eomcs.basic.ex01;
 // hash code 응용 II - HashMap의 key와 hashCode()
 
@@ -24,7 +24,7 @@ public class Exam0152 {
     HashMap<MyKey,Student> map = new HashMap<>();
 
     MyKey k1 = new MyKey("ok");
-    MyKey k2 = new MyKey("no");
+    MyKey k2 = new MyKey("no"); 
     MyKey k3 = new MyKey("haha");
     MyKey k4 = new MyKey("ohora");
     MyKey k5 = new MyKey("hul");

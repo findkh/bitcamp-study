@@ -1,5 +1,5 @@
-// Wrapper 클래스 - primitive type 을 객체로 다루기
 package com.eomcs.basic.ex02;
+// Wrapper 클래스 - primitive type 을 객체로 다루기
 
 public class Exam0211 {
   public static void main(String[] args) {
@@ -45,7 +45,7 @@ public class Exam0211 {
 
   // wapper 클래스는 primitive type의 값을 객체로 다룰 수 있게 해준다.
   // primitive type에 상관없이 Object 타입의 파라미터로 값을 받을 수 있다.
-  static void m(Object value) { // 모든 객체를 받을 수 있다.
+  static void m(Object value) { // 다형적 변수 : 모든 객체를 받을 수 있다. 인스턴스를 사용하는 이유
     System.out.printf("wrapper value=%s\n", value);
   }
 }

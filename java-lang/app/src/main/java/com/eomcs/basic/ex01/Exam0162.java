@@ -1,5 +1,6 @@
-// Object 클래스 - getClass() 와 배열의 항목 이름
+//220121
 package com.eomcs.basic.ex01;
+// Object 클래스 - getClass() 와 배열의 항목 이름
 
 public class Exam0162 {
 

@@ -1,9 +1,9 @@
-// Object 클래스 - clone() : deep copy
 package com.eomcs.basic.ex01;
+// Object 클래스 - clone() : deep copy
 
 public class Exam0174 {
 
-  static class Engine implements Cloneable {
+  static class Engine implements Cloneable { //복제 기능 활성화
     int cc;
     int valve;
 
@@ -23,7 +23,7 @@ public class Exam0174 {
     }
   }
 
-  static class Car implements Cloneable {
+  static class Car implements Cloneable { //복제 기능 활성화
     String maker;
     String name;
     Engine engine;
@@ -43,10 +43,10 @@ public class Exam0174 {
     public Car clone() throws CloneNotSupportedException {
       // deep copy
       // => 포함하고 있는 하위 객체에 대한 복제를 수행하려면 다음과 같이 
-      //    개발자가 직접 하위 객체를 복제하는 코드를 작성해야 한다.
+      //    개발자가 직접 포함하는 객체를 복제하는 코드를 작성해야 한다.
       // 
       Car copy = (Car) super.clone();
-      copy.engine = this.engine.clone();
+      copy.engine = this.engine.clone();//엔진도 복제해서 카페한 곳에 엔진 넣어 리턴
       return copy;
     }
   }
@@ -62,7 +62,7 @@ public class Exam0174 {
     System.out.println(car == car2);
     System.out.println(car);
     System.out.println(car2);
-    System.out.println(car.engine == car2.engine);
+    System.out.println(car.engine == car2.engine); //engine 주소가 다르다.
 
     // car의 엔진과 car2의 엔진이 다른 엔진인지 확인해보자!
     car.engine.cc = 2000;

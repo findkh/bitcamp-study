@@ -1,5 +1,6 @@
-// Object 클래스 - clone() 사용법 I 
+//220121
 package com.eomcs.basic.ex01;
+// Object 클래스 - clone() 사용법 I 
 
 // clone()은 인스턴스를 복제할 때 호출하는 메서드이다.
 

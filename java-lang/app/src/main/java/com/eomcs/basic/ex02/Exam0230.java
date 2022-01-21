@@ -1,5 +1,5 @@
-// Wrapper 클래스 - wrapper 객체 생성
 package com.eomcs.basic.ex02;
+// Wrapper 클래스 - wrapper 객체 생성
 
 public class Exam0230 {
 

@@ -1,5 +1,5 @@
-// Wrapper 클래스 - wrapper 객체에 들어 있는 primitive type의 값 꺼내기
 package com.eomcs.basic.ex02;
+// Wrapper 클래스 - wrapper 객체에 들어 있는 primitive type의 값 꺼내기
 
 public class Exam0212 {
   public static void main(String[] args) {
@@ -13,9 +13,9 @@ public class Exam0212 {
     boolean bool = obj3.booleanValue();
 
     // 문자열로 꺼내기
-    String s1 = obj1.toString();
-    String s2 = obj2.toString();
-    String s3 = obj3.toString();
+    String s1 = obj1.toString(); //Object의 toString()이 아니다. Long에서 오버라이딩한 toString()이다.
+    String s2 = obj2.toString(); //Object의 toString()이 아니다. Double에서 오버라이딩한 toString()이다.
+    String s3 = obj3.toString(); //Object의 toString()이 아니다. Boolean에서 오버라이딩한 toString()이다.
 
     // 다른 진수로 변환하여 문자열로 꺼내기
     System.out.println(Integer.toHexString(i));

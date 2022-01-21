@@ -1,5 +1,6 @@
-// Object 클래스 - getClass() 와 배열
+//220121
 package com.eomcs.basic.ex01;
+// Object 클래스 - getClass() 와 배열
 
 public class Exam0161 {
 
@@ -13,6 +14,8 @@ public class Exam0161 {
     String[] obj2 = new String[10];
     classInfo = obj2.getClass();
     System.out.println(classInfo.getName()); //[Ljava.lang.String;
+    //배열은 대괄호가 없다. 
+    //array라는 의미에서 L이붙고 String타입이라 알려준다.
 
     //    int i = 100;
     //    classInfo = i.getClass(); // primitive type은 Object의 서브 클래스가 아니다.

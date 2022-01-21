@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex07;
-//211220
+//211220 220121
 // # 메서드 : main() 메서드 - 프로그램 아규먼트 응용 I
 //
 public class Exam0530 {

@@ -1,9 +1,9 @@
-// Wrapper 클래스 - 종류
 package com.eomcs.basic.ex02;
+// Wrapper 클래스 - 종류
 
 public class Exam0210 {
   public static void main(String[] args) {
-    // 자바는 primitive data 를 객체처럼 다룰 수 있도록
+    // 자바는 primitive type의 data 를 객체처럼 다룰 수 있도록
     // 각 타입에 대응하는 클래스를 제공한다.
     // 예)
     Byte b = new Byte((byte)100);               // ==> byte
@@ -32,6 +32,8 @@ public class Exam0210 {
 
 
     // Wrapper 클래스의 인스턴스를 생성할 때는 생성자 대신 클래스 메서드를 사용하라.
+    byte x = 100; //ok 할당연산자를 사용할 때는 값을 넣으려할 때는 가능
+    //Byte x2 = Byte.valueOf(100); // 오류 아규먼트로 넘길 때는 허용 안함    
     Byte b2 = Byte.valueOf((byte)100);
     Short s2 = Short.valueOf((short)20000);
     Integer i2 = Integer.valueOf(3000000);
