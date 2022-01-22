@@ -1,3 +1,4 @@
+//220121 220122
 package com.eomcs.basic.ex02;
 // Wrapper 클래스 - wrapper 객체의 값 비교
 
@@ -13,7 +14,7 @@ public class Exam0231 {
     // 단, -128 ~ 127 범위의 값에 대해서만 적용된다.
 
     // 그러나 다음과 같이 new 연산자로 만든 wrapper 객체는
-    // 값이 같더라도 인스턴스가 따로 생성되기 때문에,
+    // (-128~127 안따지고)값이 같더라도 인스턴스가 따로 생성되기 때문에,
     Integer obj3 = new Integer(100); // Heap에 인스턴스 생성
     Integer obj4 = new Integer(100); // Heap에 인스턴스 생성
 

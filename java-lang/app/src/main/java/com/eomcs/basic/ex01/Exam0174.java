@@ -1,3 +1,4 @@
+//220121 220122
 package com.eomcs.basic.ex01;
 // Object 클래스 - clone() : deep copy
 
@@ -46,7 +47,7 @@ public class Exam0174 {
       //    개발자가 직접 포함하는 객체를 복제하는 코드를 작성해야 한다.
       // 
       Car copy = (Car) super.clone();
-      copy.engine = this.engine.clone();//엔진도 복제해서 카페한 곳에 엔진 넣어 리턴
+      copy.engine = this.engine.clone();//엔진도 복제해서 카피한 곳에 엔진 넣어 리턴
       return copy;
     }
   }

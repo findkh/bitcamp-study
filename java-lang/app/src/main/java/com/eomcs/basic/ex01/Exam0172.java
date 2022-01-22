@@ -1,5 +1,6 @@
-// Object 클래스 - clone() 사용법 III
+//220122
 package com.eomcs.basic.ex01;
+// Object 클래스 - clone() 사용법 III
 
 public class Exam0172 {
 

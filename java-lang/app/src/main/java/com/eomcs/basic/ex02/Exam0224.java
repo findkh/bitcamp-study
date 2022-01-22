@@ -1,5 +1,6 @@
-// Wrapper 클래스 - 오토박싱(auto-boxing)/오토언박싱(auto-unboxing) 응용
+//220121 220122
 package com.eomcs.basic.ex02;
+// Wrapper 클래스 - 오토박싱(auto-boxing)/오토언박싱(auto-unboxing) 응용
 
 public class Exam0224 {
 
