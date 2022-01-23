@@ -1,4 +1,4 @@
-//220106
+//220106 //220123
 package com.eomcs.basic.ex02;
 // StringBuffer - 문자열 비교
 

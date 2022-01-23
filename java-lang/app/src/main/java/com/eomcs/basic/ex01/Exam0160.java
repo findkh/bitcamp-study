@@ -1,4 +1,4 @@
-//220121
+//220121 220123
 package com.eomcs.basic.ex01;
 // Object 클래스 - getClass() : 해당 클래스의 정보를 리턴한다.
 

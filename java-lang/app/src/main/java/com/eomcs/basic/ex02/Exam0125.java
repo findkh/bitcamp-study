@@ -1,5 +1,6 @@
-// StringBuffer - 문자열 비교 II
+//220123
 package com.eomcs.basic.ex02;
+// StringBuffer - 문자열 비교 II
 
 public class Exam0125 {
   public static void main(String[] args) {

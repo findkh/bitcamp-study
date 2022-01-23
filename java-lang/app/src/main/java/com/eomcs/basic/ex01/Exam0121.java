@@ -1,4 +1,4 @@
-//220120
+//220120 220123
 package com.eomcs.basic.ex01;
 // Object 클래스 - toString() 을 오버라이딩 할 때 
 public class Exam0121 {
@@ -15,6 +15,7 @@ public class Exam0121 {
     }
     //재정의 하지 않으면 Object의 toString()을 사용한다.
     //패키지명.클래스명@16진수해시값
+    //오른쪽 마우스 클릭 Source -> Generate toString() 
   }
 
   public static void main(String[] args) {

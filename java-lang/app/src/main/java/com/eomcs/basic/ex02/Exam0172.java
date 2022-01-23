@@ -1,5 +1,6 @@
-// String - 기타 메서드 : Arrays.copyOfRange()
+//220123
 package com.eomcs.basic.ex02;
+// String - 기타 메서드 : Arrays.copyOfRange()
 
 import java.util.Arrays;
 

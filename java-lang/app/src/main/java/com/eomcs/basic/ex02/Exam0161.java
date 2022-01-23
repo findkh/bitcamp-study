@@ -1,5 +1,6 @@
-// String - mutable vs immutable 객체
+//220123
 package com.eomcs.basic.ex02;
+// String - mutable vs immutable 객체
 
 public class Exam0161 {
   public static void main(String[] args) {

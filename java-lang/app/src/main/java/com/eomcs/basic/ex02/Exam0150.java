@@ -1,5 +1,6 @@
-// String - equals(), hashCode()
+//220123
 package com.eomcs.basic.ex02;
+// String - equals(), hashCode()
 
 public class Exam0150 {
 

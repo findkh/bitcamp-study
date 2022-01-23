@@ -1,5 +1,6 @@
-// String - String.equals() vs Object.equals()
+//220123
 package com.eomcs.basic.ex02;
+// String - String.equals() vs Object.equals()
 
 public class Exam0122 {
 

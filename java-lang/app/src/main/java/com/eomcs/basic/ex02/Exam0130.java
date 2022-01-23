@@ -1,5 +1,6 @@
-// String - hashCode()
+//220123
 package com.eomcs.basic.ex02;
+// String - hashCode()
 
 public class Exam0130 {
   public static void main(String[] args) {

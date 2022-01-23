@@ -1,5 +1,6 @@
-// String - 다형적 변수와 형변환
+//220123
 package com.eomcs.basic.ex02;
+// String - 다형적 변수와 형변환
 
 public class Exam0142 {
   public static void main(String[] args) {

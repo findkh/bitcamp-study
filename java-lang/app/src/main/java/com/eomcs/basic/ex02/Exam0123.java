@@ -1,5 +1,6 @@
-// String - String.equals() 처럼 동작하게 만들기
+//220123
 package com.eomcs.basic.ex02;
+// String - String.equals() 처럼 동작하게 만들기
 
 import java.util.Objects;
 

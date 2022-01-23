@@ -1,5 +1,6 @@
-// String - 기타 메서드
+//220123
 package com.eomcs.basic.ex02;
+// String - 기타 메서드
 
 public class Exam0170 {
   public static void main(String[] args) {

@@ -1,5 +1,6 @@
-// String - toString()
+//220123
 package com.eomcs.basic.ex02;
+// String - toString()
 
 public class Exam0140 {
   public static void main(String[] args) {

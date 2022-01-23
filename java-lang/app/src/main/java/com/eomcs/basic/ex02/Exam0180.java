@@ -1,5 +1,6 @@
-// String - 다양한 생성자 활용
+//220123
 package com.eomcs.basic.ex02;
+// String - 다양한 생성자 활용
 
 public class Exam0180 {
   public static void main(String[] args) throws Exception {
@@ -20,7 +21,7 @@ public class Exam0180 {
     System.out.printf("s3=%s\n", s3);
 
     byte[] bytes =
-        {(byte) 0xb0, (byte) 0xa1, (byte) 0xb0, (byte) 0xa2, 0x30, 0x31, 0x32, 0x41, 0x42, 0x43};
+      {(byte) 0xb0, (byte) 0xa1, (byte) 0xb0, (byte) 0xa2, 0x30, 0x31, 0x32, 0x41, 0x42, 0x43};
     // 문자 코드 값이 저장된 바이트 배열로 String 인스턴스 생성
     String s4 = new String(bytes);
     System.out.printf("s4=%s\n", s4);
@@ -38,7 +39,7 @@ public class Exam0180 {
     System.out.printf("s5=%s\n", s5);
 
     byte[] bytes2 =
-        {(byte) 0xac, (byte) 0x00, (byte) 0xac, (byte) 0x01, 0x00, 0x61, 0x00, 0x62, 0x00, 0x63};
+      {(byte) 0xac, (byte) 0x00, (byte) 0xac, (byte) 0x01, 0x00, 0x61, 0x00, 0x62, 0x00, 0x63};
 
     // 바이트 배열에 들어 있는 코드는 무슨 문자표로 작성했는지 정확하게 알려줘야 한다.
     // 그래야 자바의 문자 코드로 제대로 변경할 수 있을 것이다.
