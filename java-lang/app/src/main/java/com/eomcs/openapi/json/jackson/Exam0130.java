@@ -1,5 +1,6 @@
-// JSON 문자열 --> 객체 : JSON 문자열에는 클래스 정보가 없다.
+//220124
 package com.eomcs.openapi.json.jackson;
+// JSON 문자열 --> 객체 : JSON 문자열에는 필드 정보는 있지만 클래스 정보가 없다.
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -34,6 +35,7 @@ public class Exam0130 {
     System.out.println(b);
   }
 }
+
 
 
 

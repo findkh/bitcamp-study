@@ -2,13 +2,13 @@ package com.eomcs.util;
 
 public class ArrayList implements java.io.Serializable {
 
-  //인스턴스 필드(변수)
-  // 인스턴스 필드는 new 명령을 통해 생성한다.
   Object[] list = new Object[5];
   int size = 0;
 
+  //기본 생성자
   public ArrayList() {}
 
+  //배열을 주면서 ArrayList[] 만들어 달라고 하면 쓰는 생성자
   public ArrayList(Object[] arr) {
     this.addAll(arr);
   }
@@ -20,6 +20,8 @@ public class ArrayList implements java.io.Serializable {
     this.list[this.size++] = obj;
   }
 
+  //addAll 추가
+  //배열을 파라미터로 받으면 바로 add() 메서드 호출해서 배열을 만든다.
   public void addAll(Object[] arr) {
     for (Object obj : arr) {
       this.add(obj);

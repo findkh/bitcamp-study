@@ -1,5 +1,6 @@
-// 객체 --> JSON 문자열 : 객체의 필드 값을 json 형식의 문자열로 만들기
+//220124
 package com.eomcs.openapi.json.jackson;
+// 객체 --> JSON 문자열 : 객체의 필드 값을 json 형식의 문자열로 만들기
 
 import java.sql.Date;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -22,6 +23,8 @@ public class Exam0110 {
 
     // 3) 객체의 값을 JSON 문자열로 얻기
     String jsonStr = mapper.writeValueAsString(m);
+    //jackson의 기본 날짜 타입이 밀리세컨드이다.
+    //gson은 변환 필요 없음
 
     System.out.println(jsonStr);
   }

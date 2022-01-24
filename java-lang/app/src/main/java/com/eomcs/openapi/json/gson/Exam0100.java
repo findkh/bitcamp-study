@@ -1,5 +1,6 @@
-// JSON 라이브러리 준비 - Gson 라이브러러 가져오기
+//220124
 package com.eomcs.openapi.json.gson;
+// JSON 라이브러리 준비 - Gson 라이브러러 가져오기
 
 import com.google.gson.Gson;
 

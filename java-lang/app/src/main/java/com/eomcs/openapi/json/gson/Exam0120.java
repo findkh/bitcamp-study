@@ -1,5 +1,6 @@
-// JSON 문자열 --> 객체 : JSON 문자열을 해석하여 객체를 생성하기
+//220124
 package com.eomcs.openapi.json.gson;
+// JSON 문자열 --> 객체 : JSON 문자열을 해석하여 객체를 생성하기
 
 import com.eomcs.openapi.json.jackson.Member;
 import com.google.gson.Gson;
@@ -13,7 +14,7 @@ public class Exam0120 {
     // 2) JSON 처리 객체 준비
     Gson gson = new Gson();
 
-    // 3) JSON 문자열을 가지고 객체 만들기 
+    // 3) JSON 문자열을 가지고 객체 만들기 (문자열과 클래스 정보를 파라미터로 넘김)
     Member m = gson.fromJson(jsonStr, Member.class);
 
     System.out.println(m);

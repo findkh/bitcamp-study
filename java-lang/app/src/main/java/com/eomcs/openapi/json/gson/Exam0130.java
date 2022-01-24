@@ -1,5 +1,6 @@
-// JSON 문자열 --> 객체 : JSON 문자열에는 클래스 정보가 없다.
+//220124
 package com.eomcs.openapi.json.gson;
+// JSON 문자열 --> 객체 : JSON 문자열에는 클래스 정보가 없다.
 
 import com.eomcs.openapi.json.jackson.Board;
 import com.google.gson.Gson;
