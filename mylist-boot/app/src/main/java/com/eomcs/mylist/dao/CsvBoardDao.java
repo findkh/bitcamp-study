@@ -11,19 +11,18 @@ import com.eomcs.util.ArrayList;
 public class CsvBoardDao {
   ArrayList boardList = new ArrayList();
 
+  //생성자 : 기존 boardController에 있던 것 옮겨와서 수정함.
   public CsvBoardDao() {
     try {
       BufferedReader in = new BufferedReader(new FileReader("boards.csv"));
 
       String csvStr;
-      while ((csvStr = in.readLine()) != null) {
-        boardList.add(Board.valueOf(csvStr));
+      while ((csvStr = in.readLine()) != null) { //readLine()은 스트림을 다 읽으면 null을 리턴함
+        boardList.add(Board.valueOf(csvStr)); 
       }
-
       in.close();
     } catch (Exception e) {
-      System.out.println("게시글 데이터 로딩 중 오류 발생");
-      e.printStackTrace();
+      System.out.println("게시글 데이터 로딩 중 오류발생");
     }
   }
 
@@ -34,7 +33,7 @@ public class CsvBoardDao {
       Board board = (Board) boardList.get(i);
       out.println(board.toCsvString());
     }
-    out.flush();
+    out.flush(); //버퍼에 남은 데이터 모두 출력
     out.close();
   }
 
@@ -54,7 +53,7 @@ public class CsvBoardDao {
     if (no < 0 || no >= boardList.size()) {
       return null;
     }
-    return (Board) boardList.get(no);
+    return(Board) boardList.get(no);
   }
 
   public int update(int no, Board board) {
@@ -72,6 +71,4 @@ public class CsvBoardDao {
     boardList.remove(no);
     return 1;
   }
-
-
 }
