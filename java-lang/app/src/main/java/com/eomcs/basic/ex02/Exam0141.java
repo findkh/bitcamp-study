@@ -1,4 +1,4 @@
-//220123
+//220123 220124
 package com.eomcs.basic.ex02;
 // String - toString(): 다형적 변수와 형변환
 

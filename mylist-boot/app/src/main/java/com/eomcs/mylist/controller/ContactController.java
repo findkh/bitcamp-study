@@ -1,15 +1,15 @@
 package com.eomcs.mylist.controller;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.PrintWriter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.eomcs.mylist.domain.Contact;
 import com.eomcs.util.ArrayList;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 @RestController
@@ -22,11 +22,13 @@ public class ContactController {
     System.out.println("ContactController() 호출됨!");
 
     try {
-      ObjectInputStream in = new ObjectInputStream(new BufferedInputStream(new FileInputStream ("contacts.ser2")));
+      BufferedReader in = new BufferedReader(new FileReader ("contacts.json"));
+      ObjectMapper mapper = new ObjectMapper();
 
-      contactList = (ArrayList) in.readObject();
+      contactList = new ArrayList(mapper.readValue(in.readLine(), Contact[].class));
 
       in.close();
+
     } catch (Exception e) {
       System.out.println("연락처 로딩 중 오류 발생");
     }
@@ -75,16 +77,10 @@ public class ContactController {
 
   @RequestMapping("/contact/save")
   public Object save() throws Exception {
-    ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream("contacts.ser2")));
-
-    //    Object[] arr = contactList.toArray();
-    //    for (Object obj : arr) {
-    //      out.writeObject(obj);      
-    //    }
-
-    out.writeObject(contactList);
-
-    out.close();
+    PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("contacts.json")));
+    ObjectMapper mapper = new ObjectMapper();
+    out.println(mapper.writeValueAsString(contactList.toArray()));
+    out.close(); 
     return contactList.size();
   }
 

@@ -1,4 +1,4 @@
-//220121 220122
+//220121 220122 220123
 package com.eomcs.basic.ex02;
 // Wrapper 클래스 - wrapper 객체에 들어 있는 primitive type의 값 꺼내기
 

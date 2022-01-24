@@ -7,11 +7,23 @@ public class ArrayList implements java.io.Serializable {
   Object[] list = new Object[5];
   int size = 0;
 
+  public ArrayList() {}
+
+  public ArrayList(Object[] arr) {
+    this.addAll(arr);
+  }
+
   public void add(Object obj) {
     if (this.size == this.list.length) {
       this.list = this.grow();
     }
     this.list[this.size++] = obj;
+  }
+
+  public void addAll(Object[] arr) {
+    for (Object obj : arr) {
+      this.add(obj);
+    }
   }
 
   Object[] grow() {

@@ -1,5 +1,6 @@
-// java.util.Calendar 클래스 - 생성자 활용
+//220123
 package com.eomcs.basic.ex02;
+// java.util.Calendar 클래스 - 생성자 활용
 
 import java.util.Calendar;
 
