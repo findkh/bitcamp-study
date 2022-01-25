@@ -6,19 +6,21 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import com.eomcs.mylist.domain.Board;
-import com.eomcs.util.ArrayList;
 
-public class CsvBoardDao {
-  ArrayList boardList = new ArrayList();
+//데이터 처리를 하는 클래스!!!
+//@Repository 
+public class CsvBoardDao extends AbstractBoardDao { 
 
-  //생성자 : 기존 boardController에 있던 것 옮겨와서 수정함.
+  String filename = "boards.csv";
+
   public CsvBoardDao() {
+
     try {
-      BufferedReader in = new BufferedReader(new FileReader("boards.csv"));
+      BufferedReader in = new BufferedReader(new FileReader(filename));
 
       String csvStr;
       while ((csvStr = in.readLine()) != null) { //readLine()은 스트림을 다 읽으면 null을 리턴함
-        boardList.add(Board.valueOf(csvStr)); 
+        boardList.add(Board.valueOf(csvStr)); //boardList에 this가 생략되어 있다.
       }
       in.close();
     } catch (Exception e) {
@@ -26,8 +28,9 @@ public class CsvBoardDao {
     }
   }
 
-  public void save() throws Exception {
-    PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("boards.csv")));
+  @Override
+  protected void save() throws Exception { //추가 변경 삭제 할 때 마다 자동으로 변경되게 수정함. 내부적으로 호출하게 private으로 변경함
+    PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter(filename)));
 
     for (int i = 0; i < boardList.size(); i++) {
       Board board = (Board) boardList.get(i);
@@ -35,40 +38,5 @@ public class CsvBoardDao {
     }
     out.flush(); //버퍼에 남은 데이터 모두 출력
     out.close();
-  }
-
-  public int countAll() {
-    return boardList.size();
-  }
-
-  public Object[] findAll() {
-    return boardList.toArray();
-  }
-
-  public void insert(Board board) {
-    boardList.add(board);
-  }
-
-  public Board findByNo(int no) {
-    if (no < 0 || no >= boardList.size()) {
-      return null;
-    }
-    return(Board) boardList.get(no);
-  }
-
-  public int update(int no, Board board) {
-    if (no < 0 || no >= boardList.size()) {
-      return 0;
-    }
-    boardList.set(no, board);
-    return 1;
-  }
-
-  public int delete(int no) {
-    if (no < 0 || no >= boardList.size()) {
-      return 0;
-    }
-    boardList.remove(no);
-    return 1;
   }
 }
