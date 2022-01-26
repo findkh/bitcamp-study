@@ -11,8 +11,8 @@ import com.eomcs.util.ArrayList;
 //   추상 메서드가 있는 클래스는 반드시 추상 클래스로 선언해야 한다.
 public abstract class AbstractBoardDao implements BoardDao {
 
-  //서브 클래스에서 접근해야 할 필드라면,
-  //접근 범위를 protected로 선언한다.
+  // 서브 클래스에서 접근해야 할 필드라면,
+  // 접근 범위를 protected로 선언한다.
   protected ArrayList boardList = new ArrayList();
 
   public AbstractBoardDao() {}

@@ -1,5 +1,6 @@
-// 인터페이스 - 정의와 구현
+//220126
 package com.eomcs.oop.ex09.b;
+// 인터페이스 - 정의와 구현
 
 // 1) 인터페이스 정의
 interface MyInterface {
@@ -25,7 +26,6 @@ interface MyInterface {
   //  private void m5(); // 컴파일 오류!
   //  protected void m6(); // 컴파일 오류!
   void m7(); // 이건 (default) 아니라, public 이 생략된 것이다.
-
 }
 
 // 2) 인터페이스 구현

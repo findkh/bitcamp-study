@@ -1,8 +1,8 @@
-// 인터페이스 규칙에 따라 만든 클래스를 사용하기
+//220126
 package com.eomcs.oop.ex09.a2.after;
+// 인터페이스 규칙에 따라 만든 클래스를 사용하기
 
 public class Exam02 {
-
   public static void main(String[] args) {
     // 도구 사용하기
 
@@ -13,6 +13,11 @@ public class Exam02 {
     // 새로 추가한 도구(클래스 ToolC)도 Spec 규칙에 따라 만들었기 때문에
     // use() 메서드에 그대로 넘길 수 있다.
     use(new ToolC());
+
+    //use(new ToolD()); //컴파일 오류
+    // 비록 ToolD 클래스에 Spec에 정의된 m1() 메서드가 있다 하더라도
+    // 문법적으로 ToolD 클래스는 Spec 인터페이스를 구현한 것이 아니기 때문에
+    // use 파라미터 값으로 넘길 수 없다.
   }
 
   static void use(Spec tool) {
@@ -22,7 +27,6 @@ public class Exam02 {
     // 그러면 해당 인스턴스의 클래스를 찾아 그 클래스에서 구현한 메서드를 호출할 것이다.
     tool.m1();
   }
-
 }
 
 

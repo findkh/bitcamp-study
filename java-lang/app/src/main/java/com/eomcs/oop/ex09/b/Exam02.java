@@ -1,6 +1,6 @@
-// 인터페이스 필드
+//220126
 package com.eomcs.oop.ex09.b;
-
+// 인터페이스 필드
 
 // 인터페이스 필드 선언
 interface MyInterface2 {
@@ -36,10 +36,4 @@ public class Exam02 {
     //    MyInterface2.v4 = 444; // 컴파일 오류!
     //    MyInterface2.v5 = 555; // 컴파일 오류!
   }
-
 }
-
-
-
-
-

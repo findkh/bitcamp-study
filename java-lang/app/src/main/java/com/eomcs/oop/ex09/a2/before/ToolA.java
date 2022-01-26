@@ -1,5 +1,6 @@
-// 인터페이스 사용 전
+//220126
 package com.eomcs.oop.ex09.a2.before;
+// 인터페이스 사용 전
 
 public class ToolA {
 

@@ -1,5 +1,6 @@
-// 추상 클래스와 추상 메서드의 활용
+//220126
 package com.eomcs.oop.ex07.a;
+// 추상 클래스와 추상 메서드의 활용
 
 abstract class Letter {
 
@@ -15,7 +16,7 @@ abstract class Letter {
   // => 자세한 구현은 서브 클래스에 맡긴다.
   public void print() { // <== 템플릿 메서드 디자인 패턴에서 "템플릿 메서드"에 해당한다. 
     this.printHeader();
-    System.out.println(this.content);
+    System.out.println(this.content); //this는 생략 가능
     System.out.println();
     System.out.printf("              From %s!\n", this.getSign());
     System.out.println();

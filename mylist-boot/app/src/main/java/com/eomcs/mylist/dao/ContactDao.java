@@ -2,8 +2,6 @@ package com.eomcs.mylist.dao;
 
 import com.eomcs.mylist.domain.Contact;
 
-//BoardDao의 인터페이스 정의(규칙을 정의한다)
-
 public interface ContactDao { 
 
   int countAll();

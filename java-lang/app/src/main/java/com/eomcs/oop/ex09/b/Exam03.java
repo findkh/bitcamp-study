@@ -1,5 +1,6 @@
-// 인터페이스 - 기본 메서드(default method)
+//220126
 package com.eomcs.oop.ex09.b;
+// 인터페이스 - 기본 메서드(default method)
 
 interface MyInterface3 {
   void m1();
@@ -29,13 +30,13 @@ class MyInterface3Impl implements MyInterface3 {
   // 추상 메서드는 반드시 구현해야 한다.
   @Override
   public void m1() {
-    System.out.println("MyInterfaceImpl.m1()");
+    System.out.println("MyInterface3Impl.m1()");
   }
 
   // default 메서드는 오버라이딩 해도 되고 안해도 된다.
   @Override
   public void m2() {
-    System.out.println("MyInterfaceImpl.m2()");
+    System.out.println("MyInterface3Impl.m2()");
   }
 
   // default 메서드는 오버라이딩 해도 되고 안해도 된다.
@@ -51,5 +52,4 @@ public class Exam03 {
     obj.m2();
     obj.m3();
   }
-
 }

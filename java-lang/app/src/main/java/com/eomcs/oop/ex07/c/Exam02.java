@@ -1,5 +1,6 @@
-// 수퍼 클래스가 concrete 클래스일 때 문제점
+//220126
 package com.eomcs.oop.ex07.c;
+// 수퍼 클래스가 concrete 클래스일 때 문제점
 
 public class Exam02 {
 

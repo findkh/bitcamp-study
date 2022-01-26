@@ -1,5 +1,6 @@
-// 인터페이스 - caller와 callee 사이의 호출 규칙을 정의하는 문법
+//220126
 package com.eomcs.oop.ex09.a1.after;
+// 인터페이스 - caller와 callee 사이의 호출 규칙을 정의하는 문법
 
 // caller(호출자;사용자) : Exam01
 // callee(피호출자;도구) : BlueWorker, JubuWorker, WhiteWorker

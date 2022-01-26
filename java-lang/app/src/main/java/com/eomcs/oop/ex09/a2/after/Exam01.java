@@ -1,5 +1,6 @@
-// 인터페이스 레퍼런스와 인스턴스의 관계
+//220126
 package com.eomcs.oop.ex09.a2.after;
+// 인터페이스 레퍼런스와 인스턴스의 관계
 
 public class Exam01 {
 

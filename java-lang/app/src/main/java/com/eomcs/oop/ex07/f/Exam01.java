@@ -1,5 +1,6 @@
-// 추상 클래스를 인터페이스로 전환하기
+//220126
 package com.eomcs.oop.ex07.f;
+// 추상 클래스를 인터페이스로 전환하기
 
 public class Exam01 {
 

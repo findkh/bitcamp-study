@@ -1,5 +1,6 @@
-// 수퍼 클래스를 추상 클래스로 선언하기
+//220126
 package com.eomcs.oop.ex07.d;
+// 수퍼 클래스를 추상 클래스로 선언하기
 
 public class Exam01 {
 
@@ -9,7 +10,10 @@ public class Exam01 {
     // Sorter 클래스를 추상 클래스로 선언했기 때문에
     // 이제 Sorter의 인스턴스를 생성을 막을 수 있다.
     //
-    //    display(new Sorter(), values); // 컴파일 오류!
+    //      display(new Sorter(), values); // 컴파일 오류!
+
+    display(new BubbleSort(), values); //ok
+    display(new QuickSort(), values); //ok
 
     // Sorter 클래스처럼
     // 서브 클래스에게 공통 필드나 기능을 상속해주는 용도로 만든 클래스인 경우

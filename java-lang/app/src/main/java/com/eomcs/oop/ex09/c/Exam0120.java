@@ -12,7 +12,7 @@ public class Exam0120 {
     void rule2();
   }
 
-  interface ProtocolC extends ProtocolA, ProtocolB {
+  interface ProtocolC extends ProtocolA, ProtocolB { //다중 상속
     void rule3();
   }
 

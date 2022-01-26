@@ -1,5 +1,6 @@
-// 추상 클래스와 추상 메서드
+//220126
 package com.eomcs.oop.ex07.a;
+// 추상 클래스와 추상 메서드
 
 // 추상 클래스
 abstract class A2 {

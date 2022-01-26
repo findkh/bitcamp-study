@@ -1,6 +1,7 @@
+//220126
+package com.eomcs.oop.ex07.c;
 // 정렬 객체를 일관성 있게 사용하려면 같은 타입으로 묶어야 한다. 
 // 상속의 generalization 기법 이용!
-package com.eomcs.oop.ex07.c;
 
 public class Exam01 {
 

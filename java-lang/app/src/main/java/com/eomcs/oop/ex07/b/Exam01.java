@@ -1,5 +1,6 @@
-// 추상 클래스와 추상 메서드의 활용: 적용 전
+//220126
 package com.eomcs.oop.ex07.b;
+// 추상 클래스와 추상 메서드의 활용: 적용 전
 
 import java.util.Arrays;
 
@@ -45,8 +46,8 @@ public class Exam01 {
   // 그 값을 정렬한 후 출력하는 메서드이다.
   static void display(BubbleSort sorter, int[] values) {
 
-    //System.out.println("[정렬 전]");
-    //printNumbers(values);
+    System.out.println("[정렬 전]");
+    printNumbers(values);
 
     long start = System.currentTimeMillis();
 
@@ -56,14 +57,14 @@ public class Exam01 {
     long end = System.currentTimeMillis();
     System.out.printf("걸린시간: %d\n", end - start);
 
-    //System.out.println("[정렬 후]--------------------------");
-    //printNumbers(values);
+    System.out.println("[정렬 후]--------------------------");
+    printNumbers(values);
   }
 
   static void display(QuickSort sorter, int[] values) {
 
-    //System.out.println("[정렬 전]");
-    //printNumbers(values);
+    System.out.println("[정렬 전]");
+    printNumbers(values);
 
     long start = System.currentTimeMillis();
 
@@ -73,8 +74,8 @@ public class Exam01 {
     long end = System.currentTimeMillis();
     System.out.printf("걸린시간: %d\n", end - start);
 
-    //System.out.println("[정렬 후]--------------------------");
-    //printNumbers(values);
+    System.out.println("[정렬 후]--------------------------");
+    printNumbers(values);
   }
 
   static void printNumbers(int[] values) {

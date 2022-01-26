@@ -1,6 +1,8 @@
 // 인터페이스 - static 메서드
 package com.eomcs.oop.ex09.b;
 
+//가능하면 인터페이스에 static , private 사용하지 마라
+//진짜 필요한 경우에만 사용 할 것
 interface MyInterface5 {
   // 인터페이스도 클래스처럼 static 메서드를 정의할 수 있다.
   // => 접근 범위는 기본이 public 이다. 다른 접근 범위를 가질 수 없다.

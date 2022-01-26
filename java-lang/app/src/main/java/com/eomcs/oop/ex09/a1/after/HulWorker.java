@@ -1,3 +1,4 @@
+//220126
 package com.eomcs.oop.ex09.a1.after;
 
 // 클래스를 정의할 때 Worker 인터페이스를 구현하겠다고 선언하지는 않았지만,

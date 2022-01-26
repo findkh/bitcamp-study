@@ -1,5 +1,6 @@
-// 구현체(implementor) - 인터페이스(사용규칙)에 따라 만든 클래스 
+//220126
 package com.eomcs.oop.ex09.a1.after;
+// 구현체(implementor) - 인터페이스(사용규칙)에 따라 만든 클래스 
 
 // 문법
 // => class 클래스명 implements 인터페이스명, 인터페이스명, ... {...}

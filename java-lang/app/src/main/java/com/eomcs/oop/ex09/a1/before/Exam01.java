@@ -1,5 +1,6 @@
-// Worker 구현체 사용
+//220126
 package com.eomcs.oop.ex09.a1.before;
+// Worker 구현체 사용
 
 public class Exam01 {
 
