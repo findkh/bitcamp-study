@@ -1,6 +1,6 @@
-// 인터페이스 다중 상속과 구현
+//220126 220127
 package com.eomcs.oop.ex09.c;
-
+// 인터페이스 다중 상속과 구현
 
 public class Exam0120 {
 
@@ -12,7 +12,8 @@ public class Exam0120 {
     void rule2();
   }
 
-  interface ProtocolC extends ProtocolA, ProtocolB { //다중 상속
+  //인터페이스는 다중 상속 가능하다
+  interface ProtocolC extends ProtocolA, ProtocolB { 
     void rule3();
   }
 
@@ -30,11 +31,18 @@ public class Exam0120 {
     // ProtocolC 규칙 준수!
     @Override
     public void rule3() {System.out.println("rule3()");}
+
+    public void m1() {System.out.println("m1()");}
   }
 
   void test() {
 
     ProtocolImpl obj = new ProtocolImpl();
+    obj.rule1(); // OK
+    obj.rule2(); // OK
+    obj.rule3(); // OK
+    obj.m1(); // OK
+    System.out.println("-------------------------------");
 
     // 1) 인터페이스 레퍼런스로 구현체의 주소 받기
     ProtocolC c = obj;
@@ -47,6 +55,7 @@ public class Exam0120 {
     c.rule1(); // OK
     c.rule2(); // OK
     c.rule3(); // OK
+    //    c.m1(); // 컴파일 오류!
     System.out.println("-------------------------------");
 
     //    b.rule1(); // 컴파일 오류!

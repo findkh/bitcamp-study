@@ -33,7 +33,7 @@ class MyInterface4Impl implements MyInterface4 {
   @Override
   public void m1() {
 
-    //    m2();
+    m2();
 
     // 인터페이스에 선언된 다른 default 메서드를 호출하고 싶다면,
     MyInterface4.super.m2();

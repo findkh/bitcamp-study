@@ -1,6 +1,6 @@
-// 인터페이스 다중 구현과 메서드 중복
+//220126 220127
 package com.eomcs.oop.ex09.c;
-
+// 인터페이스 다중 구현과 메서드 중복
 
 public class Exam0220 {
 
@@ -23,7 +23,7 @@ public class Exam0220 {
     // ProtocolA 입장에서는 rule0() 규칙 준수!
     // ProtocolB 입장에서도 rule0() 규칙 준수!
     @Override
-    public void rule0() {System.out.println("rule1()");}
+    public void rule0() {System.out.println("rule0()");}
 
     // ProtocolA 규칙 준수!
     @Override
@@ -39,17 +39,19 @@ public class Exam0220 {
     ProtocolImpl obj = new ProtocolImpl();
 
     // 1) 인터페이스 레퍼런스로 구현체의 주소 받기
-    ProtocolB b = obj;
     ProtocolA a = obj;
+    ProtocolB b = obj;
 
     // 2) 메서드 호출
     // - 해당 인터페이스의 규칙에 따라서만 호출할 수 있다.
-    b.rule2(); // OK
-    //    b.rule1(); // 컴파일 오류!
-    System.out.println("-------------------------------");
-
+    a.rule0();
     a.rule1(); // OK!
     //    a.rule2(); // 컴파일 오류!
+    System.out.println("-------------------------------");
+    b.rule0(); // ok
+    //    b.rule1(); // 컴파일 오류!
+    b.rule2(); // OK
+
   }
 
   public static void main(String[] args) {

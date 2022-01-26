@@ -1,6 +1,6 @@
-// 인터페이스 다중 상속과 메서드 중복
+//220126 220127
 package com.eomcs.oop.ex09.c;
-
+// 인터페이스 다중 상속과 메서드 중복
 
 public class Exam0130 {
 

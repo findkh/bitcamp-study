@@ -1,5 +1,6 @@
-// 인터페이스 상속과 구현
+//220126 220127
 package com.eomcs.oop.ex09.c;
+// 인터페이스 상속과 구현
 
 
 public class Exam0110 {

@@ -1,5 +1,6 @@
-// 인터페이스 다중 구현이 불가한 경우!
+//220126 220127
 package com.eomcs.oop.ex09.c;
+// 인터페이스 다중 구현이 불가한 경우!
 
 
 public class Exam0230 {

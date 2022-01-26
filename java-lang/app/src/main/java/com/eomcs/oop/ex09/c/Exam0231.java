@@ -1,6 +1,6 @@
-// 메서드의 시그너처가 다르다면 당연히 다중 구현 가능
+//220126 220127
 package com.eomcs.oop.ex09.c;
-
+// 메서드의 시그너처가 다르다면 당연히 다중 구현 가능
 
 public class Exam0231 {
 
@@ -14,12 +14,16 @@ public class Exam0231 {
     void rule2();
   }
 
-
   class ProtocolImpl implements ProtocolA, ProtocolB {
+    // ProtocolA 입장에서는 rule0() 규칙 준수!
+    // ProtocolB 입장에서는 rule0() 규칙을 준수하지 못했다.
+    // - 리턴 타입이 다르다.
     @Override
     public void rule0(int a) {}
 
-
+    // ProtocolB 입장에서는 rule0() 규칙 준수!
+    // ProtocolA 입장에서는 rule0() 규칙을 준수하지 못했다.
+    // - 리턴 타입이 다르다.
     @Override
     public int rule0() {return 0;}
 

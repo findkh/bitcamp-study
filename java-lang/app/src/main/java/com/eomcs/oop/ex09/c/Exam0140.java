@@ -1,5 +1,6 @@
-// 인터페이스 다중 상속 불가!
+//220126 220127
 package com.eomcs.oop.ex09.c;
+// 인터페이스 다중 상속 불가!
 
 
 public class Exam0140 {
