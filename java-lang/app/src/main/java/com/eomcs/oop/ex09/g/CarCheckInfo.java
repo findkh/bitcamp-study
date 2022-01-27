@@ -1,3 +1,4 @@
+//220127
 package com.eomcs.oop.ex09.g;
 
 // 이 인터페이스의 용도

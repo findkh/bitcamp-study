@@ -1,6 +1,7 @@
+//220127
+package com.eomcs.oop.ex09.h.test4;
 // 신규 프로젝트를 위해 기존 규격에 새로 규칙(watermark())를 추가하였고
 // 이 클래스는 그 규칙을 구현하였다.
-package com.eomcs.oop.ex09.h.test4;
 
 import com.eomcs.oop.ex09.h.Printer;
 

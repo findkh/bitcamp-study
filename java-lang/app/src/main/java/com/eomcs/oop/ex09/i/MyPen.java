@@ -1,5 +1,6 @@
-// 인터페이스 구현 - 인터페이스에 선언된 모든 메서드를 정의해야 한다.
+//220127
 package com.eomcs.oop.ex09.i;
+// 인터페이스 구현 - 인터페이스에 선언된 모든 메서드를 정의해야 한다.
 
 public class MyPen implements Pen {
 

@@ -1,5 +1,6 @@
-// 인터페이스 활용: 스태틱 메서드의 활용
+//220127
 package com.eomcs.oop.ex09.g;
+// 인터페이스 활용: 스태틱 메서드의 활용
 
 public class Exam0110 {
   public static void main(String[] args) {

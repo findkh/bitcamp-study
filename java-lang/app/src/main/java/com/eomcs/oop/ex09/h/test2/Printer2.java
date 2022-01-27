@@ -1,3 +1,4 @@
+//220127
 package com.eomcs.oop.ex09.h.test2;
 
 import com.eomcs.oop.ex09.h.Printer;
@@ -13,5 +14,6 @@ public interface Printer2 extends Printer {
   // 기존 프린터의 규칙은 그대로 사용해야 하기 때문에
   // 상속 받는다.
   // 그리고 다음과 같이 새 규칙을 추가한다.
+  @Override
   void watermark(String title);
 }

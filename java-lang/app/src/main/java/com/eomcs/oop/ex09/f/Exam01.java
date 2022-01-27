@@ -1,5 +1,6 @@
-// 인터페이스의 활용
+//220127
 package com.eomcs.oop.ex09.f;
+// 인터페이스의 활용
 
 public class Exam01 {
   public static void main(String[] args) {

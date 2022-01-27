@@ -1,5 +1,6 @@
-// 인터페이스 활용 : default 메서드의 활용
+//220127
 package com.eomcs.oop.ex09.e;
+// 인터페이스 활용 : default 메서드의 활용
 
 import com.eomcs.oop.ex09.e.project1.FirstComputer;
 import com.eomcs.oop.ex09.e.project2.SecondComputer;

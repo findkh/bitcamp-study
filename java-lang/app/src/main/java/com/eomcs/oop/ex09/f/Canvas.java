@@ -1,5 +1,5 @@
+//220127
 package com.eomcs.oop.ex09.f;
-
 public class Canvas {
 
   // Canvas가 사용할 도구를 구체적으로 지정(클래스 이름을 사용)하는 대신에

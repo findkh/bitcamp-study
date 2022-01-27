@@ -1,3 +1,4 @@
+//220127
 package com.eomcs.oop.ex09.e.project4;
 
 import com.eomcs.oop.ex09.e.Computer2;
@@ -8,13 +9,15 @@ import com.eomcs.oop.ex09.e.Computer2;
 //   => 그리고 새 컴퓨터(NewComputer1)는 그 규칙에 따라 만든다.
 // 
 public class NewComputer1 implements Computer2 {
-  
+
   // 기존 규칙을 구현하고,
+  @Override
   public void compute() {
     System.out.println("새 컴퓨터..");
   }
 
   // 새로 추가한 규칙도 구현한다.
+  @Override
   public void touch() {
     System.out.println("오호라.. 터치가 되네. 이거 서피스 프로인가?");
   }

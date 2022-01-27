@@ -1,5 +1,6 @@
-// 인터페이스와 디폴트 메서드
+//220127
 package com.eomcs.oop.ex09.h.test4;
+// 인터페이스와 디폴트 메서드
 
 import com.eomcs.oop.ex09.h.Printer;
 import com.eomcs.oop.ex09.h.test1.FilmPrinter;
