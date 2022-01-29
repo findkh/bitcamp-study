@@ -1,4 +1,4 @@
-//220127
+//220127 220129
 package com.eomcs.oop.ex09.j;
 // 인터페이스 : caller를 만드는 입장
 
