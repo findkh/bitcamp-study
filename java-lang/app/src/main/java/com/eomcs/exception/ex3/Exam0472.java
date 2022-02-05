@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - Throwable 변수로 예외를 받지 말라!
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - Throwable 변수로 예외를 받지 말라!
 
 import java.io.IOException;
 import java.sql.SQLException;

@@ -1,5 +1,6 @@
-// 클라이언트와 입출력 테스트 - byte stream : Data 주고 받기
+//220204 220205
 package com.eomcs.net.ex03;
+// 클라이언트와 입출력 테스트 - byte stream : Data 주고 받기
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

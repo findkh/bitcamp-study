@@ -1,5 +1,6 @@
-// 대기열의 제한 확인하기
+//220203 220205
 package com.eomcs.net.ex02;
+// 대기열의 제한 확인하기
 
 import java.net.Socket;
 import java.util.Scanner;

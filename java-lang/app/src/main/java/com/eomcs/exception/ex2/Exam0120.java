@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용한 후 - 시스템을 멈추지 않고 계속 실행할 수 있다. 
+//220204
 package com.eomcs.exception.ex2;
+// 예외 처리 문법을 적용한 후 - 시스템을 멈추지 않고 계속 실행할 수 있다. 
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

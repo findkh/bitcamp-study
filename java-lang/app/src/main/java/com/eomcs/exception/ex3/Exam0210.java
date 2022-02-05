@@ -1,5 +1,6 @@
-// 예외 던지기 - 예외 상황을 호출자에게 알려주기
+//220204
 package com.eomcs.exception.ex3;
+// 예외 던지기 - 예외 상황을 호출자에게 알려주기
 
 import java.io.FileNotFoundException;
 
@@ -27,7 +28,7 @@ public class Exam0210 {
   //       배열의 인덱스가 무효한 오류, I/O 오류, SQL 오류, Parse 오류, 데이터 포맷 오류 등
   //
 
-  // 오류를 던진다면 반드시 메서드 선언부에 어떤 오류를 던지는지 선언해야 한다.
+  // 오류를 던진다면 반드시 메서드 선언부에 어떤 오류를 던지는지 선언해야 한다.(원칙)
   // => 메서드 호출자에게 알려주는 것이다.
   static void m1() throws Throwable {
     throw new Throwable(); // OK!

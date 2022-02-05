@@ -1,5 +1,6 @@
-// 서버의 승인 테스트
+//220203 220205
 package com.eomcs.net.ex02;
+// 서버의 승인 테스트
 
 import java.net.InetSocketAddress;
 import java.net.Socket;

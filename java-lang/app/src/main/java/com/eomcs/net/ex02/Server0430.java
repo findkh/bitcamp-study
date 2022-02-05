@@ -1,5 +1,6 @@
-// 대기열과 연결 승인 테스트 II
+//220203 220205
 package com.eomcs.net.ex02;
+// 대기열과 연결 승인 테스트 II
 
 import java.net.ServerSocket;
 import java.net.Socket;

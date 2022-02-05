@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - try ~ catch ~
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - try ~ catch ~
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -15,7 +16,6 @@ public class Exam0430 {
       throw new SQLException();
     else if (i == 3)
       throw new IOException();
-
   }
 
   public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class Exam0430 {
     //
     try {
       // try 블록에는 예외가 발생할 수 있는 코드를 둔다.
-      m(0);
+      m(4);
       System.out.println("실행 성공!");
       // try 블록에 있는 코드를 실행하는 중에
       // 예외가 발생하면,
@@ -46,5 +46,4 @@ public class Exam0430 {
       System.out.println("기타 Exception 발생");
     }
   }
-
 }

@@ -1,5 +1,6 @@
-// 서버와 입출력 테스트 - byte stream : Data 주고 받기
+//220204 220205
 package com.eomcs.net.ex03;
+// 서버와 입출력 테스트 - byte stream : Data 주고 받기
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -28,6 +29,7 @@ public class Client0130 {
       System.out.println("서버에 데이터를 보냈음!");
 
       // 서버에서 보낸 int 값을 읽는다.
+      System.out.println("서버의 응답을 기다리고 있음!");
       int value = in.readInt();
       System.out.println(value);
 

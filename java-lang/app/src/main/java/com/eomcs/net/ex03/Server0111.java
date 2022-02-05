@@ -1,5 +1,7 @@
-// 클라이언트와 입출력 테스트 - byte stream + try with resource 문법 사용
+//220204 220205
 package com.eomcs.net.ex03;
+// 클라이언트와 입출력 테스트 - byte stream + try with resource 문법 사용
+//자동으로 클로즈 하기 때문에 finally가 없다.
 
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -12,7 +14,7 @@ public class Server0111 {
 
 
     try (Scanner keyboard = new Scanner(System.in);
-        ServerSocket serverSocket = new ServerSocket(8888)) {
+        ServerSocket serverSocket = new ServerSocket(8888)/*;*/) {
 
       System.out.println("클라이언트의 연결을 기다리고 있음.");
 

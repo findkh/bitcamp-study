@@ -1,5 +1,6 @@
-// 예외 던지고 받기
+//220204 220205
 package com.eomcs.exception.ex4;
+// 예외 던지고 받기
 
 public class Exam0110 {
   static void m1() {

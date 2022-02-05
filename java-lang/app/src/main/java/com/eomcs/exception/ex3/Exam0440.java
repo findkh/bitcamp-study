@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - catch 블록의 순서
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - catch 블록의 순서
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -29,13 +30,13 @@ public class Exam0440 {
       // => 예외 객체를 정확하게 받고 싶다면 Exam0430.java 처럼
       // 서브 클래스 예외부터 받아라.
       //
-    } catch (IOException e) {
+    } /*catch (IOException e) {
 
     } catch (SQLException e) {
 
     } catch (RuntimeException e) {
 
-    }
+    }*/
   }
 
 }

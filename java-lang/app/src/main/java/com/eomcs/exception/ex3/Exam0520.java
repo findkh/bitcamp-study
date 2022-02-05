@@ -1,5 +1,6 @@
-// 예외 처리 후 마무리 작업 - finally 블록
+//220204 220205
 package com.eomcs.exception.ex3;
+// 예외 처리 후 마무리 작업 - finally 블록
 
 import java.io.IOException;
 import java.sql.SQLException;

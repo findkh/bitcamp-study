@@ -1,5 +1,6 @@
-// 예외 던지기 - RuntimeException 예외를 던질 경우
+//220204
 package com.eomcs.exception.ex3;
+// 예외 던지기 - RuntimeException 예외를 던질 경우
 
 public class Exam0220 {
 

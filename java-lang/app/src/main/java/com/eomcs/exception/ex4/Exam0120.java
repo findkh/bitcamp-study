@@ -1,5 +1,6 @@
-// Exception 예외 던지고 받기
+//220204 220205
 package com.eomcs.exception.ex4;
+// Exception 예외 던지고 받기
 
 public class Exam0120 {
 
@@ -43,5 +44,4 @@ public class Exam0120 {
     // 어쩔 수 없다!
     // 무조건 선언해야 한다.
   }
-
 }

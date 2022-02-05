@@ -1,5 +1,6 @@
-// 서버 만들기
+//220203 220204
 package com.eomcs.net.ex02;
+// 서버 만들기
 
 import java.net.ServerSocket;
 import java.util.Scanner;

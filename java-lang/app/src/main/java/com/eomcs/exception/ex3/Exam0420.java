@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - 예외 처리 책임을 상위 호출자에게 위임
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - 예외 처리 책임을 상위 호출자에게 위임
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -29,5 +30,4 @@ public class Exam0420 {
     // - main()은 예외 처리의 마지막 보루이다.
     //   main()에서 마저 예외 처리를 하지 않으면 프로그램은 멈.춘.다!
   }
-
 }

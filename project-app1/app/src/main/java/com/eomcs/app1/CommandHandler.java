@@ -36,4 +36,16 @@ public class CommandHandler {
       System.out.printf("%d - %d = %d\n", num1, num2, (num1-num2));
     }
   }
+
+  void doDivide(Command command) {
+    if(command.getParamSize() != 2) { //입력값이 맞지 않으면 오류 메시지 출력
+      System.out.println("명령어 입력형식이 올바르지 않습니다.");
+      System.out.println("형식 : divide 값1 값2");
+      System.out.println("ex) divide 100 200");
+    } else {
+      int num1 = command.getInt(0);
+      int num2 = command.getInt(1);
+      System.out.printf("%d / %d = %d\n", num1, num2, (num1/num2));
+    }
+  }
 }

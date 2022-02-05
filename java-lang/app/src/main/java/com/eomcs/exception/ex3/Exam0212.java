@@ -1,5 +1,6 @@
-// 예외 던지기 - 예외 상황을 호출자에게 알려주기
+//220204
 package com.eomcs.exception.ex3;
+// 예외 던지기 - 예외 상황을 호출자에게 알려주기
 
 public class Exam0212 {
 
@@ -13,15 +14,15 @@ public class Exam0212 {
   }
 
   // Exception 예외를 던질 경우 반드시 메서드 선언부에 표시해야 한다.
-  static void m2() { // 컴파일 오류!
-    throw new Exception();
-  }
+  //  static void m2() { // 컴파일 오류!
+  //    throw new Exception();
+  //  }
 
   // 메서드의 throws 에 선언할 수 있는 클래스는 Throwable 타입만 가능한다.
-  static void m3() throws String {
-    throw new String(); // 컴파일 오류!
-    // throw 로 던질 수 있는 객체는 오직 java.lang.Throwable 타입만 가능하다.
-  }
+  //static void m3() throws String {
+  //throw new String(); // 컴파일 오류!
+  // throw 로 던질 수 있는 객체는 오직 java.lang.Throwable 타입만 가능하다.
+  //}
 
   public static void main(String[] args) {}
 

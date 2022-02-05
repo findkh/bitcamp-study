@@ -1,5 +1,6 @@
-// 예외 던지기 - 예외 상황을 호출자에게 알려주기
+//220204
 package com.eomcs.exception.ex3;
+// 예외 던지기 - 예외 상황을 호출자에게 알려주기
 
 public class Exam0211 {
 

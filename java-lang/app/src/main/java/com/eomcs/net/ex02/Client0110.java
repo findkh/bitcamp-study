@@ -1,5 +1,6 @@
-// 클라이언트 만들기
+//220203 220204
 package com.eomcs.net.ex02;
+// 클라이언트 만들기
 
 import java.net.Socket;
 

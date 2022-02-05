@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용하기 전 - 예외 발생 시 시스템 멈춤 문제 
+//220204
 package com.eomcs.exception.ex1;
+// 예외 처리 문법을 적용하기 전 - 예외 발생 시 시스템 멈춤 문제 
 
 import java.util.Scanner;
 

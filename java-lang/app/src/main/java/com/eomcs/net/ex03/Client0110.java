@@ -1,5 +1,6 @@
-// 서버와 입출력 테스트 - byte stream
+//220204 220205
 package com.eomcs.net.ex03;
+// 서버와 입출력 테스트 - byte stream
 
 import java.io.InputStream;
 import java.io.OutputStream;

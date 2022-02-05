@@ -1,5 +1,6 @@
-// 대기열에서 기다리고 있는 클라이언트와 연결하기
+//220203 220205
 package com.eomcs.net.ex02;
+// 대기열에서 기다리고 있는 클라이언트와 연결하기
 
 import java.net.ServerSocket;
 import java.net.Socket;

@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용한 후 - 메서드가 던지는 예외 정보를 받는다.
+//220204
 package com.eomcs.exception.ex2;
+// 예외 처리 문법을 적용한 후 - 메서드가 던지는 예외 정보를 받는다.
 
 public class Exam0110 {
   public static void main(String[] args) {

@@ -1,5 +1,6 @@
-// 파일 받기
+//220203 220204
 package com.eomcs.net.ex01;
+// 파일 받기
 
 import java.io.DataInputStream;
 import java.io.File;

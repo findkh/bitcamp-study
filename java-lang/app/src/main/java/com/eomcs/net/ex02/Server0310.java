@@ -1,5 +1,6 @@
-// 타임아웃 테스트
+//220203 220205
 package com.eomcs.net.ex02;
+// 타임아웃 테스트
 
 import java.net.ServerSocket;
 import java.util.Scanner;

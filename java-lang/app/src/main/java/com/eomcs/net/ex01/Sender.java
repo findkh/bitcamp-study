@@ -1,5 +1,6 @@
-// 상대편에 연결을 요청하기 - 클라이언트(client)
+//220203 220204
 package com.eomcs.net.ex01;
+// 상대편에 연결을 요청하기 - 클라이언트(client)
 
 import java.io.PrintStream;
 import java.net.Socket;

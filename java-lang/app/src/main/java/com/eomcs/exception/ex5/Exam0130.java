@@ -1,5 +1,6 @@
-// 예외 처리 - 예외에 대해 의미를 부여하기 - 사용자 정의 예외 만들고 사용하기
+//220204 220205
 package com.eomcs.exception.ex5;
+// 예외 처리 - 예외에 대해 의미를 부여하기 - 사용자 정의 예외 만들고 사용하기
 
 import java.sql.Date;
 import java.util.Scanner;
@@ -39,7 +40,7 @@ public class Exam0130 {
     }
   }
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws NumberFormatException, IllegalArgumentException {
     try {
       Board board = read();
       System.out.println("---------------------");
@@ -52,7 +53,6 @@ public class Exam0130 {
       System.out.println(e.getMessage());
       e.printStackTrace();
     }
-
   }
 }
 

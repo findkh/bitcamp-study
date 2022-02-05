@@ -1,5 +1,6 @@
-// 예외 처리 후
+//220204 220205
 package com.eomcs.exception.ex5;
+// 예외 처리 후
 
 import java.sql.Date;
 import java.util.Scanner;

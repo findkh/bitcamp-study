@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용하기 전 - 리턴 값으로 오류 여부를 알려준다.
+//220204
 package com.eomcs.exception.ex1;
+// 예외 처리 문법을 적용하기 전 - 리턴 값으로 오류 여부를 알려준다.
 
 public class Calculator {
 

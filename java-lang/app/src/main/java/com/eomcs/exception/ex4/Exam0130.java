@@ -1,5 +1,6 @@
-// RuntimeException 예외 던지고 받기
+//220204 220205
 package com.eomcs.exception.ex4;
+// RuntimeException 예외 던지고 받기
 
 public class Exam0130 {
 
@@ -29,6 +30,7 @@ public class Exam0130 {
   static void m4() /*throws RuntimeException*/ {
     // RuntimeException을 상위 호출자에게 전달할 때는
     // 굳이 메서드 선언부에 지정하지 않아도 된다.
+    // (적어도 되고 안적어도 된다.)
     throw new RuntimeException("m4()에서 예외 발생!");
   }
 
@@ -47,7 +49,5 @@ public class Exam0130 {
     // 즉 중간에 끼어 있는 메서드를 만들 때
     // throws 문장을 선언하지 않아도 되기 때문에 편하다!
     // => 스텔스처럼 조용히 예외를 전달한다.
-
   }
-
 }

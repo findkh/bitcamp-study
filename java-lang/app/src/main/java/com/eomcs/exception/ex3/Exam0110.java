@@ -1,3 +1,5 @@
+//220204
+package com.eomcs.exception.ex3;
 // 예외 처리 - 개념
 // => 메서드를 실행하는 중에 예외가 발생했을 때 호출자에게 알려주는 문법
 // => 메서드를 호출하는 중에 예외를 받았을 때 처리하는 문법
@@ -6,14 +8,14 @@
 //       리턴 값으로 알려주는 방식의 한계를 극복하기 위해
 //    2) 예외가 발생하더라도 시스템을 멈추지 않고 
 //       적절한 조치를 취한 후 계속 실행하기 위해
-package com.eomcs.exception.ex3;
 
 public class Exam0110 {
 
   static void m() {
     // 예외를 호출자에게 알려주는 문법
     // => throw [Throwable 객체];
-    //    throw new String("예외가 발생했습니다!"); // 컴파일 오류!
+    // throw new String("예외가 발생했습니다!"); // 컴파일 오류!
+    // No exception of type String can be thrown; an exception type must be a subclass of Throwable
     throw new RuntimeException("예외가 발생했습니다!");
   }
 
@@ -31,7 +33,5 @@ public class Exam0110 {
     }
 
     System.out.println("시스템을 종료합니다.");
-
   }
-
 }

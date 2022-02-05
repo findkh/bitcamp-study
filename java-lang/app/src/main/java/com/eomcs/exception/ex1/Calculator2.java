@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용하기 전 - 오류일 때 리턴하는 값은 희귀한 값으로 지정한다.
+//220204
 package com.eomcs.exception.ex1;
+// 예외 처리 문법을 적용하기 전 - 오류일 때 리턴하는 값은 희귀한 값으로 지정한다.
 
 public class Calculator2 {
   public static int compute(String op, int a, int b) {

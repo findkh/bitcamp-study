@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - 예외 처리 책임을 상위 호출자에게 위임
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - 예외 처리 책임을 상위 호출자에게 위임
 
 import java.io.IOException;
 import java.sql.SQLException;

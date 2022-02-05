@@ -1,5 +1,6 @@
-// 예외 처리 후 마무리 작업 - finally 블록과 자원 해제
+//220204 220205
 package com.eomcs.exception.ex3;
+// 예외 처리 후 마무리 작업 - finally 블록과 자원 해제
 
 import java.util.Scanner;
 
@@ -21,5 +22,4 @@ public class Exam0620 {
       System.out.println("스캐너 자원 해제!");
     }
   }
-
 }

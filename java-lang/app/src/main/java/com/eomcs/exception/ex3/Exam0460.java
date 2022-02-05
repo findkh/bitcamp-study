@@ -1,5 +1,6 @@
-// 던지는 예외 받기 - 다형적 변수의 특징을 이용하여 여러 예외를 한 catch에서 받을 수 있다.
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외 받기 - 다형적 변수의 특징을 이용하여 여러 예외를 한 catch에서 받을 수 있다.
 
 import java.io.IOException;
 import java.sql.SQLException;

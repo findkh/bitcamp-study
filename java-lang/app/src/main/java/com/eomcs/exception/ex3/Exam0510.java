@@ -1,5 +1,6 @@
-// 예외 처리 후 마무리 작업 - finally 블록
+//220204 220205
 package com.eomcs.exception.ex3;
+// 예외 처리 후 마무리 작업 - finally 블록
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -19,7 +20,7 @@ public class Exam0510 {
 
   public static void main(String[] args) {
     try {
-      m(5);
+      m(0);
       System.out.println("try");
 
     } catch (RuntimeException | SQLException | IOException e) {
@@ -40,5 +41,4 @@ public class Exam0510 {
       System.out.println("finally");
     }
   }
-
 }

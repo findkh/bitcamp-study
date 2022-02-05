@@ -1,5 +1,6 @@
-// 던지는 예외를 메서드에 선언하기
+//220204 220205
 package com.eomcs.exception.ex3;
+// 던지는 예외를 메서드에 선언하기
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -15,13 +16,13 @@ public class Exam0320 {
   //
   static void m(int i) throws Exception {
     if (i == 0)
-      throw new Exception();
+      throw new Exception(); //빵
     else if (i == 1)
-      throw new RuntimeException();
+      throw new RuntimeException(); //소보루빵
     else if (i == 2)
-      throw new SQLException();
+      throw new SQLException(); //팥빵
     else
-      throw new IOException();
+      throw new IOException(); //소세지빵
   }
 
   public static void main(String[] args) {}

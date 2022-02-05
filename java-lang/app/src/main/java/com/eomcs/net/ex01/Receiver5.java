@@ -1,5 +1,6 @@
-// 파일 받기 + 버퍼
+//220203 220204
 package com.eomcs.net.ex01;
+// 파일 받기 + 버퍼
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

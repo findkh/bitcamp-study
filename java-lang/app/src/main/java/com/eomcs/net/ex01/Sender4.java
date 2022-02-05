@@ -1,5 +1,6 @@
-// 파일 보내기
+//220203 220204
 package com.eomcs.net.ex01;
+// 파일 보내기
 
 import java.io.DataOutputStream;
 import java.io.File;

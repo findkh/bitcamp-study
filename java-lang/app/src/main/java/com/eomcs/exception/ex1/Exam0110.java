@@ -1,5 +1,6 @@
-// 예외 처리 문법을 적용하기 전 - 리턴 값을 이용한 오류 알림!
+//220204
 package com.eomcs.exception.ex1;
+// 예외 처리 문법을 적용하기 전 - 리턴 값을 이용한 오류 알림!
 
 public class Exam0110 {
   public static void main(String[] args) {
