@@ -1,4 +1,4 @@
-//220204 220205
+//220204 220205 220206 
 package com.eomcs.net.ex03;
 // 클라이언트와 입출력 테스트 - byte stream : 바이트 배열 주고 받기
 
@@ -32,7 +32,7 @@ public class Server0120 {
           if (i > 0 && (i % 20) == 0) {
             System.out.println(); // 20바이트 출력한 후 줄 바꾼다.
           }
-          System.out.printf("%x ", buf[i]);
+          System.out.printf("%d ", buf[i]);
         }
 
       }
@@ -43,6 +43,5 @@ public class Server0120 {
     }
     System.out.println("서버 종료!");
   }
-
 }
 

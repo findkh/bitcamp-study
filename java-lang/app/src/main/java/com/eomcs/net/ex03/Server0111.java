@@ -1,4 +1,4 @@
-//220204 220205
+//220204 220205 220206
 package com.eomcs.net.ex03;
 // 클라이언트와 입출력 테스트 - byte stream + try with resource 문법 사용
 //자동으로 클로즈 하기 때문에 finally가 없다.
@@ -11,8 +11,6 @@ import java.util.Scanner;
 
 public class Server0111 {
   public static void main(String[] args) {
-
-
     try (Scanner keyboard = new Scanner(System.in);
         ServerSocket serverSocket = new ServerSocket(8888)/*;*/) {
 
@@ -58,10 +56,8 @@ public class Server0111 {
 
     } catch (Exception e) {
       e.printStackTrace();
-
     }
     System.out.println("서버 종료!");
   }
-
 }
 
