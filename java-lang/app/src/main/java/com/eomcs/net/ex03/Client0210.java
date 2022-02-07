@@ -1,5 +1,6 @@
-// 서버와 입출력 테스트 - character stream
+//220207
 package com.eomcs.net.ex03;
+// 서버와 입출력 테스트 - character stream
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,5 +1,6 @@
-// 예외 상황 알리기 - 전통적인 방법
+//220207
 package com.eomcs.exception.ex91;
+// 예외 상황 알리기 - 전통적인 방법
 
 public class Exam0410 {
 

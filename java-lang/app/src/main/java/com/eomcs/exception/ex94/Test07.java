@@ -1,8 +1,9 @@
-// 예외 던지기 - RuntimeException 예외 던지기 II
+//220207
 package com.eomcs.exception.ex94;
+// 예외 던지기 - RuntimeException 예외 던지기 II
 
 public class Test07 {
-  
+
   public static void main(String[] args) {
     // RuntimeException도 Exception과 마찬가지로 
     // main()에서는 예외를 처리해야 한다.
@@ -24,21 +25,21 @@ public class Test07 {
     }
     System.out.println("종료!");
   }
-  
+
   static void m3() {
     // RuntimeException 예외를 발생시키는 메서드는 
     // 메서드 선언부에 어떤 예외를 던지는지 선언(보고)하지 않아도 된다.
     // try ~ catch로 처리하지 않아도 된다.
     m2();
   }
-  
+
   static void m2() {
     // RuntimeException 예외를 발생시키는 메서드는 
     // 메서드 선언부에 어떤 예외를 던지는지 선언(보고)하지 않아도 된다.
     // try ~ catch로 처리하지 않아도 된다.
     m1();
   }
-  
+
   static void m1() {
     // RuntimeException 예외를 발생시키는 메서드는 
     // 메서드 선언부에 어떤 예외를 던지는지 선언(보고)하지 않아도 된다.

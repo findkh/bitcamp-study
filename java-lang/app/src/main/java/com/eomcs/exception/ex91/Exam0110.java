@@ -1,5 +1,6 @@
-// 예외 발생 I
+//220207
 package com.eomcs.exception.ex91;
+// 예외 발생 I
 
 public class Exam0110 {
 

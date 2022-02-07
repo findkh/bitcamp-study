@@ -1,5 +1,6 @@
-// stateful 방식 - 다중 클라이언트의 요청 처리 시 문제점과 해결책
+//220207
 package com.eomcs.net.ex04.stateful3;
+// stateful 방식 - 다중 클라이언트의 요청 처리 시 문제점과 해결책
 
 import java.io.DataInputStream;
 import java.io.PrintStream;
@@ -21,11 +22,46 @@ public class CalcServer {
 
     @Override
     public void run() {
-      // JVM과 분리하여 별도로 실행할 코드를 이 메서드에 둔다.
-      try {
-        processRequest(socket);
+      // main() 메서드 호출과 분리하여 별도로 실행할 코드가 있다면 이 메서드에 둔다.
+      try (Socket socket2 = socket; 
+          //socket2 변수를 선언한 이유 : try문 밖에 있는 socket 객체를 나중에 닫을 수 없기 때문에 socket2 변수 안에 socket을 담아놓음
+          DataInputStream in = new DataInputStream(socket.getInputStream());
+          PrintStream out = new PrintStream(socket.getOutputStream());) {
+
+        // 작업 결과를 유지할 변수
+        int result = 0;
+
+        loop: while (true) {
+          String op = in.readUTF();
+          int a = in.readInt();
+
+          switch (op) {
+            case "+":
+              result += a;
+              break;
+            case "-":
+              result -= a;
+              break;
+            case "*":
+              result *= a;
+              break;
+            case "/":
+              result /= a;
+              break;
+            case "quit":
+              break loop;
+            default:
+              out.println("해당 연산을 지원하지 않습니다.");
+              continue;
+          }
+
+          out.printf("계산 결과: %d\n", result);
+        }
+        out.println("quit");
+
       } catch (Exception e) {
         System.out.println("클라이언트 요청 처리 중 오류 발생!");
+
       } finally {
         System.out.println("클라이언트 연결 종료!");
       }
@@ -58,44 +94,6 @@ public class CalcServer {
           remoteAddr.getAddress());
     }
     // ss.close();
-  }
-
-  static void processRequest(Socket socket) throws Exception {
-    try (Socket socket2 = socket;
-        DataInputStream in = new DataInputStream(socket.getInputStream());
-        PrintStream out = new PrintStream(socket.getOutputStream());) {
-
-      // 작업 결과를 유지할 변수
-      int result = 0;
-
-      loop: while (true) {
-        String op = in.readUTF();
-        int a = in.readInt();
-
-        switch (op) {
-          case "+":
-            result += a;
-            break;
-          case "-":
-            result -= a;
-            break;
-          case "*":
-            result *= a;
-            break;
-          case "/":
-            result /= a;
-            break;
-          case "quit":
-            break loop;
-          default:
-            out.println("해당 연산을 지원하지 않습니다.");
-            continue;
-        }
-
-        out.printf("계산 결과: %d\n", result);
-      }
-      out.println("quit");
-    }
   }
 }
 

@@ -1,5 +1,7 @@
-// 클라이언트와 입출력 테스트 - byte stream + buffer
+//220207
 package com.eomcs.net.ex03;
+// 클라이언트와 입출력 테스트 - byte stream + buffer
+// 서버든 클라이언트쪽이든 buffer를 사용할 때는 flush() 명시한다
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

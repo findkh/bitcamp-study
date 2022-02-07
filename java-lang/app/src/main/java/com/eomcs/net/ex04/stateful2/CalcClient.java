@@ -1,5 +1,6 @@
-// stateful 방식의 이점 활용 - 계산기 클라이언트 만들기
+//220207
 package com.eomcs.net.ex04.stateful2;
+// stateful 방식의 이점 활용 - 계산기 클라이언트 만들기
 
 import java.io.DataOutputStream;
 import java.net.Socket;

@@ -1,5 +1,6 @@
-// 클라이언트와 입출력 테스트 - byte stream
+//220207
 package com.eomcs.net.ex03;
+// 클라이언트와 입출력 테스트 - byte stream
 
 import java.io.PrintStream;
 import java.net.ServerSocket;

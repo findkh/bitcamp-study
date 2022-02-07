@@ -1,5 +1,6 @@
-// stateful 방식 - 계산기 서버 만들기
+//220207
 package com.eomcs.net.ex04.stateful;
+// stateful 방식 - 계산기 서버 만들기
 
 import java.io.DataInputStream;
 import java.io.PrintStream;
@@ -52,7 +53,6 @@ public class CalcServer {
             out.println("해당 연산을 지원하지 않습니다.");
             continue;
         }
-
         out.printf("%d %s %d = %d\n", a, op, b, result);
       }
       out.println("Goodbye!");

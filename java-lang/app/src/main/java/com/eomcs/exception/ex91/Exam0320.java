@@ -1,5 +1,6 @@
-// 예외의 종류 - 시스템 예외
+//220207
 package com.eomcs.exception.ex91;
+// 예외의 종류 - 시스템 예외
 
 public class Exam0320 {
 

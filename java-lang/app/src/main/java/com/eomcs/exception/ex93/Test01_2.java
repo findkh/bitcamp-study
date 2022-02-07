@@ -1,5 +1,6 @@
-// 애플리케이션 예외의 종류: Exception 계열의 예외와 RuntimeException 계열의 예외
+//220207
 package com.eomcs.exception.ex93;
+// 애플리케이션 예외의 종류: Exception 계열의 예외와 RuntimeException 계열의 예외
 
 public class Test01_2 {
 
@@ -21,7 +22,7 @@ public class Test01_2 {
 
     int result = divide(100, 2); // OK!
     System.out.println(result);
-    
+
     // RuntimeException 예외가 발생할 수 있는 메서드를 호출할 경우
     // 컴파일러가 try ~ catch ~ 로 예외를 처리하라고 요구하지 않는다.
     // 그렇다고 특정 예외 조건(0으로 나누는 것)에서 예외가 발생되지 않는 것은 아니다.
@@ -30,13 +31,13 @@ public class Test01_2 {
     // main()을 호출한 것은 JVM이기 때문에 
     // main()에서 예외를 처리하지 않으면 JVM에게 전달되고 
     // JVM은 예외를 받는 즉시 실행을 멈춘다.
-    
+
     result = divide(100, 0); // 예외 발생! main() 호출자에게 전달. 즉 JVM에 전달. 즉시 종료!
     System.out.println(result);
-    
+
     System.out.println("실행 종료!");
   }
-  
+
   static int divide(int a, int b) throws RuntimeException {
     if (b == 0)
       throw new RuntimeException("0으로 나눌 수 없습니다.");

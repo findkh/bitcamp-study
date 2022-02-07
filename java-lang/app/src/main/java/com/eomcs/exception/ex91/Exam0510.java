@@ -1,5 +1,6 @@
-// 예외 처리와 자원 해제 보장 - finally 블록
+//220207
 package com.eomcs.exception.ex91;
+// 예외 처리와 자원 해제 보장 - finally 블록
 
 import java.util.Scanner;
 

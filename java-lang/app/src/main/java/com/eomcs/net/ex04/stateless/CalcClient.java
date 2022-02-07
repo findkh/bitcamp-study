@@ -1,5 +1,6 @@
-// stateless 방식 - 계산기 클라이언트 만들기
+//220207
 package com.eomcs.net.ex04.stateless;
+// stateless 방식 - 계산기 클라이언트 만들기
 
 import java.io.DataOutputStream;
 import java.net.Socket;

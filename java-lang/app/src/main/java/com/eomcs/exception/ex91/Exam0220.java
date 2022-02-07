@@ -1,5 +1,6 @@
-// 예외 처리 - 예외 발생과 예외 처리
+//220207
 package com.eomcs.exception.ex91;
+// 예외 처리 - 예외 발생과 예외 처리
 
 public class Exam0220 {
 

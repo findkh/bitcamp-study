@@ -1,5 +1,6 @@
-// 애플리케이션 예외의 종류: main() 과 RuntimeException
+//220207
 package com.eomcs.exception.ex93;
+// 애플리케이션 예외의 종류: main() 과 RuntimeException
 
 import java.util.Scanner;
 
@@ -16,9 +17,9 @@ public class Test01_3 {
     // 프로그램을 종료하기 싫으면 RuntimeException 에 대해서도 
     // 예외 처리를 하라!
     //
-    
+
     Scanner keyScan = new Scanner(System.in);
-    
+
     while (true) {
       try {
         // 아래의 코드에서 예외가 발생한다면 RuntimeException 예외이다.
@@ -28,21 +29,21 @@ public class Test01_3 {
         // 즉시 실행을 멈출 것이다. 
         // 그래서 예외처리가 강제 사항이 아니라 할지라도 
         // 이렇게 try ~ catch ~로 처리한 것이다.
-        
+
         System.out.print("값1? ");
         int a = Integer.parseInt(keyScan.nextLine());
-        
+
         System.out.print("값2? ");
         int b = Integer.parseInt(keyScan.nextLine());
-        
+
         System.out.println(divide(a, b));
       } catch (RuntimeException e) {
         System.out.println("입력 또는 계산 중에 오류 발생!");
       }
     }
-    
+
   }
-  
+
   static int divide(int a, int b) throws RuntimeException {
     if (b == 0)
       throw new RuntimeException("0으로 나눌 수 없습니다.");

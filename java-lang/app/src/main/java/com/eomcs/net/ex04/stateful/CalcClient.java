@@ -1,5 +1,6 @@
-// stateful 방식 - 계산기 클라이언트 만들기
+//220207
 package com.eomcs.net.ex04.stateful;
+// stateful 방식 - 계산기 클라이언트 만들기
 
 import java.io.DataOutputStream;
 import java.net.Socket;
@@ -22,6 +23,7 @@ public class CalcClient {
 
       System.out.print("값2? ");
       out.writeInt(Integer.parseInt(keyScan.nextLine()));
+      out.flush();
 
       String str = in.nextLine();
       System.out.println(str);

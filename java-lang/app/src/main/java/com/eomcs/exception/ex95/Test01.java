@@ -1,8 +1,9 @@
-// 사용자 정의 예외 사용하기
+//220207
 package com.eomcs.exception.ex95;
+// 사용자 정의 예외 사용하기
 
 public class Test01 {
-  
+
   // 사용자(개발자) 정의 예외 클래스
   // => Exception 또는 RuntimeException을 상속 받아 만든다.
   // => 예외 클래스는 수퍼 클래스에 기능을 덧붙이는 것이 아니다.
@@ -32,11 +33,11 @@ public class Test01 {
     public MyException(Throwable cause) {
       super(cause);
     }
-    
+
   }
-  
+
   public static void main(String[] args) throws Exception {
-    
+
     // m1()에서 발생한 예외 정보를 보면 예외 클래스 이름이 출력된다.
     // 예외 클래스 이름으로 어디에서 왜 예외가 발생했는지 짐작할 수 있다.
     // 이런 이유로 사용자 정의 예외를 만들어 사용하는 것이다.
@@ -45,11 +46,11 @@ public class Test01 {
     //
     m1();
   }
-  
+
   static void m1() throws MyException {
     throw new MyException();
   }
- 
+
 }
 
 

@@ -1,5 +1,6 @@
-// 통신 방식 - Stateful
+//220207
 package com.eomcs.net.ex04;
+// 통신 방식 - Stateful
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -45,6 +46,5 @@ public class Server0110 {
     }
     System.out.println("서버 종료!");
   }
-
 }
 

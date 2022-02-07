@@ -1,5 +1,6 @@
-// 애플리케이션 예외의 종류: Exception 계열의 예외 처리
+//220207
 package com.eomcs.exception.ex93;
+// 애플리케이션 예외의 종류: Exception 계열의 예외 처리
 
 import java.lang.reflect.Constructor;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ import java.util.Scanner;
 public class Test02_2 {
 
   public static void main(String[] args) {
-    
+
     // Exception 계열의 예외 처리 방법
     // 1) try ~ catch로 예외 받기
     //    try {
@@ -20,7 +21,7 @@ public class Test02_2 {
     //      예외가 발생할 수 있는 코드 
     //    }
     // 
-    
+
     // '방법1' 적용
     // => try ~ catch 로 예외 처리하기
     try {
@@ -29,17 +30,17 @@ public class Test02_2 {
       Constructor<?> constructor = clazz.getConstructor(Scanner.class);
       Command command = (Command) constructor.newInstance(keyboard);
       command.execute();
-      
+
     } catch (ClassNotFoundException e) {
       System.out.println("해당 클래스를 찾지 못했습니다.");
-      
+
     } catch (NoSuchMethodException e) {
       System.out.println("해당 생성자를 찾지 못했습니다.");
-      
+
     } catch (ReflectiveOperationException e) {
       System.out.println("기타 예외 발생!");
     }
-    
+
     System.out.println("종료!");
 
   }

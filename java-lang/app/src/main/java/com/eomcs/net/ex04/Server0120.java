@@ -1,5 +1,8 @@
-// 통신 방식 - Stateful + 여러 클라이언트 요청 처리
+//220207
 package com.eomcs.net.ex04;
+// 통신 방식 - Stateful + 여러 클라이언트 요청 처리
+//먼저 접속한 클라이언트가 quit을 해야 기다리고 있던 클라이언트가 보낸 메시지를 보고 서버가 응답한다
+//순차적으로 처리한다.
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -44,6 +47,5 @@ public class Server0120 {
     }
     System.out.println("서버 종료!");
   }
-
 }
 

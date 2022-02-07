@@ -1,5 +1,6 @@
-// 통신 방식 - Stateful + 여러 클라이언트 요청 처리 + 서버 종료
+//220207
 package com.eomcs.net.ex04;
+// 통신 방식 - Stateful + 여러 클라이언트 요청 처리 + 서버 종료
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

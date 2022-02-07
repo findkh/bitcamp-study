@@ -1,5 +1,6 @@
-// 서버와 입출력 테스트 - byte stream + buffer
+//220207
 package com.eomcs.net.ex03;
+// 서버와 입출력 테스트 - byte stream + buffer
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -22,11 +23,13 @@ public class Client0160 {
       keyScan.nextLine();
 
       out.println("ABC가각간");
-      //      out.flush();
+      out.flush();
       // 버퍼를 사용할 때는
       // 데이터를 보내기 위해 반드시 flush()를 호출해야 한다.
       // => 버퍼에 남아 있는 데이터를 연결된 출력 스트림을 이용하여 내보낸다.
-      System.out.println("서버에 데이터를 보냈음!");
+      System.out.println("서버에 데이터를 보냈음!"); 
+      //out.println으로 보낸 데이터가 BufferedOutputStream 객체 안의 바이트 배열에 보관됨
+      //서버에서 데이트를 못받음
 
       String str = in.nextLine();
       System.out.println(str);

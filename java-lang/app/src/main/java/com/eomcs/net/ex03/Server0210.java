@@ -1,5 +1,6 @@
-// 클라이언트와 입출력 테스트 - character stream
+//220207
 package com.eomcs.net.ex03;
+// 클라이언트와 입출력 테스트 - character stream
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -30,7 +31,7 @@ public class Server0210 {
         keyboard.nextLine();
 
         out.println(str);
-        //        out.flush();
+        //out.flush();
         // character stream 클래스의 경우
         // 출력 데이터를 내부 버퍼에 보관하고 있다가
         // flush()가 호출되면 비로서 출력을 수행한다.
@@ -47,6 +48,5 @@ public class Server0210 {
     }
     System.out.println("서버 종료!");
   }
-
 }
 

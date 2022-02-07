@@ -1,5 +1,6 @@
-// stateless 방식에서 클라이언트를 구분하고 작업 결과를 유지하는 방법
+//220207
 package com.eomcs.net.ex04.stateless2;
+// stateless 방식에서 클라이언트를 구분하고 작업 결과를 유지하는 방법
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

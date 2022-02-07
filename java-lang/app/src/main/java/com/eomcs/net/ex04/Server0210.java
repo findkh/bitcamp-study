@@ -1,5 +1,6 @@
-// 통신 방식 - Stateless
+//220207
 package com.eomcs.net.ex04;
+// 통신 방식 - Stateless
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,7 +13,6 @@ public class Server0210 {
     try (ServerSocket serverSocket = new ServerSocket(8888)) {
 
       System.out.println("서버 실행!");
-
 
       loop: while (true) {
         // 한 번 클라이언트와 연결되면

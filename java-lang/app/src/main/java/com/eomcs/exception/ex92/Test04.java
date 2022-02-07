@@ -1,30 +1,31 @@
-// 예외 처리하기 - 상속 관계가 있을 때 예외 받는 순서 = catch 블록 순서
+//220207
 package com.eomcs.exception.ex92;
+// 예외 처리하기 - 상속 관계가 있을 때 예외 받는 순서 = catch 블록 순서
 
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class Test04 {
   public static void main(String[] args) {
-    
+
     Scanner keyboard = new Scanner(System.in);
-    
+
     HashMap<String,Command> commandMap = new HashMap<>();
     commandMap.put("plus", new PlusCommand(keyboard));
     commandMap.put("divide", new DivideCommand(keyboard));
-    
+
     while (true) {
       System.out.print("명령> ");
       String input = keyboard.nextLine();
-      
+
       if (input.equals("quit"))
         break;
-      
+
       // 예외 처리 문법을 적용하면, 예외가 발생하더라도 JVM을 멈추지 않는다.
       try {
         Command command = commandMap.get(input);
         command.execute();
-       
+
         // 여러 개의 예외 중 일부는 하나의 catch 블록에서 받고 
         // 일부는 다른 catch 블록에서 받기
         // 
@@ -43,7 +44,7 @@ public class Test04 {
         //    => 예) 값2? 0
         //    => ArithmeticException
         //
-        
+
         // catch 블록을 배치할 때 구멍 큰 그물부터 배치하라.
         // 즉 예외 클래스들이 서로 상속 관계가 있을 때 서브 클래스의 예외부터 배치하라. 
         // 만약 RuntimeException 예외를 받는 catch 블록을 먼저 두면 
@@ -52,17 +53,17 @@ public class Test04 {
         //
       } catch (NumberFormatException e) {
         System.out.println("정수 값을 입력하세요!");
-        
+
       } catch (RuntimeException e) { // OK! 공통 부모이기 때문에 가능!
         System.out.println("명령어 처리 중 오류 발생!");
         System.out.println(e.toString());
 
       } 
     }
-     
-    
+
+
     System.out.println("실행 완료!");
     keyboard.close();
-    
+
   }
 }

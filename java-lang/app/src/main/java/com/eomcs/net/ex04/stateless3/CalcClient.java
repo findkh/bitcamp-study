@@ -1,5 +1,6 @@
-// stateless 에서 다중 클라이언트 요청 처리하기
+//220207
 package com.eomcs.net.ex04.stateless3;
+// stateless 에서 다중 클라이언트 요청 처리하기
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -49,7 +50,6 @@ public class CalcClient {
         break;
       }
     }
-
     keyScan.close();
   }
 }

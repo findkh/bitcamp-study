@@ -1,5 +1,6 @@
-// stateful 방식의 이점 활용 - 계산기 서버 만들기
+//220207
 package com.eomcs.net.ex04.stateful2;
+// stateful 방식의 이점 활용 - 계산기 서버 만들기
 
 import java.io.DataInputStream;
 import java.io.PrintStream;
@@ -56,7 +57,6 @@ public class CalcServer {
             out.println("해당 연산을 지원하지 않습니다.");
             continue;
         }
-
         out.printf("계산 결과: %d\n", result);
       }
       out.println("Goodbye!");

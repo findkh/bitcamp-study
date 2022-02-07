@@ -1,5 +1,6 @@
-// 예외 상황 알리기 - 예외 던지기 + 예외 처리 강요
+//220207
 package com.eomcs.exception.ex91;
+// 예외 상황 알리기 - 예외 던지기 + 예외 처리 강요
 
 public class Exam0420 {
 
