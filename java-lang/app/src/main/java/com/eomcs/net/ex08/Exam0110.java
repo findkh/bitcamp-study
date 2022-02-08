@@ -1,4 +1,4 @@
-// URL 클래스를 이용하여 HTTP 요청 수행하기
+// URL 클래스를 이용하여 HTTP 요청 수행하기(크롤링)
 package com.eomcs.net.ex08;
 
 import java.io.BufferedReader;

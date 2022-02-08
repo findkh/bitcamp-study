@@ -1,5 +1,6 @@
-// HTTP 서버 만들기
+//220208
 package com.eomcs.net.ex06;
+// HTTP 서버 만들기
 
 import java.io.PrintStream;
 import java.net.ServerSocket;
@@ -45,7 +46,6 @@ public class HttpServer {
       socket.close();
     }
   }
-
 }
 
 

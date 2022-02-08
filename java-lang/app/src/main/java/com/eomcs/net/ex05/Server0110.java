@@ -1,5 +1,6 @@
-// connection-oriented 서버 - 연결 후 데이터 송수신
+//220208
 package com.eomcs.net.ex05;
+// connection-oriented 서버 - 연결 후 데이터 송수신
 
 import java.io.PrintStream;
 import java.net.ServerSocket;
@@ -16,13 +17,13 @@ public class Server0110 {
     Scanner keyboardScanner = new Scanner(System.in);
 
     System.out.println("서버 실행 중...");
-    ServerSocket ss = new ServerSocket(8888);
+    ServerSocket ss = new ServerSocket(8888); 
 
-    System.out.println("엔터를 치면 대기열에서 기다리고 있는 클라이언트의 소캣을 생성한다.>");
+    System.out.println("엔터를 치면 대기열에서 기다리고 있는 클라이언트의 소켓을 생성한다.");
     keyboardScanner.nextLine();
 
     Socket socket = ss.accept();
-    System.out.println("클라이언트와 통신할 소캣을 준비하였다!");
+    System.out.println("클라이언트와 통신할 소켓을 준비하였다!");
 
     Scanner in = new Scanner(socket.getInputStream());
     PrintStream out = new PrintStream(socket.getOutputStream());

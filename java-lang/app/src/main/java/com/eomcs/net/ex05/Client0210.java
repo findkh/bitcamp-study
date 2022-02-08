@@ -1,5 +1,6 @@
-// connectionless 클라이언트 - 연결없이 데이터 송신
+//220208
 package com.eomcs.net.ex05;
+// connectionless 클라이언트 - 연결없이 데이터 송신
 
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
@@ -16,7 +17,7 @@ public class Client0210 {
     // connectionless 방식으로 통신을 수행할 소켓 생성
     // - 클라이언트 쪽은 포트 번호를 지정하지 않는다.
     // - 물론 OS가 자동으로 부여할 것이다.
-    DatagramSocket socket = new DatagramSocket();
+    DatagramSocket socket = new DatagramSocket(); //DatagramSocket은 서버주소 소켓번호 안적는다.
 
     // 데이터를 받을 상대편 주소와 포트 번호
     String receiver = "localhost";
@@ -25,10 +26,11 @@ public class Client0210 {
     // 보낼 데이터를 바이트 배열로 준비
     // String message = new String("Hello"); // Heap에 String 객체 생성
     // String message = "Hello"; // constant pool에 String 객체 생성
+    // byte[] bytes = message.getBytes("UTF-8"); //27, 28을 합쳐서 밑에 한줄로 표현하기.
     byte[] bytes = "Hello".getBytes("UTF-8");
 
     // 보낼 데이터를 패킷에 담는다.
-    // => 패킷 = 데이터 + 데이터크기 + 받는이의 주소 + 받는이의 포트번호
+    // => 패킷 = 데이터(바이트배열) + 데이터크기 + 받는이의 주소 + 받는이의 포트번호
     DatagramPacket packet = new DatagramPacket(
         bytes, // 데이터가 저장된 바이트 배열
         bytes.length, // 전송할 데이터 개수

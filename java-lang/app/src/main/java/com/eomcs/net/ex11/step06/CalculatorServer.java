@@ -1,5 +1,6 @@
-// 계산기 서버 만들기 - 6단계: 클라이언트가 보내온 계산식을 실행하여 결과를 리턴한다.
+//220208
 package com.eomcs.net.ex11.step06;
+// 계산기 서버 만들기 - 6단계: 클라이언트가 보내온 계산식을 실행하여 결과를 리턴한다.
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

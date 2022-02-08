@@ -1,5 +1,6 @@
-// URL(Uniform Resource Locator) - Windows OS의 로컬 파일 경로
+//220208
 package com.eomcs.net.ex07;
+// URL(Uniform Resource Locator) - Windows OS의 로컬 파일 경로
 
 import java.net.URL;
 

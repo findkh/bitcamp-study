@@ -1,5 +1,6 @@
-// URL(Uniform Resource Locator) - URL을 다루는 클래스
+//220208
 package com.eomcs.net.ex07;
+// URL(Uniform Resource Locator) - URL을 다루는 클래스
 
 import java.net.URL;
 
@@ -10,7 +11,10 @@ public class Exam01 {
     // => [프로토콜]://서버주소:포트번호/자원의경로?파라미터명=값&파라미터명=값
     // - 프로토콜: http(80), https(443), ftp(21/20) 등
     // - 서버주소: IP 주소(192.168.0.1), 도메인명(www.bitcamp.co.kr)
-    // - 포트번호: 80(생략할 수 있다), 8080(프록시 서버) 등
+    // - 포트번호: 80 또는 443(생략할 수 있다), 8080(프록시 서버) 등
+    //      ex) http://auction.co.kr:80/ -> 80번 안적어도 됨
+    //      ex) https://www.naver.com:443/ -> 443번 생략해도 된다
+
     // - 자원의경로: /index.html, /board/list.jsp 등
     // - 서버에 보내는 파라미터(Query String): 파라미터명=값&파라미터명=값
     //
@@ -21,9 +25,9 @@ public class Exam01 {
     // - 동적 자원(dynamic)
     //   - 요청할 때 마다 결과 콘텐트가 변할 수 있는 자원. 
     //   - 메일 조회, 게시물 변경, 주문 등의 웹 프로그램을 가리킨다.
-    //   - 예) index.php, index.jsp 등
+    //   - 예) index.php, index.jsp, /board/list 등
     //
-    URL url = new URL("https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=bitcamp");
+    URL url = new URL("https://search.naver.com:443/search.naver?sm=tab_hty.top&where=nexearch&query=bitcamp&oquery=%EB%B9%84%ED%8A%B8%EC%BA%A0%ED%94%84&tqi=hlcDsdprvmssshG9eodssssssBC-261116");
 
     // URL 분석
     System.out.printf("프로토콜: %s\n", url.getProtocol());

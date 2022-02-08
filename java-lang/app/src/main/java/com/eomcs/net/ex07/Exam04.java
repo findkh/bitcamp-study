@@ -1,5 +1,6 @@
-// URL(Uniform Resource Locator) - 부가 데이터 지정
+//220208
 package com.eomcs.net.ex07;
+// URL(Uniform Resource Locator) - 부가 데이터 지정
 
 import java.net.URL;
 

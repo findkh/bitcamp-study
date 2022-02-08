@@ -1,5 +1,5 @@
 package com.eomcs.lang.ex99;
-//211213 //211219 220121
+//211213 211219 220121 220207
 //# 키보드 입력 받기 - System.in 과 java.util.Scanner
 //
 public class Exam0210 {

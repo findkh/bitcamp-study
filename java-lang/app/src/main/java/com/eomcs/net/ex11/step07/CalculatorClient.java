@@ -1,5 +1,6 @@
-// 계산기 클라이언트 만들기 - 7단계: 프로그램 종료 명령 'quit' 처리하기
+//220208
 package com.eomcs.net.ex11.step07;
+// 계산기 클라이언트 만들기 - 7단계: 프로그램 종료 명령 'quit' 처리하기
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

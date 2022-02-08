@@ -1,5 +1,6 @@
-// URL(Uniform Resource Locator) - 포트번호 생략
+//220208
 package com.eomcs.net.ex07;
+// URL(Uniform Resource Locator) - 포트번호 생략
 
 import java.net.URL;
 
@@ -8,7 +9,7 @@ public class Exam02 {
   public static void main(String[] args) throws Exception {
     // 포트번호 명시
     // - http://서버주소:포트번호/자원경로?파라미터명=값&파라미터명=값&파라미터명=값 
-    URL url = new URL("https://search.naver.com:8888/search.naver?sm=top_hty&fbm=1&ie=utf8&query=bitcamp");
+    URL url = new URL("https://search.naver.com/search.naver?sm=top_hty&fbm=1&ie=utf8&query=bitcamp");
 
     // URL 분석
     System.out.printf("프로토콜: %s\n", url.getProtocol());
@@ -20,6 +21,7 @@ public class Exam02 {
 
     System.out.printf("자원경로: %s\n", url.getPath());
     System.out.printf("QueryString: %s\n", url.getQuery()); // 없으면 null 리턴
+    // ? 만 있으면 빈문자열 출력된다.
 
   }
 
