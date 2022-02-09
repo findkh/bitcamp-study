@@ -27,7 +27,7 @@ public class Exam01 {
     //   - 메일 조회, 게시물 변경, 주문 등의 웹 프로그램을 가리킨다.
     //   - 예) index.php, index.jsp, /board/list 등
     //
-    URL url = new URL("https://search.naver.com:443/search.naver?sm=tab_hty.top&where=nexearch&query=bitcamp&oquery=%EB%B9%84%ED%8A%B8%EC%BA%A0%ED%94%84&tqi=hlcDsdprvmssshG9eodssssssBC-261116");
+    URL url = new URL("https://search.naver.com:443/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=수달");
 
     // URL 분석
     System.out.printf("프로토콜: %s\n", url.getProtocol());
@@ -36,7 +36,6 @@ public class Exam01 {
     System.out.printf("자원경로: %s\n", url.getPath());
     System.out.printf("서버에 보내는 파라미터: %s\n", url.getQuery());
   }
-
 }
 
 

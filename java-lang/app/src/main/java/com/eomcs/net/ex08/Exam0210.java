@@ -1,5 +1,6 @@
-// URL 요청하기 - URLConnection 사용
+//220208 220209
 package com.eomcs.net.ex08;
+// URL 요청하기 - URLConnection 사용
 
 import java.io.BufferedReader;
 import java.io.InputStream;

@@ -1,5 +1,6 @@
-// URL 클래스를 이용하여 HTTP 요청 수행하기(크롤링)
+//220208 220209
 package com.eomcs.net.ex08;
+// URL 클래스를 이용하여 HTTP 요청 수행하기(크롤링)
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -16,7 +17,7 @@ public class Exam0110 {
     // => URL 주소를 검증하고 준비한다.
     URL url = new URL("https://www.weather.go.kr/w/index.do");
 
-    // => 서버와 연결하고 HTTP 요청을 수행한다.
+    // => openStream():서버와 연결하고 HTTP 요청을 수행한다.
     // => 그런 후에 웹서버의 응답 데이터를 읽어들일 도구를 준비한다.
     InputStream in = url.openStream();
 

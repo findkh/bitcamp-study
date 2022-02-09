@@ -1,10 +1,10 @@
-// URL(Uniform Resource Locator) - 문서 내의 위치 지정
+//220208
 package com.eomcs.net.ex07;
+// URL(Uniform Resource Locator) - 문서 내의 위치 지정
 
 import java.net.URL;
 
 public class Exam03 {
-
   public static void main(String[] args) throws Exception {
     // 자원의 내부 위치를 표현하는 방법
     // - http://서버주소:포트/자원의경로/../xxx#문서의 내부 위치
@@ -18,9 +18,7 @@ public class Exam03 {
     System.out.printf("참조경로(내부위치): %s\n", url.getRef());
     // 자원 경로 다음에 문서의 내부 위치를 지정하면
     // 웹브라우저는 해당 위치로 자동 스크롤 한다.
-
   }
-
 }
 
 
