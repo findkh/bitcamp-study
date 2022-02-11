@@ -1,5 +1,6 @@
-// local class : 사용 범위
+//220211
 package com.eomcs.oop.ex11.d;
+// local class : 사용 범위
 
 class B {
   void m1() {

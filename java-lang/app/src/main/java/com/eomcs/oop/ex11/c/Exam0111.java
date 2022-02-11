@@ -9,9 +9,10 @@ class A2 {
     // - static nested class 
     // 만이 가질 수 있다.
     // 
-    //    static int v1; // 컴파일 오류!
-    //    static void m1() {} // 컴파일 오류!
-    //    static {} // 컴파일 오류!
+    //JDK15까지는 오류 JDK16부터는 오류가 아니다.
+    //static int v1; // 컴파일 오류!
+    //static void m1() {} // 컴파일 오류!
+    //static {} // 컴파일 오류!
 
     int v2;
     void m2() {}

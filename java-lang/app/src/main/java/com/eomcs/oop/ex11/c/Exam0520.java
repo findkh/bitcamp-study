@@ -1,5 +1,6 @@
-// inner class : 바깥 클래스의 인스턴스를 보관할 this 변수와 생성자 II
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : 바깥 클래스의 인스턴스를 보관할 this 변수와 생성자 II
 
 class F {
   class X {

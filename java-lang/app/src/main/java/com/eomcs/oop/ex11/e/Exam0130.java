@@ -1,5 +1,6 @@
-// anonymous class - 수퍼 클래스와 인터페이스를 동시에 지정할 수 있을까?
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 수퍼 클래스와 인터페이스를 동시에 지정할 수 있을까?
 
 public class Exam0130 {
 

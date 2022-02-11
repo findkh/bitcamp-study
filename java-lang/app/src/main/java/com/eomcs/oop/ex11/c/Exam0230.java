@@ -1,12 +1,12 @@
-// inner class : 바깥 클래스의 인스턴스 멤버 접근하기 II
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : 바깥 클래스의 인스턴스 멤버 접근하기 II
 
 class B3 {
-
   // 인스턴스 멤버
   int v1 = 10;
 
-  class X {
+  class X { 
     int v1 = 100;
 
     void test() {
@@ -29,7 +29,7 @@ public class Exam0230 {
     x1.test();
     System.out.println("--------------------");
 
-    B3.X x2 = outer.new X();
+    B3. X x2 = outer.new X();
     x2.test();
     System.out.println("--------------------");
 
@@ -40,5 +40,4 @@ public class Exam0230 {
     x3.test();
     System.out.println("--------------------");
   }
-
 }

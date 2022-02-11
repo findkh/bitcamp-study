@@ -1,5 +1,6 @@
-// local class에서 바깥 메서드의 로컬 변수 접근 I
+//220211
 package com.eomcs.oop.ex11.d;
+// local class에서 바깥 메서드의 로컬 변수 접근 I
 
 class D2 { 
   int v1 = 1;
@@ -28,10 +29,8 @@ class D2 {
 }
 
 public class Exam0321 {
-
   public static void main(String[] args) {
     D2 obj = new D2();
     obj.m1();
   }
-
 }

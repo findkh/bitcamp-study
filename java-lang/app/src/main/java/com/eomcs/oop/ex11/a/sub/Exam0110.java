@@ -1,5 +1,6 @@
-// top level class : 접근 범위
+//220211
 package com.eomcs.oop.ex11.a.sub;
+// top level class : 접근 범위
 
 // top level class
 // - 패키지에 소속된 클래스다.
@@ -16,6 +17,5 @@ public class Exam0110 {
     // import 도 할 필요가 없다.
     A obj3 = new A();
     B obj4 = new B();
-
   }
 }

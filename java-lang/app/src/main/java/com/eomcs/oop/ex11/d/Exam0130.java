@@ -1,5 +1,6 @@
-// local class : .class 파일명
+//220211
 package com.eomcs.oop.ex11.d;
+// local class : .class 파일명
 
 class B2 {
   void m1() {

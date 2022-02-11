@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex11.g.step3;
-
+//220211
 public class Product {
   // 카테고리 값을 잘못 입력할 경우를 방지하기 위해
   // 문자열을 상수로 정의한다.

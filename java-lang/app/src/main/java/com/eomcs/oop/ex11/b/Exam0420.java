@@ -1,5 +1,6 @@
-//static nested class : import static 사용 후
+//220211
 package com.eomcs.oop.ex11.b;
+//static nested class : import static 사용 후
 
 // 스태틱 멤버를 임포트하기
 import static com.eomcs.oop.ex11.b.E.m1;

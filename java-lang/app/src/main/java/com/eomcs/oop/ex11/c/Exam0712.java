@@ -1,5 +1,6 @@
-// inner class 응용 I : 2단계 - 논스태틱 중첩 클래스(inner class) 사용 
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class 응용 I : 2단계 - 논스태틱 중첩 클래스(inner class) 사용 
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,8 +20,13 @@ public class Exam0712 {
     // Player가 사용할 바깥 클래스 Musics2의 객체를 넘길 때는 
     // 다음과 같이 파라미터가 아니라 
     // 생성자 호출 문장 앞쪽에 놓는다. 
+
     Musics2.Player p1 = m1.new Player();
     Musics2.Player p2 = m2.new Player();
+
+    //스태틱 중첩 클래스를 사용할 때는 다음과 같이 직접 생성자에 파라미터로 바깥 클래스의 객체를 넘겨줘야 했다.
+    //Music2.Player p1 = new Music2.player(m1);
+    //Music2.Player p2 = new Music2.player(m1);
 
     p1.play();
     p2.play();

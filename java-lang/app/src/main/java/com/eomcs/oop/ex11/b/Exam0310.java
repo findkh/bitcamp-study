@@ -1,5 +1,6 @@
-// static nested class : 다른 멤버가 중첩 클래스 사용하기
+//220211
 package com.eomcs.oop.ex11.b;
+// static nested class : 다른 멤버가 중첩 클래스 사용하기
 
 class C {
   static void m1() {

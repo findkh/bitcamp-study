@@ -1,5 +1,6 @@
-// anonymous class - 생성자 II
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 생성자 II
 
 public class Exam0220 {
 

@@ -1,5 +1,6 @@
-// inner class : inner 클래스에서 변수를 찾는 순서 II
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : inner 클래스에서 변수를 찾는 순서 II
 
 class H {
   int v1 = 1;
@@ -28,13 +29,10 @@ class H {
 }
 
 public class Exam0620 {
-
   public static void main(String[] args) {
     H outer = new H();
 
     H.X obj = outer.new X();
     obj.m1(100);
-
   }
-
 }

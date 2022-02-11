@@ -1,5 +1,6 @@
-//static nested class : import static 사용 후
+//220211
 package com.eomcs.oop.ex11.b;
+//static nested class : import static 사용 후
 
 // 각각의 스태틱 멤버를 지정하는 대신 
 // 다음과 같이 wildcard(*)를 사용하여 전체 스태틱 멤버를 한 번에 지정할 수 있다.

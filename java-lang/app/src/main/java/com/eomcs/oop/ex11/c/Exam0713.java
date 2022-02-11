@@ -1,5 +1,6 @@
-// inner class 응용 I : 리랙토링  
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class 응용 I : 리랙토링  
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,8 +55,6 @@ class Musics3 {
       System.out.println("-----------------------------");
     }
   }
-
-
 }
 
 

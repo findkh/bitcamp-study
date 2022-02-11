@@ -1,5 +1,6 @@
-// static nested class 문법을 이용하여 상수를 효과적으로 관리하기
+//220211
 package com.eomcs.oop.ex11.g.step7;
+// static nested class 문법을 이용하여 상수를 효과적으로 관리하기
 
 //상수를 관리하는 용도로만 사용될 클래스라면 서브 클래스를 만들지 못하도록 막아야 한다.
 //=> final 제한자를 사용하라!

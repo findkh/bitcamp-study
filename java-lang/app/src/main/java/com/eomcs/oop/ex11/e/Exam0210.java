@@ -1,11 +1,34 @@
-// anonymous class - 생성자
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 생성자
 
 public class Exam0210 {
 
   interface A {
     void print();
   }
+  /* 복습
+  class X {
+    public X() {
+
+      System.out.println("Hello");
+    }
+
+    public X(int a) {
+
+      System.out.println("Hello");
+    }
+
+    public X(String s) {
+
+      System.out.println("Hello");
+    }
+
+    { //여러 생성자에 공통으로 들어갈 때 인스턴스 블록으로 설정해라
+      //자바 컴파일러가 컴파일 할 때 인스턴스 블록을 클래스의 생성자 앞쪽으로 넣어 컴파일 한다.
+      System.out.println("ABC2");
+    }
+  } */
 
   public static void main(final String[] args) {
 

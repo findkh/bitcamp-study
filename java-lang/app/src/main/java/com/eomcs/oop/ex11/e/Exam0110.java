@@ -1,5 +1,6 @@
-// anonymous class : 인터페이스를 구현한 익명 클래스 정의
+//220211
 package com.eomcs.oop.ex11.e;
+// anonymous class : 인터페이스를 구현한 익명 클래스 정의
 
 public class Exam0110 {
   // 인터페이스의 경우 static으로 선언하지 않아도 스태틱 멤버에서 사용할 수 있다.

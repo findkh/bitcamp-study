@@ -1,5 +1,6 @@
-// inner class : inner 클래스에서 변수를 찾는 순서
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : inner 클래스에서 변수를 찾는 순서
 
 class G {
   int v1 = 1;

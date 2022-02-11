@@ -1,5 +1,6 @@
-// local class : 클래스 정의와 인스턴스 생성
+//220211
 package com.eomcs.oop.ex11.d;
+// local class : 클래스 정의와 인스턴스 생성
 
 class A {
 
@@ -32,5 +33,4 @@ public class Exam0110 {
     A outer = new A();
     outer.m1();
   }
-
 }

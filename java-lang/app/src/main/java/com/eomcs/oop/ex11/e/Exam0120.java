@@ -1,8 +1,8 @@
-// anonymous class : 클래스를 상속 받은 익명 클래스 정의
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class : 클래스를 상속 받은 익명 클래스 정의
 
 public class Exam0120 {
-
   // 클래스는 static과 non-static이 구분된다.
   static abstract class A {
     abstract void print();

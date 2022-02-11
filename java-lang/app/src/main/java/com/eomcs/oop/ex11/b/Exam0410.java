@@ -1,7 +1,6 @@
-//static nested class : import static 사용 전
+//220211
 package com.eomcs.oop.ex11.b;
-
-import com.eomcs.oop.ex11.b.sub.M;
+//static nested class : import static 사용 전
 
 class D {
   static int v1;
@@ -24,9 +23,9 @@ public class Exam0410 {
     D.X obj = new D.X();
 
     // 다른 패키지 클래스
-    M.v2 = 200;
-    M.m2();
-    M.Y obj2 = new M.Y();
+    com.eomcs.oop.ex11.b.sub.M.v2 = 200;
+    com.eomcs.oop.ex11.b.sub.M.m2();
+    com.eomcs.oop.ex11.b.sub.M.Y obj2 = new com.eomcs.oop.ex11.b.sub.M.Y();
   }
 
 }

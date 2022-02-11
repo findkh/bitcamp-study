@@ -1,5 +1,6 @@
-// top level class : (package-private)
+//220211
 package com.eomcs.oop.ex11.a.sub;
+// top level class : (package-private)
 
 //top level class 의 접근 제한자
 // - public : 다른 패키지에서도 접근 가능

@@ -1,5 +1,6 @@
-// 상수를 그룹 별로 별도의 클래스로 분리하여 다루기
+//220211
 package com.eomcs.oop.ex11.g.step6;
+// 상수를 그룹 별로 별도의 클래스로 분리하여 다루기
 
 import static com.eomcs.oop.ex11.g.step6.Appliance.TV;
 import static com.eomcs.oop.ex11.g.step6.Book.NOVEL;

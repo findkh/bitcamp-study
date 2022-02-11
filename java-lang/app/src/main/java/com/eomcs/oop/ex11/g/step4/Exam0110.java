@@ -1,6 +1,6 @@
-// 상수를 활용한 후 : 카테고리를 정수타입의 상수로 정의
+//220211
 package com.eomcs.oop.ex11.g.step4;
-
+// 상수를 활용한 후 : 카테고리를 정수타입의 상수로 정의
 
 public class Exam0110 {
   public static void main(String[] args) {

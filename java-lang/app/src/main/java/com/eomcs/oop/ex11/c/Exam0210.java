@@ -1,5 +1,6 @@
-// inner class : 바깥 클래스의 스태틱 멤버에 접근하기
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : 바깥 클래스의 스태틱 멤버에 접근하기
 
 class B {
   // 클래스 멤버
@@ -28,12 +29,10 @@ class B {
 }
 
 public class Exam0210 {
-
   public static void main(String[] args) {
     B outer = new B();
     B.X obj = outer.new X();
 
     obj.test();
   }
-
 }

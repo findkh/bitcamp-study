@@ -1,5 +1,6 @@
-// local class : 스태틱 메서드와 로컬 클래스
+//220211
 package com.eomcs.oop.ex11.d;
+// local class : 스태틱 메서드와 로컬 클래스
 
 class C2 {
   int v1 = 1;
@@ -33,5 +34,4 @@ public class Exam0220 {
     C2 c = new C2();
     c.m1();
   }
-
 }

@@ -1,5 +1,6 @@
-// anonymous class - 수퍼 클래스의 메서드 오버라이딩 하기
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 수퍼 클래스의 메서드 오버라이딩 하기
 
 public class Exam0310 {
 

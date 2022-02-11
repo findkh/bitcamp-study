@@ -1,5 +1,6 @@
-// 상수를 활용하기 전 : 카테고리를 문자열로 받기
+//220211
 package com.eomcs.oop.ex11.g.step2;
+// 상수를 활용하기 전 : 카테고리를 문자열로 받기
 
 public class Exam0110 {
   public static void main(String[] args) {

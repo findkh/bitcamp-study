@@ -1,5 +1,6 @@
-// local class : 인스턴스 메서드와 로컬 클래스
+//220211
 package com.eomcs.oop.ex11.d;
+// local class : 인스턴스 메서드와 로컬 클래스
 
 class C {
   int v1 = 1;
@@ -36,5 +37,4 @@ public class Exam0210 {
     C c = new C();
     c.m1();
   }
-
 }

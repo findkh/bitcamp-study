@@ -1,5 +1,6 @@
-// top level class : 접근 범위
+//220211
 package com.eomcs.oop.ex11.a;
+// top level class : 접근 범위
 
 // top level class
 // - 패키지에 소속된 클래스다.

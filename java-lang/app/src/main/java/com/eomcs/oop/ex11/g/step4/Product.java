@@ -1,5 +1,5 @@
 package com.eomcs.oop.ex11.g.step4;
-
+//220211
 public class Product {
   // 상수를 문자열로 정의하면
   // 값을 저장할 때 메모리를 많이 차지한다.

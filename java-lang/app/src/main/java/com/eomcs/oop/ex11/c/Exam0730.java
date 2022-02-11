@@ -1,5 +1,6 @@
-// inner class 응용 III : inner 클래스와 인터페이스 2
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class 응용 III : inner 클래스와 인터페이스 2
 
 import java.util.ArrayList;
 import java.util.Iterator;

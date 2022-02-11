@@ -1,5 +1,6 @@
-// inner class : 바깥 클래스의 인스턴스 멤버 접근하기 III
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : 바깥 클래스의 인스턴스 멤버 접근하기 III
 
 class B4 {
 
@@ -26,21 +27,21 @@ class B4 {
 public class Exam0240 {
 
   public static void main(String[] args) {
-    B3 outer = new B3();
+    B4 outer = new B4();
     outer.v1 = 11;
 
-    B3.X x1 = outer.new X();
+    B4.X x1 = outer.new X();
     x1.test();
     System.out.println("--------------------");
 
-    B3.X x2 = outer.new X();
+    B4.X x2 = outer.new X();
     x2.test();
     System.out.println("--------------------");
 
-    B3 outer2 = new B3();
+    B4 outer2 = new B4();
     outer2.v1 = 22;
 
-    B3.X x3 = outer2.new X();
+    B4.X x3 = outer2.new X();
     x3.test();
     System.out.println("--------------------");
   }

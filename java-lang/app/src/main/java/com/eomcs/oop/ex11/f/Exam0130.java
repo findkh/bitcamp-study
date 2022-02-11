@@ -1,5 +1,6 @@
-// FilenameFilter 를 정의하는 다양한 방법 : non-static 중첩 클래스(nested class) 사용
+//220211
 package com.eomcs.oop.ex11.f;
+// FilenameFilter 를 정의하는 다양한 방법 : non-static 중첩 클래스(nested class) 사용
 
 import java.io.File;
 import java.io.FilenameFilter;

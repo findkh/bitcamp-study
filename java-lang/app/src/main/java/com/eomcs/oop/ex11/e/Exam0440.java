@@ -1,5 +1,6 @@
-// anonymous class - 익명 클래스가 놓이는 장소: 파라미터
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 익명 클래스가 놓이는 장소: 파라미터
 
 public class Exam0440 {
   // 인터페이스의 경우 static으로 선언하지 않아도 스태틱 멤버에서 사용할 수 있다.
@@ -38,6 +39,5 @@ public class Exam0440 {
         System.out.println("안녕!!!");
       }
     });
-
   }
 }

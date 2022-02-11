@@ -1,5 +1,6 @@
-// inner class : import 사용
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class : import 사용
 
 // 중첩 클래스를 직접 import 할 수 있다.
 // => import 가 하는 일은 클래스를 로딩하는 것이 아니다!
@@ -17,7 +18,6 @@ class D {
 }
 
 public class Exam0410 {
-
   public static void main(String[] args) {
 
     D outer = new D();
@@ -28,5 +28,4 @@ public class Exam0410 {
     Y obj2 = outer2.new Y();
     obj2.test();
   }
-
 }

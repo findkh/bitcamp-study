@@ -1,5 +1,6 @@
-// 상수를 별도의 클래스로 분리하여 다루기 - static 멤버 import
+//220211
 package com.eomcs.oop.ex11.g.step5;
+// 상수를 별도의 클래스로 분리하여 다루기 - static 멤버 import
 
 import static com.eomcs.oop.ex11.g.step5.Category.APPLIANCE_TV;
 import static com.eomcs.oop.ex11.g.step5.Category.BOOK_NOVEL;

@@ -1,5 +1,6 @@
-// nested class : 로컬 클래스의 접근 제어
+//220211
 package com.eomcs.oop.ex11.a;
+// nested class : 로컬 클래스의 접근 제어
 
 public class Exam0311 {
 
@@ -8,6 +9,8 @@ public class Exam0311 {
     //    private class A1 {} // 컴파일 오류!
     //    protected class A2 {} // 컴파일 오류!
     //    public class A3 {} // 컴파일 오류!
+    // 로컬 클래스에는 public을 붙일 수 없다. 
+    // 내부 메서드 안에서만 쓰이기 때문에 로컬 클래스로 만들었는데, public으로 공개할 수 없다.
 
     class A4 {} // OK!
   }

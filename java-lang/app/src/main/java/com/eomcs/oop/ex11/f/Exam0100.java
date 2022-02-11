@@ -1,5 +1,6 @@
-// FilenameFilter 를 정의하는 다양한 방법
+//220211
 package com.eomcs.oop.ex11.f;
+// FilenameFilter 를 정의하는 다양한 방법
 
 import java.io.File;
 
@@ -22,14 +23,5 @@ public class Exam0100 {
     for (String name : names) {
       System.out.println(name);
     }
-
   }
-
 }
-
-
-
-
-
-
-

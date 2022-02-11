@@ -1,5 +1,6 @@
-// inner class 응용 I : 1단계 - 스태틱 중첩 클래스 사용 
+//220211
 package com.eomcs.oop.ex11.c;
+// inner class 응용 I : 1단계 - 스태틱 중첩 클래스 사용 
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,8 +61,6 @@ class Musics1 {
       System.out.println("-----------------------------");
     }
   }
-
-
 }
 
 

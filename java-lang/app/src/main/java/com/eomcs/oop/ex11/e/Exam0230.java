@@ -1,5 +1,6 @@
-// anonymous class - 호출할 수퍼 클래스의 생성자 지정하기
+//220212
 package com.eomcs.oop.ex11.e;
+// anonymous class - 호출할 수퍼 클래스의 생성자 지정하기
 
 public class Exam0230 {
 
