@@ -1,5 +1,6 @@
-// Lambda 문법 - 람다 파라미터 II
+//220214
 package com.eomcs.oop.ex12;
+// Lambda 문법 - 람다 파라미터 II
 
 public class Exam0140 {
 
@@ -21,5 +22,3 @@ public class Exam0140 {
     //    p3.play("임꺽정", 30);
   }
 }
-
-

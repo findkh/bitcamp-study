@@ -1,8 +1,10 @@
-// Lambda 문법 - 람다 body
+//220214
 package com.eomcs.oop.ex12;
+// Lambda 문법 - 람다 body
 
 public class Exam0120 {
 
+  //functional interface : 추상 메서드가 한 개만 있는 인터페이스
   interface Player {
     void play();
   }
@@ -22,5 +24,3 @@ public class Exam0120 {
     //    Player p3 = -> System.out.println("테스트3"); // 컴파일 오류!
   }
 }
-
-

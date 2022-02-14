@@ -1,5 +1,6 @@
-// 아규먼트에 람다(lambda) 활용 III - 여러 개의 문장이 있는 경우
+//220214
 package com.eomcs.oop.ex12;
+// 아규먼트에 람다(lambda) 활용 III - 여러 개의 문장이 있는 경우
 
 public class Exam0331 {
 

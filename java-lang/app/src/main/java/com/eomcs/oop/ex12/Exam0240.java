@@ -1,5 +1,6 @@
-// Lambda 문법 - functional interface의 자격
+//220214
 package com.eomcs.oop.ex12;
+// Lambda 문법 - functional interface의 자격
 
 public class Exam0240 {
 
