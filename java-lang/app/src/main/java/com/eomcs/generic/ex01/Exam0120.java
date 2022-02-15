@@ -1,5 +1,6 @@
-// 제네릭(generic) 적용 전 - Object를 이용한 다형적 변수 사용할 때 형변환이 불편한다.
+//220215
 package com.eomcs.generic.ex01;
+// 제네릭(generic) 적용 전 - Object를 이용한 다형적 변수 사용할 때 형변환이 불편한다.
 
 import java.util.Calendar;
 import java.util.Date;

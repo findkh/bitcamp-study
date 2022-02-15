@@ -1,5 +1,6 @@
-// 제네릭(Generic) : 메서드에 타입 파라미터 선언하기
+//220215
 package com.eomcs.generic.ex01;
+// 제네릭(Generic) : 메서드에 타입 파라미터 선언하기
 
 public class Exam0410 {
 
@@ -42,7 +43,6 @@ public class Exam0410 {
     }
     System.out.println();
   }
-
 }
 
 

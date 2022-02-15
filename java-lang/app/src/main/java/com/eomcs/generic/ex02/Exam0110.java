@@ -1,5 +1,6 @@
-// 제네릭(Generic) 활용 - java.util.ArrayList
+//220215
 package com.eomcs.generic.ex02;
+// 제네릭(Generic) 활용 - java.util.ArrayList
 
 import java.util.ArrayList;
 
@@ -13,10 +14,10 @@ public class Exam0110 {
     //    클래스명 옆에 다루고자 하는 타입의 이름을 지정한다.
     //    클래스명<타입명>
     //
-    ArrayList<Member> list = new ArrayList<Member>();
+    ArrayList<Member> list = new ArrayList<>();
     list.add(new Member("홍길동", 20));
 
-    // ArrayList를 선언할 때 지정한 타입이 아닌 경우에는 컴파일 오류가 발생한다.
+    // ArrayList 객체를 생성할 때 지정한 타입이 아닌 경우에는 컴파일 오류가 발생한다.
     // => 컬렉션에 잘못된 값이 들어갈 상황을 없앨 수 있다.
     //    list.add(new String("Hello"));
     //    list.add(new Integer(100));

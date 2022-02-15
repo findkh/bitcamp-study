@@ -1,5 +1,6 @@
-// 클래스에 제네릭(generic) 적용하기 : 적용 후
+//220215
 package com.eomcs.generic.ex01;
+// 클래스에 제네릭(generic) 적용하기 : 적용 후
 
 import java.util.Date;
 

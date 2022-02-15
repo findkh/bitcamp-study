@@ -1,5 +1,6 @@
-// 클래스에 제네릭(generic) 적용하기 : 적용 후
+//220215
 package com.eomcs.generic.ex01;
+// 클래스에 제네릭(generic) 적용하기 : 적용 후
 
 import com.eomcs.generic.ex02.Member;
 
@@ -11,8 +12,9 @@ public class Exam0230 {
   //     class 클래스명<타입파라미터명, 타입파라미터명, ...> {...}
   //- 클래스가 다루는 어떤 타입이 있다고 가정하자. 그 타입을 T라고 부르겠다.
   //- T가 어떤 타입인지는 Box 객체를 생성할 때 결정된다.
-  //
-  static class Box<T> {
+
+  //Box가 다룰 타입에 대해서 결정하지 않는다. 인스턴스를 생성할 때 결정한다.
+  static class Box<T> { 
     T value;  // T라는 타입의 인스턴스 주소를 저장할 필드
 
     public T get() { // T라는 타입의 객체를 리턴

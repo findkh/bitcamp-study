@@ -1,4 +1,4 @@
-//220214
+//220214 220215
 package com.eomcs.oop.ex12;
 // 메서드 레퍼런스 - 스태틱 메서드 레퍼런스
 
@@ -77,7 +77,7 @@ public class Exam0530 {
     //    };
 
 
-    // 리턴 타입 int ===> void
+    // 리턴 타입 int ===> void(void는 리턴하지 않는다. int값을 받아서 리턴하지 않으니까 문제가 없다.)
     Calculator4 c4 = MyCalculator::plus; // OK!
     // 위 문장은 다음과 같다.
     //    Calculator4 c4 = new Calculator4() {

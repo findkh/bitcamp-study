@@ -1,5 +1,6 @@
-// 클래스에 제네릭(generic) 적용하기 :  Object를 이용한 다형적 변수 사용할 때 형변환이 불편한다.
+//220215
 package com.eomcs.generic.ex01;
+// 클래스에 제네릭(generic) 적용하기 :  Object를 이용한 다형적 변수 사용할 때 형변환이 불편한다.
 
 import java.util.Date;
 import com.eomcs.generic.ex02.Member;
@@ -18,7 +19,6 @@ class ObjectBox {
 }
 
 public class Exam0220 {
-
   public static void main(String[] args) {
 
     // 1) 제네릭이 적용되지 않은 ObjectBox 클래스 이용
@@ -40,8 +40,9 @@ public class Exam0220 {
 
     // ObjectBox 객체에서 값 꺼내기
     // => 값을 꺼낼 때마다 형변환 해야 한다.
-    //
-    Member v1 = (Member) b1.get();
+    // get이라는 메서드는 문법상 Object타입이다. 
+    // 들어 있는것은 Member객체지만 문법상 Object이기 때문에 Member 레퍼런스에 담으려면 형변환을 해줘야 한다.
+    Member v1 = (Member) b1.get(); 
     System.out.println(v1);
 
     String v2 = (String) b2.get();

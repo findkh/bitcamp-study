@@ -1,5 +1,6 @@
-// 클래스에 제네릭(generic) 적용하기 : 적용 후
+//220215
 package com.eomcs.generic.ex01;
+// 클래스에 제네릭(generic) 적용하기 : 적용 후
 
 import com.eomcs.generic.ex02.Member;
 
@@ -22,6 +23,8 @@ public class Exam0240 {
     b1.set(new Member("홍길동", 20));
     b2.set("Hello");
     b3.set(100);
+    //->JVM이 이렇게 변환한다
+    //b3.set(Integer.valueOf(100));
 
     // 제네릭을 사용하면 get() 메서드가 각 타입별로 존재하는 것처럼 사용할 수 있다.
     // => 즉 형변환 할 필요가 없다.

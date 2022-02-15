@@ -1,12 +1,12 @@
-// 제네릭(generic) 적용 전 - Object를 이용한 다형적 변수 사용
+//220215
 package com.eomcs.generic.ex01;
+// 제네릭(generic) 적용 전 - Object를 이용한 다형적 변수 사용
 
 import java.util.Calendar;
 import java.util.Date;
 
 public class Exam0110 {
-
-  public static Object echo(Object obj) {
+  public static Object echo(Object obj) { //파라미터로 받은 obj를 그대로 obj로 리턴한다
     return obj;
   }
 
@@ -27,5 +27,4 @@ public class Exam0110 {
 
     Calendar obj5 = (Calendar) echo(Calendar.getInstance());
   }
-
 }

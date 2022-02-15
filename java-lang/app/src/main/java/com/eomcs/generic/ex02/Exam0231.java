@@ -1,5 +1,6 @@
-// 제네릭(Generic) 문법 정리 - 제네릭 객체의 메서드 사용 
+//220215
 package com.eomcs.generic.ex02;
+// 제네릭(Generic) 문법 정리 - 제네릭 객체의 메서드 사용 
 
 import java.util.ArrayList;
 

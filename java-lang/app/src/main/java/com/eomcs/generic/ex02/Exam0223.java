@@ -1,5 +1,6 @@
-// 제네릭(Generic) 문법 정리 - 제네릭 파라미터 
+//220215
 package com.eomcs.generic.ex02;
+// 제네릭(Generic) 문법 정리 - 제네릭 파라미터 
 
 import java.util.ArrayList;
 
@@ -39,9 +40,14 @@ public class Exam0223 {
     //    m1(new ArrayList<Object>()); // 컴파일 오류!
     //    m1(new ArrayList<A>()); // 컴파일 오류!
     m1(new ArrayList<B1>()); // OK!
+    m1(new ArrayList<>()); // OK! //생략 가능
     //    m1(new ArrayList<B2>()); // 컴파일 오류!
     //    m1(new ArrayList<C>()); // 컴파일 오류!
   }
+
+  //위와 아래는 분리 해서 생각 해야 한다.
+  // 레퍼런스에 객체를 넘길 때는 다형적 변수 적용하지 않는다. 안된다. 안 따진다. B를 원하면 B만 줘야 함.
+  // 레퍼런스를 받은 다음에 그 객체를 사용할 때는 다형적 변수 적용할 수 있다.B를 주면 B의 자식은 C도 사용할 수 있다.
 
   static void m1(ArrayList<B1> list) {
     // 컴파일러는 파라미터로 넘어온 ArrayList가  어떤 타입이든 간에 

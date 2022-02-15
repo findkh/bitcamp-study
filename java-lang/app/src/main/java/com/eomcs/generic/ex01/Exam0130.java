@@ -1,5 +1,6 @@
-// 제네릭(generic) 적용 전 - 메서드에 제네릭 적용하기
+//220215
 package com.eomcs.generic.ex01;
+// 제네릭(generic) 적용 전 - 메서드에 제네릭 적용하기
 
 import java.io.File;
 import java.util.Calendar;
@@ -8,7 +9,8 @@ import java.util.Date;
 public class Exam0130 {
 
   // 제네릭을 이용하면 여러 타입을 모두 수용할 수 있는 메서드를 만들 수 있다.
-  //    <다루는 타입의 별명>  리턴타입 메서드명(다루는_타입_별명 파라미터, ...) {...}
+  //    <다루는_타입_별명>  다루는_타입_별명 메서드명(다루는_타입_별명 파라미터, ...) {...}
+  //    ex) <What> What test(What obj){...}
   //
   // 다음 메서드를 해석하기
   // => echo() 메서드가 다루는 타입을 "What"라고 가정하자!
@@ -18,7 +20,7 @@ public class Exam0130 {
   // => 제네릭을 사용하면 특정 타입을 다루는 메서드 여러 개를 한 개의 메서드로 줄일 수 있다.
   // => 이때 "What"을 가리키는 용어로 "타입(이름을 받는) 파라미터"라고 부른다.
   //
-  static <What> What echo(What obj) {
+  static <What> What echo(What obj) { //<What>을 붙이지 않으면 클래스나 인터페이스의 이름이 된다.
     return obj;
   }
 

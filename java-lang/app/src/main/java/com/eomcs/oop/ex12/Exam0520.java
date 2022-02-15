@@ -1,4 +1,4 @@
-//220214
+//220214 220215
 package com.eomcs.oop.ex12;
 // 메서드 레퍼런스 - 스태틱 메서드 레퍼런스 구현 원리
 
@@ -31,6 +31,11 @@ public class Exam0520 {
     // 스태틱 메서드 레퍼런스로 Calculator 구현체를 만드는 방법
     //
     //    Calculator c1 = MyCalculator::plus;
+
+    Calculator c2 = MyCalculator::plus;
+    Calculator c3 = MyCalculator::minus;
+    Calculator c4 = MyCalculator::multiple;
+    Calculator c5 = MyCalculator::divide;
 
     // 위의 코드는 내부적으로 다음과 같다.
     //

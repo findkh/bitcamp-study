@@ -1,5 +1,6 @@
-// 제네릭(Generic) - 여러 개의 타입 파라미터
+//220215
 package com.eomcs.generic.ex01;
+// 제네릭(Generic) - 여러 개의 타입 파라미터
 
 import com.eomcs.generic.ex02.Member;
 
@@ -36,7 +37,7 @@ class A2<T,S,U> {
 public class Exam0310 {
 
   public static void main(String[] args) {
-    A<String,Integer,Member> obj = new A<>();
+    A2<String,Integer,Member> obj = new A2<>();
 
     obj.v1 = new String("Hello");
     obj.v2 = Integer.valueOf(100);

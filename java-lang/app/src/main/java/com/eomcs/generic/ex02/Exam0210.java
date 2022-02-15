@@ -1,5 +1,6 @@
-// 제네릭(Generic) 문법 정리 - 레퍼런스와 인스턴스 생성 
+//220215
 package com.eomcs.generic.ex02;
+// 제네릭(Generic) 문법 정리 - 레퍼런스와 인스턴스 생성 
 
 import java.util.ArrayList;
 
