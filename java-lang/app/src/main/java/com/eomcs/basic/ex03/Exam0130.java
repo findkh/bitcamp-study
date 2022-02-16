@@ -1,5 +1,6 @@
-// java.util.ArrayList 사용법 - contains() 와 equals()의 관계
+//220216
 package com.eomcs.basic.ex03;
+// java.util.ArrayList 사용법 - contains() 와 equals()의 관계
 
 import java.util.ArrayList;
 

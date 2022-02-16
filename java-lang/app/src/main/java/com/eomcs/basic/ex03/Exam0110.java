@@ -1,5 +1,6 @@
-// java.util.ArrayList 사용법
+//220215
 package com.eomcs.basic.ex03;
+// java.util.ArrayList 사용법
 
 import java.util.ArrayList;
 import java.util.Date;

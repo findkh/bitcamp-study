@@ -9,12 +9,12 @@ public class Exam0211 {
     // 만약 <타입명> 을 생략한다면, 제네릭이 적용된 어떤 객체든지 담을 수 있다.
     ArrayList list1; 
     list1 = new ArrayList();
-    //    list1 = new ArrayList<>();
-    //    list1 = new ArrayList<Object>();
-    //    list1 = new ArrayList<String>();
-    //    list1 = new ArrayList<Member>();
+    list1 = new ArrayList<>();
+    //        list1 = new ArrayList<Object>();
+    //        list1 = new ArrayList<String>();
+    //        list1 = new ArrayList<Member>();
 
-    //=>레퍼런스를 서넌할 때 제네릭 타입을 지정하지 않으면
+    //=>레퍼런스를 선언할 때 제네릭 타입을 지정하지 않으면
     // ArrayList 객체를 생성할 때 지정한 제네릭 문법은 무시된다.
     list1.add(new String());
     list1.add(new Integer(100));
@@ -35,7 +35,7 @@ public class Exam0211 {
     //=> 레퍼런스 선언할 때 제네릭 타입을 ?로 설정했기 때문에
     //   add() 메서드의 파라미터 타입은 ? 가 된다.
     //   즉 파라미터 타입이 뭔지 정확하게 설정되지 않았기 때문에
-    //   컴파일러는 문접의 유효여부를 검사할 수 없다.
+    //   컴파일러는 문법의 유효여부를 검사할 수 없다.
     //
     //    list2.add(new String()); // 컴파일 오류!
     //    list2.add(new Integer(100)); // 컴파일 오류!
