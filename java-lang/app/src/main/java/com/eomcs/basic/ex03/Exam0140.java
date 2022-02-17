@@ -1,5 +1,6 @@
-// java.util.ArrayList 사용법 - indexOf()
+//220217
 package com.eomcs.basic.ex03;
+// java.util.ArrayList 사용법 - indexOf()
 
 import java.util.ArrayList;
 
