@@ -1,5 +1,6 @@
-// 목록 조회: java.util.Collection의 forEach() 사용법
+//220219
 package com.eomcs.basic.ex03;
+// 목록 조회: java.util.Collection의 forEach() 사용법
 
 import java.util.ArrayList;
 

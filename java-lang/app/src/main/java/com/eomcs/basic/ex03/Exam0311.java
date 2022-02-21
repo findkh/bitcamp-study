@@ -1,5 +1,6 @@
-// 목록 조회: 제네릭 적용
+//220219
 package com.eomcs.basic.ex03;
+// 목록 조회: 제네릭 적용
 
 public class Exam0311 {
 

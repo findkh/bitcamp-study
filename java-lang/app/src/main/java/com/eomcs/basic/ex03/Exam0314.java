@@ -1,5 +1,6 @@
-// 목록 조회: for(변수:Iterable 객체)
+//220221
 package com.eomcs.basic.ex03;
+// 목록 조회: for(변수:Iterable 객체)
 
 import java.util.Arrays;
 import java.util.Iterator;

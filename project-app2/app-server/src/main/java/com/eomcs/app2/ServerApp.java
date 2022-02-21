@@ -52,6 +52,7 @@ public class ServerApp {
           if (command.equals("quit")) {
             break;
           }
+
           try {
             switch (command) {
               case "insert" : 
@@ -102,5 +103,4 @@ public class ServerApp {
       } 
     }
   }
-
 }

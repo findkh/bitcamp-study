@@ -1,5 +1,6 @@
-// LinkedList 사용법
+//220221
 package com.eomcs.basic.ex04;
+// LinkedList 사용법
 
 import java.util.LinkedList;
 

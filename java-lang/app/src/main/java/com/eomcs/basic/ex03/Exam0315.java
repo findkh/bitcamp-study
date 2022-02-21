@@ -1,5 +1,6 @@
-// 목록 조회: 중첩 클래스의 이점
+//220221
 package com.eomcs.basic.ex03;
+// 목록 조회: 중첩 클래스의 이점
 
 import java.util.Arrays;
 import java.util.Iterator;
