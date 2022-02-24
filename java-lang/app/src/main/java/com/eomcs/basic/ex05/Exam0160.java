@@ -1,5 +1,6 @@
-// Stack 클래스 사용법 - Iterator 사용
+//220223
 package com.eomcs.basic.ex05;
+// Stack 클래스 사용법 - Iterator 사용
 
 import java.util.Iterator;
 import java.util.Stack;

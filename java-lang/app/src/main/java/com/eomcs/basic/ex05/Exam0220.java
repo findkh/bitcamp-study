@@ -1,5 +1,6 @@
-// Stack의 Iterator와 Deque의 Iterator 차이점 
+//220223
 package com.eomcs.basic.ex05;
+// Stack의 Iterator와 Deque의 Iterator 차이점 
 
 import java.util.ArrayDeque;
 import java.util.Iterator;

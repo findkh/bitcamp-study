@@ -1,5 +1,6 @@
-// java.util.HashSet 클래스 사용 - 중복저장 불가 테스트
+//220224
 package com.eomcs.basic.ex07;
+// java.util.HashSet 클래스 사용 - 중복저장 불가 테스트
 
 import java.util.HashSet;
 

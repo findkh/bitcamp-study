@@ -1,5 +1,6 @@
-// 스택과 Deque
+//220223
 package com.eomcs.basic.ex05;
+// 스택과 Deque
 
 import java.util.ArrayDeque;
 

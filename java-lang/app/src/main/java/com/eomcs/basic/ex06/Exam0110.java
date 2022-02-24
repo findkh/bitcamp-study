@@ -1,5 +1,6 @@
-// Queue 구현과 사용
+//220224
 package com.eomcs.basic.ex06;
+// Queue 구현과 사용
 
 import java.util.concurrent.ArrayBlockingQueue;
 

@@ -1,5 +1,6 @@
-// Stack 클래스 사용법 
+//220222
 package com.eomcs.basic.ex05;
+// Stack 클래스 사용법 
 
 import java.util.Stack;
 

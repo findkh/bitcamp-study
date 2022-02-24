@@ -1,5 +1,6 @@
-// Deque의 Iterator 와 for(:) 문 
+//220223
 package com.eomcs.basic.ex05;
+// Deque의 Iterator 와 for(:) 문 
 
 import java.util.ArrayDeque;
 
