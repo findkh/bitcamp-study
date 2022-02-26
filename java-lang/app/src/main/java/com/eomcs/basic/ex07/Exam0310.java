@@ -1,5 +1,6 @@
-// HashSet과 사용자 정의 데이터 타입
+//220225
 package com.eomcs.basic.ex07;
+// HashSet과 사용자 정의 데이터 타입
 
 import java.util.HashSet;
 

@@ -1,5 +1,6 @@
-// HashSet과 사용자 정의 데이터 타입 - equals()만 오버라이딩
+//220225
 package com.eomcs.basic.ex07;
+// HashSet과 사용자 정의 데이터 타입 - equals()만 오버라이딩
 
 import java.util.HashSet;
 import java.util.Objects;

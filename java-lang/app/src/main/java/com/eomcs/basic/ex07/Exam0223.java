@@ -1,5 +1,6 @@
-// Iterator 의 사용
+//220225
 package com.eomcs.basic.ex07;
+// Iterator 의 사용
 
 import java.util.ArrayDeque;
 import java.util.Iterator;

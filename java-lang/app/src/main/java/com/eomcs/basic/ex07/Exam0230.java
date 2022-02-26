@@ -1,5 +1,6 @@
-// java.util.HashSet 클래스 사용 - 값을 꺼내는 방법 : for(:)
+//220225
 package com.eomcs.basic.ex07;
+// java.util.HashSet 클래스 사용 - 값을 꺼내는 방법 : for(:)
 
 import java.util.HashSet;
 
