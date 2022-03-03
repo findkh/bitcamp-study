@@ -1,5 +1,6 @@
-// java.util.Map 사용법 - put(), get()
+//220228
 package com.eomcs.basic.ex08;
+// java.util.Map 사용법 - put(), get()
 
 import java.util.HashMap;
 

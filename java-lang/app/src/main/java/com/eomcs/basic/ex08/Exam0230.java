@@ -1,5 +1,6 @@
-// java.util.HashMap - key/value 한쌍으로 묶어 꺼내기
+//220301
 package com.eomcs.basic.ex08;
+// java.util.HashMap - key/value 한쌍으로 묶어 꺼내기
 
 import java.util.HashMap;
 import java.util.Map.Entry;

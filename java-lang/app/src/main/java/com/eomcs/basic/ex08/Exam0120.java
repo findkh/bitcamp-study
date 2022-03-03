@@ -1,5 +1,6 @@
-// java.util.Map 사용법 - 사용자 정의 데이터 타입을 key로 사용할 경우
+//220228
 package com.eomcs.basic.ex08;
+// java.util.Map 사용법 - 사용자 정의 데이터 타입을 key로 사용할 경우
 
 import java.util.HashMap;
 

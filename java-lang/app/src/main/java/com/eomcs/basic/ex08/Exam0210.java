@@ -1,5 +1,6 @@
-// java.util.HashMap - key 목록을 사용하여 맵에서 값을 꺼내기
+//220228
 package com.eomcs.basic.ex08;
+// java.util.HashMap - key 목록을 사용하여 맵에서 값을 꺼내기
 
 import java.util.HashMap;
 import java.util.Iterator;

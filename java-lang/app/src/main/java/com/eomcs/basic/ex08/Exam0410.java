@@ -1,5 +1,6 @@
-// HashMap vs Hashtable
+//220301
 package com.eomcs.basic.ex08;
+// HashMap vs Hashtable
 
 import java.util.HashMap;
 import java.util.Hashtable;
