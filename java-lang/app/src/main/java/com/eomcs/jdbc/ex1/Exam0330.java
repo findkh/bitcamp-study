@@ -1,4 +1,4 @@
-// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : select
+// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : select(컬럼이름을 직접 지정함)
 package com.eomcs.jdbc.ex1;
 
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ public class Exam0330 {
   public static void main(String[] args) throws Exception {
     try (
         java.sql.Connection con = DriverManager
-        .getConnection("jdbc:mysql://localhost:3306/studydb?user=study&password=1111");
+        .getConnection("jdbc:mariadb://localhost:3306/studydb?user=study&password=1111");
         java.sql.Statement stmt = con.createStatement();
         java.sql.ResultSet rs = stmt.executeQuery(//
             "select * from x_board order by board_id desc");
