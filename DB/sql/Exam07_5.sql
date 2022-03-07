@@ -271,10 +271,30 @@ from lect_appl la
   left join room r on l.rno=r.rno
   left outer join memb m2 on l.mno=m2.mno;
 
-  select
-    la.lano,
-    (select titl from lect where lno=la.lano) lect_title,
-    (select )
-    la.mno,
-    to_char(la.rdt, "YYYY-MM-DD") reg_date
-  from lect_appl la;
+
+실습
+select
+  la.lano,
+  /*date_format(la.rdt, "%Y-%m-%d") reg_date,*/
+  to_char(la.rdt, 'YYYY-MM-DD') reg_date,
+  l.titl,
+  m.name student_name,
+  s.work,
+  coalesce(r.name, ' ') room_name,
+  coalesce(m2.name, ' ') manager_name
+from lect_appl la
+  inner join lect l on la.lno = l.lno
+  inner join memb m on la.mno = m.mno
+  inner join stnt s on la.mno = s.mno
+  left outer join room r on l.rno = r.rno
+  left outer join memb m2 on l.mno=m2.mno;
+
+서브쿼리 실습
+select
+  la.lano,
+  (select titl from lect where lno=la.lno) lect_title,
+  (select work from stnt where la.mno = mno) working,
+  (select name from memb where la.mno = mno) student_name,
+  to_char(la.rdt, 'YYYY-MM-DD') reg_date,
+  ifnull((select name from room where rno=(select rno from lect where lno=la.lno)), '') room_name
+from lect_appl la;
