@@ -296,5 +296,6 @@ select
   (select work from stnt where la.mno = mno) working,
   (select name from memb where la.mno = mno) student_name,
   to_char(la.rdt, 'YYYY-MM-DD') reg_date,
-  ifnull((select name from room where rno=(select rno from lect where lno=la.lno)), '') room_name
+  ifnull((select name from room where rno=(select rno from lect where lno=la.lno)), '') room_name,
+  ()/*매니저명*/
 from lect_appl la;
