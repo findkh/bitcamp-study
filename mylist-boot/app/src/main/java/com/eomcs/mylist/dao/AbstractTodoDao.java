@@ -3,12 +3,9 @@ package com.eomcs.mylist.dao;
 import java.util.ArrayList;
 import com.eomcs.mylist.domain.Todo;
 
-
 public abstract class AbstractTodoDao implements TodoDao {
 
-  protected ArrayList<Todo> todoList = new ArrayList<>();
-
-  public AbstractTodoDao() {}
+  protected ArrayList<Todo> todoList = new ArrayList<Todo>(); 
 
   protected abstract void save() throws Exception;
 
@@ -23,7 +20,7 @@ public abstract class AbstractTodoDao implements TodoDao {
   }
 
   @Override
-  public void insert(Todo todo) throws Exception { //요청한 곳으로 오류를 넘김
+  public void insert(Todo todo) throws Exception {
     todoList.add(todo);
     save();
   }
@@ -37,7 +34,7 @@ public abstract class AbstractTodoDao implements TodoDao {
   }
 
   @Override
-  public int update(int no, Todo todo) throws Exception { //요청한 곳으로 오류를 넘김
+  public int update(int no, Todo todo) throws Exception {
     if (no < 0 || no >= todoList.size()) {
       return 0;
     }
@@ -57,7 +54,7 @@ public abstract class AbstractTodoDao implements TodoDao {
   }
 
   @Override
-  public int delete(int no) throws Exception { //요청한 곳으로 오류를 넘김
+  public int delete(int no) throws Exception {
     if (no < 0 || no >= todoList.size()) {
       return 0;
     }
@@ -65,4 +62,16 @@ public abstract class AbstractTodoDao implements TodoDao {
     save();
     return 1;
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+

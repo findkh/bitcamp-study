@@ -6,8 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eomcs.mylist.dao.ContactDao;
 import com.eomcs.mylist.domain.Contact;
 
-
-@RestController
+@RestController 
 public class ContactController {
 
   @Autowired
@@ -15,7 +14,7 @@ public class ContactController {
 
   @RequestMapping("/contact/list")
   public Object list() {
-    return contactDao.findAll();
+    return contactDao.findAll(); 
   }
 
   @RequestMapping("/contact/add")
@@ -42,3 +41,7 @@ public class ContactController {
   }
 
 }
+
+
+
+

@@ -7,30 +7,38 @@ import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import org.springframework.stereotype.Repository;
 
-@Repository 
+//@Repository
 public class SerialBoardDao extends AbstractBoardDao {
 
   String filename = "boards.ser";
 
   public SerialBoardDao() {
-
     try {
       ObjectInputStream in = new ObjectInputStream(new BufferedInputStream(new FileInputStream(filename)));
       boardList = (ArrayList) in.readObject();
       in.close();
     } catch (Exception e) {
-      System.out.println("게시글 데이터 로딩 중 오류발생");
+      System.out.println("게시글 데이터 로딩 중 오류 발생!");
     }
   }
 
   @Override
-  protected void save() throws Exception { 
+  protected void save() throws Exception {
     ObjectOutputStream out = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(filename)));
-
     out.writeObject(boardList);
     out.flush();
     out.close();
   }
 }
+
+
+
+
+
+
+
+
+
+
+

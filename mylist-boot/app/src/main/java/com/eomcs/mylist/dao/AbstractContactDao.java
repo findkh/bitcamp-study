@@ -3,10 +3,9 @@ package com.eomcs.mylist.dao;
 import java.util.ArrayList;
 import com.eomcs.mylist.domain.Contact;
 
-
 public abstract class AbstractContactDao implements ContactDao {
 
-  protected ArrayList<Contact> contactList = new ArrayList<>();
+  protected ArrayList<Contact> contactList = new ArrayList<>(); 
 
   protected abstract void save() throws Exception;
 
@@ -65,4 +64,16 @@ public abstract class AbstractContactDao implements ContactDao {
     }
     return -1;
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+

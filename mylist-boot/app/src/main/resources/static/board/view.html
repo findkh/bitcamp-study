@@ -11,8 +11,8 @@
 <form>
 제목*: <input id="x-title" type="text"><br>
 내용*: <textarea id="x-content" cols="60" rows="10"></textarea><br>
-작성일*: <span id="x-createdDate"></span><br>
 조회수: <span id="x-viewCount"></span><br>
+등록일: <span id="x-createdDate"></span><br>
 별표(*) 항목은 필수 입력입니다.<br>
 <button id="x-update-btn" type="button">변경</button>
 <button id="x-delete-btn" type="button">삭제</button>
@@ -26,28 +26,27 @@
   console.log(arr);
 
   if (arr.length == 1) {
-    alert("요청 형식이 올바르지 않습니다.")
+    alert("요청 형식이 옳바르지 않습니다.")
     throw "URL 형식 오류!";
   }
 
   var qs = arr[1];
   console.log(qs);
 
-  // 2) 쿼리 스트링에서 index 값을 추출한다.
+  // 2) 쿼리 스트링에서 email 값을 추출한다.
   var params = new URLSearchParams(qs);
   var index = params.get("index");
 
   if (index == null) {
-    alert("게시글 번호가 없습니다.");
+    alert("게시물 번호가 없습니다.");
     throw "파라미터 오류!";
   }
   console.log(index);
 
-
   var xTitle = document.querySelector("#x-title");
   var xContent = document.querySelector("#x-content");
-  var xCreatedDate = document.querySelector("#x-createdDate");
   var xViewCount = document.querySelector("#x-viewCount");
+  var xCreatedDate = document.querySelector("#x-createdDate");
 
   // 3) 서버에서 데이터 가져오기
   fetch(`/board/get?index=${index}`)
@@ -55,11 +54,11 @@
       return response.json();
     })
     .then(function(board) {
-        // 4) 연락처 상세 정보를 화면에 출력한다.
+      // 4) 연락처 상세 정보를 화면에 출력한다.
       xTitle.value = board.title;
       xContent.value = board.content;
-      xCreatedDate.innerHTML = board.createdDate;
       xViewCount.innerHTML = board.viewCount;
+      xCreatedDate.innerHTML = board.createdDate;
     });
 
   document.querySelector("#x-update-btn").onclick = function() {

@@ -2,7 +2,7 @@ package com.eomcs.mylist.dao;
 
 import com.eomcs.mylist.domain.Book;
 
-public interface BookDao { 
+public interface BookDao {
 
   int countAll();
 
@@ -15,5 +15,15 @@ public interface BookDao {
   int update(int no, Book book) throws Exception;
 
   int delete(int no) throws Exception;
-
 }
+
+
+
+
+
+
+
+
+
+
+

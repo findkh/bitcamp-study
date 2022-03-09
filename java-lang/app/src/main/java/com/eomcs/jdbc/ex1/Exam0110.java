@@ -1,5 +1,6 @@
-// JDBC 드라이버 준비 - 드라이버 다운로드 및 로딩
+//220303 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 드라이버 준비 - 드라이버 다운로드 및 로딩
 
 import java.sql.DriverManager;
 import java.sql.SQLException;

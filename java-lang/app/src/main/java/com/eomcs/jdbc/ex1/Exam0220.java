@@ -1,5 +1,6 @@
-// JDBC 프로그래밍 - DBMS에 연결하기
+//220304 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 프로그래밍 - DBMS에 연결하기
 
 import java.sql.DriverManager;
 

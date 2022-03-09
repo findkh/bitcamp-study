@@ -1,5 +1,6 @@
-// JDBC 프로그래밍 - DBMS에 연결하기
+//220304 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 프로그래밍 - DBMS에 연결하기
 
 import java.sql.DriverManager;
 
@@ -17,7 +18,7 @@ public class Exam0210 {
 
       // DBMS에 연결하기
       // => Driver 객체를 직접 사용하여 DBMS에 연결하지 않고 대신 DriverManager를 통해 연결한다. 
-      //    DriverManager에게 연결할 DBMS의 정보(jdbc url)를 주면 
+      //    DriverManager에게 연결할 DBMS의 정보(jdbc URL)를 주면 
       //    해당 DBMS의 Driver 객체를 찾아 connect()를 호출한다.
       // jdbc url : DBMS 서버 정보. 
       //  예) jdbc:DBMS://서버주소:포트/데이터베이스명

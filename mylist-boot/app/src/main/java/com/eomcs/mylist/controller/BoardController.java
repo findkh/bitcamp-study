@@ -58,3 +58,7 @@ public class BoardController {
     return boardDao.delete(index);
   }
 }
+
+
+
+

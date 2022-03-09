@@ -1,5 +1,6 @@
-// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : update
+//220304 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : update
 
 import java.sql.DriverManager;
 
@@ -17,7 +18,7 @@ public class Exam0350 {
       // => 리턴 값: 변경된 레코드의 개수이다.
       int count = stmt.executeUpdate( 
           "update x_board set view_count = view_count + 1"
-              + " where board_id < 100");
+              + " where board_id = 4");
       System.out.printf("%d 개 변경 성공!", count);
     }
   }

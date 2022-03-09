@@ -288,14 +288,3 @@ from lect_appl la
   inner join stnt s on la.mno = s.mno
   left outer join room r on l.rno = r.rno
   left outer join memb m2 on l.mno=m2.mno;
-
-서브쿼리 실습
-select
-  la.lano,
-  (select titl from lect where lno=la.lno) lect_title,
-  (select work from stnt where la.mno = mno) working,
-  (select name from memb where la.mno = mno) student_name,
-  to_char(la.rdt, 'YYYY-MM-DD') reg_date,
-  ifnull((select name from room where rno=(select rno from lect where lno=la.lno)), '') room_name,
-  ()/*매니저명*/
-from lect_appl la;

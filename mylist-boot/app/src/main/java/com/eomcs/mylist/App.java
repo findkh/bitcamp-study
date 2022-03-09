@@ -13,7 +13,6 @@ public class App {
 
   public static void main(String[] args) {
     SpringApplication.run(App.class, args);
-    //class는 내장변수이다. (클래스에 대한 정보를 가지고 있음)
   }
 
   //@Bean
@@ -23,10 +22,11 @@ public class App {
       System.out.println("빈 컨테이너가 생성한 객체(빈 컨테이너에 들어 있는 객체):");
 
       String[] beanNames = beanContainer.getBeanDefinitionNames();
-      for (int i = 0; i < beanNames.length ; i++) {
+      for (int i = 0; i < beanNames.length; i++) {
         Object bean = beanContainer.getBean(beanNames[i]);
-        System.out.printf("----> %03d: %s\n", i+1, bean.getClass().getName() );
+        System.out.printf("----> %03d: %s\n", i + 1, bean.getClass().getName());
       }
+
     };
   }
 
@@ -34,4 +34,5 @@ public class App {
   String hello() {
     return "Hello World!";
   }
+
 }

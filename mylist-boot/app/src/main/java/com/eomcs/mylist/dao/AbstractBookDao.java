@@ -3,12 +3,9 @@ package com.eomcs.mylist.dao;
 import java.util.ArrayList;
 import com.eomcs.mylist.domain.Book;
 
-
 public abstract class AbstractBookDao implements BookDao {
 
-  protected ArrayList<Book> bookList = new ArrayList<>();
-
-  public AbstractBookDao() {}
+  protected ArrayList<Book> bookList = new ArrayList<>(); 
 
   protected abstract void save() throws Exception;
 
@@ -23,7 +20,7 @@ public abstract class AbstractBookDao implements BookDao {
   }
 
   @Override
-  public void insert(Book book) throws Exception { //요청한 곳으로 오류를 넘김
+  public void insert(Book book) throws Exception {
     bookList.add(book);
     save();
   }
@@ -37,7 +34,7 @@ public abstract class AbstractBookDao implements BookDao {
   }
 
   @Override
-  public int update(int no, Book book) throws Exception { //요청한 곳으로 오류를 넘김
+  public int update(int no, Book book) throws Exception {
     if (no < 0 || no >= bookList.size()) {
       return 0;
     }
@@ -47,7 +44,7 @@ public abstract class AbstractBookDao implements BookDao {
   }
 
   @Override
-  public int delete(int no) throws Exception { //요청한 곳으로 오류를 넘김
+  public int delete(int no) throws Exception {
     if (no < 0 || no >= bookList.size()) {
       return 0;
     }
@@ -55,4 +52,16 @@ public abstract class AbstractBookDao implements BookDao {
     save();
     return 1;
   }
+
 }
+
+
+
+
+
+
+
+
+
+
+

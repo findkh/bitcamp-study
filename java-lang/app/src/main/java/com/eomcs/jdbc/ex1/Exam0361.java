@@ -1,5 +1,6 @@
-// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : delete, FK 가 참조하는 데이터 지우기
+//220304 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : delete, FK 가 참조하는 데이터 지우기
 
 import java.sql.DriverManager;
 
@@ -17,9 +18,9 @@ public class Exam0361 {
       // 부모 테이블의 데이터를 참조하는 자식 테이블의 데이터를 먼저 지워야 한다.
       //
       // => 게시글을 참조하는 첨부 파일 데이터를 먼저 지운다.
-      int count = stmt.executeUpdate(
-          "delete from x_board_file where board_id = 1");
-      System.out.printf("x_board_file 테이블 : %d 개 삭제 성공!\n", count);
+      //      int count = stmt.executeUpdate(
+      //          "delete from x_board_file where board_id = 1");
+      //      System.out.printf("x_board_file 테이블 : %d 개 삭제 성공!\n", count);
 
       // => 부모 테이블의 데이터를 지운다.
       int count2 = stmt.executeUpdate(

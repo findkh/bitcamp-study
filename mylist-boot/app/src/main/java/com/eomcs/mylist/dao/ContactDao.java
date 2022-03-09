@@ -2,7 +2,7 @@ package com.eomcs.mylist.dao;
 
 import com.eomcs.mylist.domain.Contact;
 
-public interface ContactDao { 
+public interface ContactDao {
 
   int countAll();
 
@@ -14,6 +14,16 @@ public interface ContactDao {
 
   int update(Contact contact) throws Exception;
 
-  int delete(String Email) throws Exception;
-
+  int delete(String email) throws Exception;
 }
+
+
+
+
+
+
+
+
+
+
+

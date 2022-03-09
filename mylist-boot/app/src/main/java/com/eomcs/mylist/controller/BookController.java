@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eomcs.mylist.dao.BookDao;
 import com.eomcs.mylist.domain.Book;
 
-@RestController
+@RestController 
 public class BookController {
 
   @Autowired
@@ -14,7 +14,7 @@ public class BookController {
 
   @RequestMapping("/book/list")
   public Object list() {
-    return bookDao.findAll();
+    return bookDao.findAll(); 
   }
 
   @RequestMapping("/book/add")
@@ -23,6 +23,7 @@ public class BookController {
     return bookDao.countAll();
   }
 
+
   @RequestMapping("/book/get")
   public Object get(int index) {
     Book book = bookDao.findByNo(index);
@@ -30,7 +31,7 @@ public class BookController {
   }
 
   @RequestMapping("/book/update")
-  public Object update(int index, Book book) throws Exception {
+  public Object update(int index, Book book) throws Exception{
     Book old = bookDao.findByNo(index);
     if (old == null) {
       return 0;
@@ -47,3 +48,7 @@ public class BookController {
     return bookDao.delete(index);
   }
 }
+
+
+
+

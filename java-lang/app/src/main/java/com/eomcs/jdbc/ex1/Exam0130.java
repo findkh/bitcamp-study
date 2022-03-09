@@ -1,5 +1,6 @@
-// JDBC 드라이버 준비 - 드라이버 클래스 로딩과 등록
+//220303 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 드라이버 준비 - 드라이버 클래스 로딩과 등록
 
 import java.sql.DriverManager;
 

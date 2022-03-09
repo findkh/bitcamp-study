@@ -1,5 +1,6 @@
-// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : select(컬럼이름을 직접 지정함)
+//220304 220309
 package com.eomcs.jdbc.ex1;
+// JDBC 프로그래밍 - DBMS에 SQL문 보내기 : select(컬럼이름을 직접 지정함)
 
 import java.sql.DriverManager;
 
