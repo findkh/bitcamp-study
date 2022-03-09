@@ -1,5 +1,6 @@
-// 게시판 관리 - JDBC 코드를 별도의 클래스로 캡슐화시킴. DAO 적용.
+//220307 220309
 package com.eomcs.jdbc.ex2;
+// 게시판 관리 - JDBC 코드를 별도의 클래스로 캡슐화시킴. DAO 적용.
 
 import java.util.List;
 

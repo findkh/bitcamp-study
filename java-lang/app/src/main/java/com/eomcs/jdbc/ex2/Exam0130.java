@@ -1,5 +1,6 @@
-// 게시물 관리 - 조회
+//220307 220309
 package com.eomcs.jdbc.ex2;
+// 게시물 관리 - 조회
 
 import java.sql.Connection;
 import java.sql.DriverManager;

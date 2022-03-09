@@ -1,5 +1,6 @@
-// 게시판 관리 - 삭제
+//220307 220309
 package com.eomcs.jdbc.ex2;
+// 게시판 관리 - 삭제
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,5 +1,6 @@
-// 게시물 관리 - 목록
+//220307 220309
 package com.eomcs.jdbc.ex2;
+// 게시물 관리 - 목록
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,7 +20,7 @@ public class Exam0120 {
     try (Connection con = DriverManager.getConnection(
         "jdbc:mariadb://localhost:3306/studydb?user=study&password=1111");
         Statement stmt = con.createStatement();
-        ResultSet rs = stmt.executeQuery(
+        ResultSet rs = stmt.executeQuery( //ResultSet 결과를 가져오는 도구
             "select * from x_board order by board_id desc")) {
 
       System.out.println("번호, 제목, 등록일, 조회수");
