@@ -1,5 +1,6 @@
-// 게시판 관리 - 삭제 + PreparedStatement 적용
+//220307 220310
 package com.eomcs.jdbc.ex3;
+// 게시판 관리 - 삭제 + PreparedStatement 적용
 
 import java.sql.Connection;
 import java.sql.DriverManager;

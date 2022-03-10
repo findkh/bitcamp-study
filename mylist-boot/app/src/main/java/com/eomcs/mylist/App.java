@@ -13,7 +13,7 @@ public class App {
 
   public static void main(String[] args) {
     SpringApplication.run(App.class, args);
-  }
+  } //스프링부트 실행
 
   //@Bean
   public CommandLineRunner commandLineRunner(ApplicationContext beanContainer) {

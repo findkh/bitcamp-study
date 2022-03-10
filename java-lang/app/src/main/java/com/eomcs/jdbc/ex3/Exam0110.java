@@ -1,5 +1,6 @@
-// Statement 와 SQL 삽입 공격
+//220307 220310
 package com.eomcs.jdbc.ex3;
+// Statement 와 SQL 삽입 공격
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -38,6 +39,7 @@ public class Exam0110 {
       //
       // insert into x_board(title, contents) values('aaaa','bbbb'), ('haha', 'hoho'), ('hehe', 'puhul')
       //
+      //"insert into x_board(title, contents) values('xxx' + 'okok'),('haha','뭐야'),('되네?','ㅋㅋㅋ'),('어쩔티비','저쩔티비');
 
       System.out.println(count + " 개를 입력하였습니다.");
     }

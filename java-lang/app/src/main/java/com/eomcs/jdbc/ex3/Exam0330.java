@@ -1,5 +1,6 @@
-// 게시물 관리 - 조회 + PreparedStatement 적용
+//220307 220310
 package com.eomcs.jdbc.ex3;
+// 게시물 관리 - 조회 + PreparedStatement 적용
 
 import java.sql.Connection;
 import java.sql.DriverManager;

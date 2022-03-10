@@ -1,5 +1,6 @@
-// PreparedStatement를 이용하여 SQL 삽입 공격 차단하기
+//220307 220310
 package com.eomcs.jdbc.ex3;
+// PreparedStatement를 이용하여 SQL 삽입 공격 차단하기
 
 import java.sql.Connection;
 import java.sql.DriverManager;

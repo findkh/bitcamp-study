@@ -1,5 +1,6 @@
-// Statement 와 SQL 삽입 공격
+//220307 220310
 package com.eomcs.jdbc.ex3;
+// Statement 와 SQL 삽입 공격
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -47,6 +48,10 @@ public class Exam0120 {
       // contents = 'test', view_count = 300, created_date = '2019-3-3'
       // where board_id = 1
       //
+
+      //update x_board set title = 'zzzzzz' ,
+      //contents = haha', view_count=10000, create_date='2040-01-01 where board_id = '4')
+
 
       if (count == 0) {
         System.out.println("해당 번호의 게시물이 존재하지 않습니다.");

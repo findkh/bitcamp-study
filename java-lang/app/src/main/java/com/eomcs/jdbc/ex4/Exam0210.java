@@ -1,5 +1,6 @@
-// auto commit 의 문제점
+//220307 220310
 package com.eomcs.jdbc.ex4;
+// auto commit 의 문제점
 
 import java.sql.Connection;
 import java.sql.DriverManager;

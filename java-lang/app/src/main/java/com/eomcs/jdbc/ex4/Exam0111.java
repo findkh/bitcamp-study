@@ -1,5 +1,6 @@
-// insert 한 후 auto increment PK 값 리턴 받기
+//220307 220310
 package com.eomcs.jdbc.ex4;
+// insert 한 후 auto increment PK 값 리턴 받기
 
 import java.sql.Connection;
 import java.sql.DriverManager;

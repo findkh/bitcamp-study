@@ -1,5 +1,6 @@
-// 자식 테이블의 데이터를 함께 입력할 때 문제점
+//220307 220310
 package com.eomcs.jdbc.ex4;
+// 자식 테이블의 데이터를 함께 입력할 때 문제점
 
 import java.sql.Connection;
 import java.sql.DriverManager;
