@@ -26,7 +26,6 @@ public class BoardController {
     return boardDao.insert(board);
   }
 
-
   @RequestMapping("/board/get")
   public Object get(int no) {
     Board board = boardDao.findByNo(no);
