@@ -27,7 +27,13 @@
   }
 
 
-  /* specificity = 100 + 1 + 100 = 201 */
+  /* specificity = 100 + 1 + 100 = 201 
+  #d2, #d3 : d2와 d3 2개를 의미
+  #d2 #d3 : d2의 자손중에 d3를 가리킴
+  #d2 > #d3 : d2의 직계 자손 d3를 가리킴
+  #d2 div #d3 : d2의 자손 중에 div를 찾고 div의 자손중에 d3 가리킴
+  #d2 div#d3 : d2의 자손중에서 div를 찾고 id가 d3인 div를 가리킴
+  */
   #d2 div#d3 {
     background-color: red;
     color: white;
