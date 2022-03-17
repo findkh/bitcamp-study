@@ -58,7 +58,7 @@
     margin-left: 184px;
     padding: 10px;
     xheight: 500px;
-    min-height: 500px;
+    min-height: 500px; /*최소 높이를 500으로 고정함. absoulte 사용할 때 사용 - footer 때문에*/
   }
 
   #footer {
@@ -66,7 +66,7 @@
     /* 왼쪽에 이 태그의 내용을 가리는 것이 있다면
         그 아래로 위치하도록 이동시킨다.
         단 왼쪽에 있는 것이 float 객체일 때!*/
-    xclear: left; 
+    xclear: left; /*float 일때만 먹히고, absoulte는 안먹힘*/ 
     text-align: center;
     border: 1px solid red;
   }
@@ -85,7 +85,7 @@
 <body>
 
   <div id="menu">
-  <img src='http://bitcamp.co.kr/resources/images/logo/head_logo.gif'>
+  <img src='https://www.bitcamp.co.kr/theme/basic/img/blue_logo.png'>
   <ul>
     <li class="c1">BITCamp</li>
     <li class="c1">교육안내</li>

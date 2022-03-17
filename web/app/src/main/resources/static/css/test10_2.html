@@ -21,7 +21,7 @@
 
   div {
     border: 1px solid black;
-    margin: 10px;
+    margin: 10px 0px 10px 10px; /*위 아래 마진은 서로 겹친다.*/
     padding: 10px;
   }
 
@@ -34,17 +34,18 @@
   #d1 {background-color: red;}
   #d11 {background-color: orange;}
   #d111 {
-    xfloat: right;
+    float: right;
   }
   #d112 {
-    xfloat: left;
+    float: left;
   }
   #d2 {
     background-color: green;
-    float: left;
+    float: right; /*float하면 기존 코드의 margin이 겹치지 않아서 더 밀린다.*/
   }
   #d3 {
     background-color: blue;
+    float: left;
   }
   </style>
 </head>
