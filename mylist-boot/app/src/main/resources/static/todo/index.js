@@ -77,9 +77,9 @@
        } else {
          var titleSpan = $(`tr[data-no="${no}"] > td.todo-title > span`);
          if (checked) {
-           titleSpan.classList.add("todo-checked");
+           titleSpan.addClass("todo-checked");
          } else {
-           titleSpan.classList.remove("todo-checked")
+           titleSpan.removeClass("todo-checked")
          }
        }
      });
