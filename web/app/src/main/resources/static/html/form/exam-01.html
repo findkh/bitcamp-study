@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>get/post 요청</title>
+</head>
+<body>
+<h1>GET 요청</h1>
+
+1. 주소창에 직접 URL을 입력할 때 <br>
+
+2. 링크: <a href="/html/form/exam01">GET 요청1</a><br>
+
+3. form에서 요청(메서드 속성 설정하지 않음 : 기본 값이 get이다.)<br>
+<form action="/html/form/exam01">
+  <button>요청</button>
+</form>
+
+4. form에서 요청(메서드 속성의 값을 get으로 설정)<br>
+<form action="/html/form/exam01" method="get">
+  <button>요청</button>
+</form>
+
+
+<h1>POST 요청</h1>
+1. form에서 요청(method 속성의 값을 post로 설정)<br>
+<form action="/html/form/exam01" method="post">
+  <button>요청</button>
+</form>
+</body>
+</html>
