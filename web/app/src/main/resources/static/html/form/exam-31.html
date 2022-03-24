@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AJAX</title>
+</head>
+<body>
+<h1>AJAX POST 요청- multipart 데이터 보내기</h1>
+
+
+<form id="form">
+  이름: <input type="text" name="name"><br>
+  나이: <input type="number" name="age"><br>
+  사진: <input type="file" name="photo"><br>
+  <button id="btn" type="button">요청</button> <!--type="button"을 주지 않으면 submit 서버에 요청을 한다.-->
+</form>
+
+<script>
+
+  var fName = document.querySelector("input[name=name]");
+  var fAge = document.querySelector("input[name=age]");
+
+  document.querySelector("#btn").onclick = function(){
+
+    //멀티 파트 형식으로 데이터를 FormData 객체에 보관한다.
+    var fd = new FormData;
+    fd.append("name", fName.value);
+    fd.append("age", fAge.value)
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function(e) {
+      if(xhr.readyState == 4){
+        console.log("-->", xhr.responseText)
+      }
+    };
+
+    xhr.open("POST", "/html/form/exam31", true);
+
+    //FormData 객체에 값을 담아서 보낼 경우,
+    //Content-Type은 "multipart/form-data"이다.
+    xhr.send(fd);
+  };
+</script>
+
+
+</body>
+</html>
