@@ -10,4 +10,5 @@ public class Board {
   String content;
   int viewCount;
   Date createdDate;
+  Member writer;
 }

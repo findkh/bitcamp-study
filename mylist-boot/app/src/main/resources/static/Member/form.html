@@ -34,20 +34,24 @@
     
     fetch("/member/signup", { 
         method: "POST",
-        body: fd
+        body: new URLSearchParams(fd)
       }) 
       .then(function(response) {
         return response.text();
       })
       .then(function(text) {
-        console.log(text);
-        window.alert("회원가입 성공!");
+        if (text == "success") {
+          location.href = "signin.html"
+        } else {
+          window.alert("회원가입 실패");
+        }
+
       });
   return false;
   };
 
   document.querySelector("#x-cancel-btn").onclick = function() {
-    // window.location.href = "index.html";
+    window.location.href = "../index.html";
   };
 </script>
 
