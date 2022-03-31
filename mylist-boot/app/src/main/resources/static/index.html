@@ -68,29 +68,29 @@
 css(".login", "display", "none");
 
 fetch("/member/getLoginUser").then(function(response) {
-	return response.json();
+  return response.json();
 }).then(function(result) {
-	if (result.status == "success") {
-		document.querySelector("#user-name").innerHTML = result.data.name;
-		css(".login", "display", "");
-		css(".not-login", "display", "none");
-	}
+  if (result.status == "success") {
+    document.querySelector("#user-name").innerHTML = result.data.name;
+    css(".login", "display", "");
+    css(".not-login", "display", "none");
+  }
 });
 
 function css(selector, name, value) {
-	var el = document.querySelectorAll(selector);
+  var el = document.querySelectorAll(selector);
   for (var e of el) {
     e.style[name] = value;
   }
 }
 
 document.querySelector("#login-btn").onclick = function() {
-	location.href = "/member/signin.html";
+  location.href = "/member/signin.html";
 };
 
 document.querySelector("#logout-btn").onclick = function() {
   fetch("/member/signout").then(function(response) {
-	  location.href = "/index.html";
+    location.href = "/index.html";
   });
 };
 

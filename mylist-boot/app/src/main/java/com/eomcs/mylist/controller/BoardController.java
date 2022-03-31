@@ -25,13 +25,14 @@ public class BoardController {
   public Object add(Board board, HttpSession session) {
     Member member = (Member) session.getAttribute("loginUser");
     if (member == null) {
-      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다");
+      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다.");
     }
 
     board.setWriter(member);
     boardService.add(board);
     return new ResultMap().setStatus(SUCCESS);
   }
+
 
   @RequestMapping("/board/get")
   public Object get(int no) {
@@ -46,7 +47,7 @@ public class BoardController {
   public Object update(Board board, HttpSession session) {
     Member member = (Member) session.getAttribute("loginUser");
     if (member == null) {
-      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다");
+      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다.");
     }
 
     board.setWriter(member);
@@ -63,7 +64,7 @@ public class BoardController {
   public Object delete(int no, HttpSession session) {
     Member member = (Member) session.getAttribute("loginUser");
     if (member == null) {
-      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다");
+      return new ResultMap().setStatus(FAIL).setData("로그인 하지 않았습니다.");
     }
 
     Board board = new Board();
@@ -76,12 +77,9 @@ public class BoardController {
       return new ResultMap().setStatus(SUCCESS);
     } else {
       return new ResultMap().setStatus(FAIL).setData("게시글 번호가 유효하지 않거나 게시글 작성자가 아닙니다.");
-    }    
-
-
+    }
   }
 }
-
 
 
 

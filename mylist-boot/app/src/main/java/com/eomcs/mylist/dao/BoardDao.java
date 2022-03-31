@@ -12,6 +12,7 @@ import com.eomcs.mylist.domain.Board;
 //    ex) <select id="countAll">...</select>
 //
 public interface BoardDao {
+
   int countAll();
 
   List<Board> findAll();
