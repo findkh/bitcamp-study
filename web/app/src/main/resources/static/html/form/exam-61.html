@@ -19,8 +19,6 @@
 
     var fd = new FormData(document.forms.namedItem("form1"));
 
-    var xhr = new XMLHttpRequest();
-
     fetch("/html/form/exam51", { //비동기 방식으로 서버에 요청을 보낸다.
       method: "POST",
       body: fd
