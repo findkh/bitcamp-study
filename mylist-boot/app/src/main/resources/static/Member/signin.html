@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <title>로그인</title>
-</head>
-<body>
-
 <h1>로그인</h1>
 
 <form name="form1">
 이메일: <input name="email" type="email"><br>
 암호: <input name="password" type="password"><br>
-<input name="saveEmail" type="checkbox">이메일 저장<br>
+<input name="saveEmail" type="checkbox"> 이메일 저장<br>
 <div>
   <button id="x-add-btn">로그인</button>
   <button id="x-cancel-btn" type="button">취소</button>
-  <a href="form.html">회원가입</a>
+  <a href="?content=/member/form.html">회원가입</a>
 </div>
 <div>
   <fb:login-button 
@@ -42,11 +34,11 @@ document.querySelector("form[name=form1]").onsubmit = function() {
       body: new URLSearchParams(fd)
     }) 
     .then(function(response) {
-      return response.text();
+      return response.json();
     })
-    .then(function(text) {
-      if (text == "success") {
-        location.href = "../index.html";
+    .then(function(result) {
+      if (result.status == "success") {
+        location.href = "/index.html";
       } else {
         window.alert("로그인 실패!")
       }
@@ -55,7 +47,7 @@ document.querySelector("form[name=form1]").onsubmit = function() {
 };
 
 document.querySelector("#x-cancel-btn").onclick = function() {
-  window.location.href = "../index.html";
+  window.location.href = "/index.html";
 };
 
 window.fbAsyncInit = function() {
@@ -91,7 +83,7 @@ function checkLoginState() {
           }).then(function(result) {
             if (result.status == "success") {
               console.log(result.data)
-              location.href = "../index.html";
+              location.href = "/index.html";
             } else {
               window.alert("페이스북 로그인 실패!");
               console.log(result.data);
@@ -103,18 +95,19 @@ function checkLoginState() {
         }
     });
 }
-
 </script>
 
 <script src="/node_modules/js-cookie/dist/js.cookie.js"></script>
 <script>
-//userEmail 쿠키가 있다면 값을 꺼내서 이메일 입력 상자에 넣는다.
-  var userEmail = Cookies.get('userEmail');
+  //userEmail 쿠키가 있다면 값을 꺼내서 이메일 입력 상자에 넣는다.
+  var userEmail = Cookies.get('userEmail'); 
   if (userEmail != undefined) {
-	  xEmail.value = userEmail;
+    xEmail.value = userEmail;
   }
- 
 </script>
 
-</body>
-</html>
+
+
+
+
+

@@ -22,9 +22,9 @@ public class MemberController {
   @RequestMapping("/member/signup")
   public Object signUp(Member member) {
     if (memberService.add(member) == 1) {
-      return "success";
+      return new ResultMap().setStatus(SUCCESS);
     } else {
-      return "fail";
+      return new ResultMap().setStatus(FAIL);
     }
   }
 
@@ -32,7 +32,7 @@ public class MemberController {
   public Object signin(String email, String password, boolean saveEmail, HttpServletResponse response, HttpSession session) {
     Member loginUser = memberService.get(email, password);
     if (loginUser == null) {
-      return "fail";
+      return new ResultMap().setStatus(FAIL);
     }
 
     // 로그인이 성공하면, 
@@ -41,15 +41,15 @@ public class MemberController {
 
     Cookie cookie = null;
     if (saveEmail) {
-      //클라이언트로 보낼 데이터인 쿠키에 이메일을 저장한다.
+      // 클라이언트로 보낼 데이터인 쿠키에 이메일을 저장한다.
       cookie = new Cookie("userEmail", email);
     } else {
-      cookie = new Cookie("userEmail", email);
-      cookie.setMaxAge(0); //클라이언트에게 해당 이름의 쿠키를 삭제하도록 요구한다.
+      cookie = new Cookie("userEmail", "");
+      cookie.setMaxAge(0); // 클라이언트에게 해당 이름의 쿠키를 삭제하도록 요구한다.
     }
-    response.addCookie(cookie); //응답할 때 쿠키 정보를 응답 헤더에 포함시킨다.
+    response.addCookie(cookie); // 응답할 때 쿠키 정보를 응답헤더에 포함시킨다.
 
-    return "success";
+    return new ResultMap().setStatus(SUCCESS);
   }
 
   @RequestMapping("/member/getLoginUser")
