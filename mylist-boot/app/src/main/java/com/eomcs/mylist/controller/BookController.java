@@ -4,7 +4,11 @@ import static com.eomcs.mylist.controller.ResultMap.FAIL;
 import static com.eomcs.mylist.controller.ResultMap.SUCCESS;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.util.UUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
@@ -22,6 +26,8 @@ import net.coobird.thumbnailator.geometry.Positions;
 @RestController 
 public class BookController {
 
+  private static final Logger log = LoggerFactory.getLogger(BookController.class);
+
   @Autowired
   BookService bookService;
 
@@ -38,7 +44,9 @@ public class BookController {
       return new ResultMap().setStatus(SUCCESS);
 
     } catch (Exception e) {
-      e.printStackTrace();
+      StringWriter out = new StringWriter();
+      e.printStackTrace(new PrintWriter(out));
+      log.error(out.toString());
       return new ResultMap().setStatus(FAIL);
     }
   }
