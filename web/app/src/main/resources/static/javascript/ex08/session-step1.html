@@ -14,10 +14,11 @@
 
 document.querySelector("#btn1").onclick = function() {
 	var fd = new FormData(document.forms.namedItem("form1"));
+	  //console.log(new URLSearchParams(fd).toString());
 	  
 	  fetch("/session/step1", {
 		  method: "POST",
-		  body: new URLSearchParams(fd)
+		  body: new URLSearchParams(fd) //그냥 fd를 주면 멀티파트로 보낸다. URLSearchParams로 보내면 name=xxx&age=11 이런식으로 요청한다.
 	  }).then(function(response){
 		  return response.text();
 	  }).then(function(text){

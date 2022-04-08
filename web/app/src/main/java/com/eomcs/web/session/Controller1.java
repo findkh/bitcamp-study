@@ -21,7 +21,7 @@ public class Controller1 {
     return "test2() 실행";
   }
 
-  // 3. 세션을 사용는 request handler
+  // 3. 세션을 사용하는 request handler
   // -> 세션이 생성된 후에 요청하면 기존 세션 객체를 그대로 사용한다.
   // -> 세션이 없는 상태에서 요청하면 새 세션 객체를 만든다.
   // -> 세션이 있지만 무효한 상태일 경우 새 세션 객체를 만든다.
