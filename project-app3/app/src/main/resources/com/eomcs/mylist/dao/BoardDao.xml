@@ -37,6 +37,7 @@
       inner join ml_member m on (b.writer = m.no) 
     order by 
       b.board_no desc
+    limit #{offset}, #{rowCount} <!-- DAO에서 지정해서 넘긴 파라미터 이름으로 사용 -->
   </select>
   
   <!-- 
