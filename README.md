@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bitcamp-study
 비트캠프 216기 교육과정 수업 자료 모음
 
@@ -24,3 +25,6 @@
 >>>>>>> 78a12ff08b2daca1b32036a857f56568018f1471
 
 집 pc commit 확인
+=======
+# mytest
+>>>>>>> mytest/main
