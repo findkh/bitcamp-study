@@ -37,7 +37,7 @@ public class FormController {
 
     try {
       File photoFile = new File("c:/upload/" + photo.getOriginalFilename());
-      photo.transferTo(photoFile);
+      photo.transferTo(photoFile); //파일 객체를 통해 경로를 지정하게 되면 클라이언트가 보낸 데이터를 그 경로로 옮긴다.
     } catch (Exception e) {
       e.printStackTrace();
       return "error";
@@ -46,11 +46,11 @@ public class FormController {
   }
 
   @RequestMapping("/html/form/exam12")
-  public Object exam12(String name, int age, MultipartFile[] photo) {
+  public Object exam12(String name, int age, MultipartFile[] photo) { //여러개의 파일을 받을 때는 배열로 선언한다.
     System.out.println(name);
     System.out.println(age);
 
-    for (MultipartFile part : photo) {
+    for (MultipartFile part : photo) { //반복문을 돌린다.
       try {
         File photoFile = new File("c:/upload/" + part.getOriginalFilename());
         part.transferTo(photoFile);
@@ -67,7 +67,7 @@ public class FormController {
     System.out.println(name);
     System.out.println(age);
 
-    //Thread.sleep(10000);
+    //    Thread.sleep(10000);
 
     return "ok!"; 
   }
